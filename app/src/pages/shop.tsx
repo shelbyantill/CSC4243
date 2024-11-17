@@ -371,7 +371,7 @@ const Shop: NextPage = () => {
               <section className="flex flex-col gap-3">
                 <h3 className="text-lg font-bold">Double or Nothing</h3>
                 <p className="text-sm text-gray-500">
-                  Attempt to double your five lingot wager by maintaining a
+                  Attempt to double your five progot wager by maintaining a
                   seven day streak.
                 </p>
                 <button
@@ -383,7 +383,7 @@ const Shop: NextPage = () => {
               </section>
             </div>
           </div>
-          <div className="py-7">
+          {/* <div className="py-7">
             <h2 className="mb-5 text-2xl font-bold">Merch</h2>
             <div className="flex border-t-2 border-gray-300 py-5">
               <DuoPlushieSvg className="h-32 w-32 shrink-0 p-4" />
@@ -397,7 +397,7 @@ const Shop: NextPage = () => {
                 </button>
               </section>
             </div>
-          </div>
+          </div> */}
         </div>
         <RightBar />
       </div>

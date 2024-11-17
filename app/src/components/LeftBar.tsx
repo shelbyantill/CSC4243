@@ -85,7 +85,7 @@ export const LeftBar = ({ selectedTab }: { selectedTab: Tab | null }) => {
                 moreMenuShown ? "" : "hidden",
               ].join(" ")}
             >
-              <div className="flex flex-col py-2">
+              {/* <div className="flex flex-col py-2">
                 <Link
                   className="flex items-center gap-4 px-5 py-2 text-left uppercase hover:bg-gray-100"
                   href="https://schools.duolingo.com"
@@ -104,7 +104,7 @@ export const LeftBar = ({ selectedTab }: { selectedTab: Tab | null }) => {
                   <PodcastIconSvg className="h-10 w-10" />
                   Podcast
                 </Link>
-              </div>
+              </div> */}
               <div className="flex flex-col border-t-2 border-gray-300 py-2">
                 {!loggedIn && (
                   <button

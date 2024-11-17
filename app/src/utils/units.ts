@@ -19,22 +19,22 @@ export type TileType = Tile["type"];
 export const units: readonly Unit[] = [
   {
     unitNumber: 1,
-    description: "Form basic sentences, greet people",
+    description: "Form basic print statements, create variables",
     backgroundColor: "bg-[#58cc02]",
     textColor: "text-[#58cc02]",
     borderColor: "border-[#46a302]",
     tiles: [
       {
         type: "star",
-        description: "Form basic sentences",
+        description: "Form basic print statements",
       },
       {
         type: "book",
-        description: "Good morning",
+        description: "Create variables",
       },
       {
         type: "star",
-        description: "Greet people",
+        description: "Form basic print statements, create variables",
       },
       { type: "treasure" },
       { type: "book", description: "A date" },
