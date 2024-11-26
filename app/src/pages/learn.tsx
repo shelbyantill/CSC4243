@@ -213,12 +213,12 @@ const TileTooltip = ({
 }) => {
   const tileTooltipRef = useRef<HTMLDivElement | null>(null);
 
+  const lessonType = useBoundStore((x) => x.language.name); 
+
   useEffect(() => {
     const containsTileTooltip = (event: MouseEvent) => {
       if (selectedTile !== index) return;
-      const clickIsInsideTooltip = tileTooltipRef.current?.contains(
-        event.target as Node,
-      );
+      const clickIsInsideTooltip = tileTooltipRef.current?.contains(event.target as Node);
       if (clickIsInsideTooltip) return;
       closeTooltip();
     };
@@ -230,6 +230,9 @@ const TileTooltip = ({
   const unit = units.find((unit) => unit.unitNumber === unitNumber);
   const activeBackgroundColor = unit?.backgroundColor ?? "bg-green-500";
   const activeTextColor = unit?.textColor ?? "text-green-500";
+
+  // Dynamically set the href based on lesson type (Python or default)
+  const isPythonLesson = lessonType === "Python";
 
   return (
     <div
@@ -245,8 +248,8 @@ const TileTooltip = ({
           status === "ACTIVE"
             ? activeBackgroundColor
             : status === "LOCKED"
-              ? "border-2 border-gray-200 bg-gray-100"
-              : "bg-yellow-400",
+            ? "border-2 border-gray-200 bg-gray-100"
+            : "bg-yellow-400",
           index === selectedTile ? "top-4 scale-100" : "-top-14 scale-0",
         ].join(" ")}
         style={{ left: "calc(50% - 150px)" }}
@@ -257,8 +260,8 @@ const TileTooltip = ({
             status === "ACTIVE"
               ? activeBackgroundColor
               : status === "LOCKED"
-                ? "border-l-2 border-t-2 border-gray-200 bg-gray-100"
-                : "bg-yellow-400",
+              ? "border-l-2 border-t-2 border-gray-200 bg-gray-100"
+              : "bg-yellow-400",
           ].join(" ")}
           style={{
             left: getTileTooltipLeftOffset({ index, unitNumber, tilesLength }),
@@ -270,15 +273,16 @@ const TileTooltip = ({
             status === "ACTIVE"
               ? "text-white"
               : status === "LOCKED"
-                ? "text-gray-400"
-                : "text-yellow-600",
+              ? "text-gray-400"
+              : "text-yellow-600",
           ].join(" ")}
         >
           {description}
         </div>
+
         {status === "ACTIVE" ? (
           <Link
-            href="/lesson"
+            href={`/lesson?lessonType=${isPythonLesson ? "python" : "language"}`}
             className={[
               "flex w-full items-center justify-center rounded-xl border-b-4 border-gray-200 bg-white p-3 uppercase",
               activeTextColor,
@@ -295,7 +299,7 @@ const TileTooltip = ({
           </button>
         ) : (
           <Link
-            href="/lesson"
+            href={`/lesson?lessonType=${isPythonLesson ? "python" : "language"}`}
             className="flex w-full items-center justify-center rounded-xl border-b-4 border-yellow-200 bg-white p-3 uppercase text-yellow-400"
           >
             Practice +5 XP
@@ -305,6 +309,7 @@ const TileTooltip = ({
     </div>
   );
 };
+
 
 const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
   const router = useRouter();
@@ -560,7 +565,7 @@ const LessonCompletionSvg = ({
   if (status !== "ACTIVE") {
     return null;
   }
-  switch (lessonsCompleted % 4) {
+  switch (lessonsCompleted%4 ) {
     case 0:
       return <LessonCompletionSvg0 style={style} />;
     case 1:

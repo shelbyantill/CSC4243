@@ -39,6 +39,192 @@ const lessonProblem2 = {
 
 const lessonProblems = [lessonProblem1, lessonProblem2];
 
+const pythonLessonProblem1 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of these is a correct way to declare a variable in Python?",
+  answers: [
+    { icon: <AppleSvg/>, name: "x = 5" },
+    { icon: <AppleSvg/>, name: "int x 5" },
+    { icon: <AppleSvg/>, name: "x : 5" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem2 = {
+  type: "WRITE",
+  question: "Write the Python code to print 'Hello, World!'",
+  answerTiles: ["print", "('","')", "world", "Hello"],
+  correctAnswer: [0, 1, 4, 3, 2]
+} as const;
+
+const pythonLessonProblem3 = {
+  type: "SELECT_1_OF_3",
+  question: "Which keyword is used to define a function in Python?",
+  answers: [
+    { icon: <AppleSvg/>, name: "function" },
+    { icon: <AppleSvg/>, name: "def" },
+    { icon: <AppleSvg/>, name: "func" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const pythonLessonProblem4 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of these is a valid variable name in Python?",
+  answers: [
+    { icon: <AppleSvg/>, name: "3myVariable" },
+    { icon: <AppleSvg/>, name: "my_variable" },
+    { icon: <AppleSvg/>, name: "@myVariable" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+
+const pythonLessonProblem5 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct syntax for a list in Python?",
+  answers: [
+    { icon: <AppleSvg/>, name: "[1, 2, 3]" },
+    { icon: <AppleSvg/>, name: "(1, 2, 3)" },
+    { icon: <AppleSvg/>, name: "{1, 2, 3}" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+
+const pythonLessonProblem6 = {
+  type: "WRITE",
+  question: "Write the Python code to assign the value 10 to a variable named 'a'.",
+  answerTiles: ["a","10", "="],
+  correctAnswer: [0, 2, 1]
+} as const;
+
+
+const pythonLessonProblem7 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of the following Python expression: 5 + 3 * 2?",
+  answers: [
+    { icon: <AppleSvg/>, name: "16" },
+    { icon: <AppleSvg/>, name: "11" },
+    { icon: <AppleSvg/>, name: "13" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+
+const pythonLessonProblem8 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code: print(type('hello'))?",
+  answers: [
+    { icon: <AppleSvg/>, name: "<class 'int'>" },
+    { icon: <AppleSvg/>, name: "<class 'str'>" },
+    { icon: <AppleSvg/>, name: "<class 'bool'>" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const pythonLessonProblem9 = {
+  type: "WRITE",
+  question: "Write the Python code to check if a variable 'a' is greater than 10.",
+  answerTiles: ["if", "10", ">",  "print", "( 'True' )", "a",":"],
+  correctAnswer: [0, 5, 2, 1, 6, 3, 4]
+} as const;
+
+const pythonLessonProblem10 = {
+  type: "SELECT_1_OF_3",
+  question: "What does the 'len()' function do in Python?",
+  answers: [
+    { icon: <AppleSvg/>, name: "Returns the length of a string or list" },
+    { icon: <AppleSvg/>, name: "Returns the first character of a string" },
+    { icon: <AppleSvg/>, name: "Converts a string into a list" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+
+const pythonLessonProblem11 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the data type of the value 5.7 in Python?",
+  answers: [
+    { icon: <AppleSvg/>, name: "int" },
+    { icon: <AppleSvg/>, name: "float" },
+    { icon: <AppleSvg/>, name: "str" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const pythonLessonProblem12 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of these methods is used to add an element to the end of a list in Python?",
+  answers: [
+    { icon: <AppleSvg/>, name: "append()" },
+    { icon: <AppleSvg/>, name: "add()" },
+    { icon: <AppleSvg/>, name: "insert()" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem13 = {
+  type: "WRITE",
+  question: "Write Python code to create a list containing the numbers 1, 2, and 3.",
+  answerTiles: ["[","]", "1,", "3","2,"],
+  correctAnswer: [0, 2, 5, 4, 1]
+} as const;
+
+const pythonLessonProblem14 = {
+  type: "SELECT_1_OF_3",
+  question: "What does the following code print: 'print(5 == 5)'?",
+  answers: [
+    { icon: <AppleSvg/>, name: "True" },
+    { icon: <AppleSvg/>, name: "False" },
+    { icon: <AppleSvg/>, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem15 = {
+  type: "SELECT_1_OF_3",
+  question: "How can you access the second element of a list 'my_list'?",
+  answers: [
+    { icon: <AppleSvg/>, name: "my_list[1]" },
+    { icon: <AppleSvg/>, name: "my_list(2)" },
+    { icon: <AppleSvg/>, name: "my_list[2]" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem16 = {
+  type: "WRITE",
+  question: "Write Python code to iterate over a list 'my_list' and print each element.",
+  answerTiles: [ "in", "for", "my_list",  "(element)", ":", "print", "element"],
+  correctAnswer: [1, 6, 0, 2, 4, 5, 3]
+} as const;
+
+
+const getPythonLessonProblems = (lessonsCompleted: number) => {
+  // Define the full set of Python problems
+  const pythonLessonProblems = [
+    pythonLessonProblem1,
+    pythonLessonProblem2,
+    pythonLessonProblem3,
+    pythonLessonProblem4,
+    pythonLessonProblem5,
+    pythonLessonProblem6,
+    pythonLessonProblem7,
+    pythonLessonProblem8,
+    pythonLessonProblem9,
+    pythonLessonProblem10,
+    pythonLessonProblem11,
+  ];
+
+  // Calculate the number of problems to remove (n)
+  const n = lessonsCompleted * 2;
+
+  // Slice the array to remove the first n problems
+  return pythonLessonProblems.slice(n);
+};
+
+
 const numbersEqual = (a: readonly number[], b: readonly number[]): boolean => {
   return a.length === b.length && a.every((_, i) => a[i] === b[i]);
 };
@@ -59,7 +245,28 @@ const formatTime = (timeMs: number): string => {
 const Lesson: NextPage = () => {
   const router = useRouter();
 
-  const [lessonProblem, setLessonProblem] = useState(0);
+  // Define lesson sets here before use
+  const lessonProblems = [
+    // Your language lesson problems go here, as before
+    lessonProblem1, lessonProblem2,
+  ];
+
+  const pythonLessonProblems = [
+    // Your Python lesson problems go here, as before
+    pythonLessonProblem1, pythonLessonProblem2, pythonLessonProblem3, pythonLessonProblem4,
+    pythonLessonProblem5, pythonLessonProblem6, pythonLessonProblem7, pythonLessonProblem8,
+    pythonLessonProblem9, pythonLessonProblem10, pythonLessonProblem11, pythonLessonProblem1, pythonLessonProblem2, pythonLessonProblem3, pythonLessonProblem4,
+    pythonLessonProblem5, pythonLessonProblem6, pythonLessonProblem7, pythonLessonProblem8,
+    pythonLessonProblem9, pythonLessonProblem10, pythonLessonProblem11
+  ];
+
+  // Check lesson type dynamically
+  const isPythonLesson = router.query["lessonType"] === "python";    
+  const lessonsCompleted = useBoundStore((x)=> x.lessonsCompleted);
+  const lessonSet = isPythonLesson ? getPythonLessonProblems(lessonsCompleted): lessonProblems;
+
+
+  const [lessonProblem, setLessonProblem] = useState(0); // Start at the first question
   const [correctAnswerCount, setCorrectAnswerCount] = useState(0);
   const [incorrectAnswerCount, setIncorrectAnswerCount] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<null | number>(null);
@@ -74,7 +281,7 @@ const Lesson: NextPage = () => {
   const [questionResults, setQuestionResults] = useState<QuestionResult[]>([]);
   const [reviewLessonShown, setReviewLessonShown] = useState(false);
 
-  const problem = lessonProblems[lessonProblem] ?? lessonProblem1;
+  const problem = lessonSet[lessonProblem] ?? lessonProblem1; // Default to first problem if not defined
 
   const totalCorrectAnswersNeeded = 2;
 
@@ -119,9 +326,21 @@ const Lesson: NextPage = () => {
     setSelectedAnswer(null);
     setSelectedAnswers([]);
     setCorrectAnswerShown(false);
-    setLessonProblem((x) => (x + 1) % lessonProblems.length);
+  
+    // Increment by 1, ensuring it doesn't loop back
+    setLessonProblem((prevLessonProblem) => {
+      const nextProblem = prevLessonProblem + 1;
+      if (nextProblem < lessonSet.length) {
+        return nextProblem;
+      } else {
+        return prevLessonProblem;  // Stay on the last problem if already at the end
+      }
+    });
+  
     endTime.current = Date.now();
   };
+  
+  
 
   const onSkip = () => {
     setSelectedAnswer(null);
@@ -201,7 +420,7 @@ const Lesson: NextPage = () => {
       );
     }
 
-    case "WRITE_IN_ENGLISH": {
+    case "WRITE": {
       return (
         <ProblemWriteInEnglish
           problem={problem}
