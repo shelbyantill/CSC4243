@@ -794,8 +794,6 @@ const pythonLessonProblem76 = {
 
 const getJavaScriptLessonProblems = (lessonsCompleted: number) => {};
 const getCsLessonProblems = (lessonsCompleted: number) => {};
-const getJavaLessonProblems  = (lessonsCompleted: number) => {};
-const getCLessonProblems = (lessonsCompleted: number) => {};
 
 const getPythonLessonProblems = (lessonsCompleted: number) => {
   // Define the full set of Python problems

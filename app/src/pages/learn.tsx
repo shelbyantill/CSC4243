@@ -233,9 +233,7 @@ const TileTooltip = ({
 
   // Dynamically set the href based on lesson type (Python or default)
   const isPythonLesson = lessonType === "Python";
-  const isJavaLesson = lessonType === "Java";
   const isJavaScriptLesson = lessonType === "JavaScript";
-  const isCLesson = lessonType === "C";
   const isCsLesson = lessonType === "C#";
 
     return (
@@ -329,10 +327,9 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
   const closeTooltip = useCallback(() => setSelectedTile(null), []);
 
   const lessonsCompleted = useBoundStore((x) => x.lessonsCompleted);
-  const increaseLessonsCompleted = useBoundStore(
-    (x) => x.increaseLessonsCompleted,
-  );
+  const increaseLessonsCompleted = useBoundStore((x) => x.increaseLessonsCompleted);
   const increaseLingots = useBoundStore((x) => x.increaseLingots);
+  const lessonType = useBoundStore((x) => x.language.name);
 
   return (
     <>
@@ -401,8 +398,15 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
                               tile.type === "fast-forward" &&
                               status === "LOCKED"
                             ) {
+                              // Handle fast-forward jump
+                              if(unit.unitNumber==2){
+                                increaseLessonsCompleted(24);
+                              }else if(unit.unitNumber==3){
+                                increaseLessonsCompleted(4);
+                              }
+                                // Increment lessons completed by 5
                               void router.push(
-                                `/lesson?fast-forward=${unit.unitNumber}`,
+                                `/lesson?lessonType=${lessonType}&unit=${unit.unitNumber}&tile=${tile.type}`
                               );
                               return;
                             }
@@ -475,6 +479,7 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
     </>
   );
 };
+
 
 const getTopBarColors = (
   scrollY: number,
