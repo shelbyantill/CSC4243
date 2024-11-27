@@ -394,17 +394,17 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
                             }),
                           ].join(" ")}
                           onClick={() => {
-                            if (
-                              tile.type === "fast-forward" &&
-                              status === "LOCKED"
-                            ) {
-                              // Handle fast-forward jump
-                              if(unit.unitNumber==2){
-                                increaseLessonsCompleted(24);
-                              }else if(unit.unitNumber==3){
-                                increaseLessonsCompleted(4);
+                            if (tile.type === "fast-forward" && status === "LOCKED") {
+                              // Conditional logic based on unit number and lessons completed
+                              if (unit.unitNumber === 2 && lessonsCompleted < 40) {
+                                // If the user is on unit 2 and has completed less than 40 lessons
+                                const increment = 24 - lessonsCompleted;
+                                increaseLessonsCompleted(increment); // Increment lessons by the calculated amount
+                              } else if (unit.unitNumber === 3) {
+                                increaseLessonsCompleted(4); // Increment lessons by 4 for unit 3
                               }
-                                // Increment lessons completed by 5
+                              
+                              // Navigate to the lesson with lesson type and other parameters
                               void router.push(
                                 `/lesson?lessonType=${lessonType}&unit=${unit.unitNumber}&tile=${tile.type}`
                               );
@@ -479,6 +479,7 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
     </>
   );
 };
+
 
 
 const getTopBarColors = (
