@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   const { loginScreenState, setLoginScreenState } = useLoginScreen();
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-center bg-[#235390] text-white"
+      className="flex min-h-screen flex-col items-center justify-center bg-[#CC5742] text-white"
       style={{ backgroundImage: `url(${bgSnow.src})` }}
     >
       <LanguageHeader />
@@ -27,12 +27,12 @@ const Home: NextPage = () => {
           <div className="mx-auto mt-4 flex w-fit flex-col items-center gap-3">
             <Link
               href="/register"
-              className="w-full rounded-2xl border-b-4 border-green-700 bg-green-600 px-10 py-3 text-center font-bold uppercase transition hover:border-green-600 hover:bg-green-500 md:min-w-[320px]"
+              className="w-full rounded-2xl border-b-4 border-[#D8492F] text-[#D8492F] bg-white px-10 py-3 text-center font-bold uppercase transition hover:border-gray-200 hover:bg-gray-100 md:min-w-[320px]"
             >
               Get started
             </Link>
             <button
-              className="w-full rounded-2xl border-2 border-b-4 border-[#042c60] bg-[#235390] px-8 py-3 font-bold uppercase transition hover:bg-[#204b82] md:min-w-[320px]"
+              className="w-full rounded-2xl border-2 border-b-4 border-[#CC5742] bg-[#CC5742] px-8 py-3 font-bold uppercase transition hover:bg-[#204b82] md:min-w-[320px]"
               onClick={() => setLoginScreenState("LOGIN")}
             >
               I already have an account

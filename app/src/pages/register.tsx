@@ -13,7 +13,7 @@ const Register: NextPage = () => {
   const setLanguage = useBoundStore((x) => x.setLanguage);
   return (
     <main
-      className="flex min-h-screen flex-col items-center bg-[#235390] text-white"
+      className="flex min-h-screen flex-col items-center bg-[#CC5742] text-white"
       style={{ backgroundImage: `url(${bgSnow.src})` }}
     >
       <LanguageHeader />
@@ -27,7 +27,7 @@ const Register: NextPage = () => {
               key={language.name}
               href="/learn"
               className={
-                "flex cursor-pointer flex-col items-center gap-4 rounded-2xl border-2 border-b-4 border-gray-400 px-5 py-8 text-xl font-bold hover:bg-gray-300 hover:bg-opacity-20"
+                "flex cursor-pointer flex-col items-center gap-4 rounded-2xl border-2 border-b-4 border-gray-200 px-5 py-8 text-xl font-bold hover:bg-gray-300 hover:bg-opacity-20"
               }
               onClick={() => setLanguage(language)}
             >

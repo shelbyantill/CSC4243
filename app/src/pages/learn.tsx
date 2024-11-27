@@ -186,7 +186,7 @@ const getTileColors = ({
   switch (status) {
     case "LOCKED":
       if (tileType === "fast-forward") return defaultColors;
-      return "border-[#b7b7b7] bg-[#e5e5e5]";
+      return "border-[#CC5742] bg-[#CC5742]";
     case "COMPLETE":
       return "border-yellow-500 bg-yellow-400";
     case "ACTIVE":
@@ -233,8 +233,12 @@ const TileTooltip = ({
 
   // Dynamically set the href based on lesson type (Python or default)
   const isPythonLesson = lessonType === "Python";
+  const isJavaLesson = lessonType === "Java";
+  const isJavaScriptLesson = lessonType === "JavaScript";
+  const isCLesson = lessonType === "C";
+  const isCsLesson = lessonType === "C#";
 
-  return (
+    return (
     <div
       className={[
         "relative h-0 w-full",
@@ -282,7 +286,7 @@ const TileTooltip = ({
 
         {status === "ACTIVE" ? (
           <Link
-            href={`/lesson?lessonType=${isPythonLesson ? "python" : "language"}`}
+          href={`/lesson?lessonType=${lessonType}`}
             className={[
               "flex w-full items-center justify-center rounded-xl border-b-4 border-gray-200 bg-white p-3 uppercase",
               activeTextColor,
@@ -299,7 +303,7 @@ const TileTooltip = ({
           </button>
         ) : (
           <Link
-            href={`/lesson?lessonType=${isPythonLesson ? "python" : "language"}`}
+          href={`/lesson?lessonType=${lessonType}`}
             className="flex w-full items-center justify-center rounded-xl border-b-4 border-yellow-200 bg-white p-3 uppercase text-yellow-400"
           >
             Practice +5 XP
@@ -456,7 +460,7 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
                         ? "Jump here?"
                         : tile.description;
                     case "trophy":
-                      return `Unit ${unit.unitNumber} review`;
+                      return tile.description;
                     case "treasure":
                       return "";
                   }
@@ -479,8 +483,8 @@ const getTopBarColors = (
   borderColor: `border-${string}`;
 } => {
   const defaultColors = {
-    backgroundColor: "bg-[#58cc02]",
-    borderColor: "border-[#46a302]",
+    backgroundColor: "bg-[#CC5742]",
+    borderColor: "border-[#CC5742]",
   } as const;
 
   if (scrollY < 680) {

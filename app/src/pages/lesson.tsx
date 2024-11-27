@@ -15,7 +15,57 @@ import {
   LessonTopBarHeart,
   WomanSvg,
 } from "~/components/Svgs";
-import womanPng from "../../public/woman.png";
+
+import two_birds from "../../theme/two_birds.png";
+import three_chicks from "../../theme/three_chicks.png";
+import five_candles from "../../theme/five_candles.png";
+import chick_microphone from "../../theme/chick_microphone.png";
+import two_chicks from "../../theme/two_chicks.png";
+import chick_card from "../../theme/chick_card.png";
+import cow_2fingers from "../../theme/two_cow_fingers.png";
+import chick_flattered from "../../theme/chick_flattered.png";
+import three_cows from "../../theme/three_cows.png";
+import cake from "../../theme/cake.png";
+import chick_thumbsup from "../../theme/chick_thumbs_up.png";
+import hen_thumbsup from "../../theme/hen_thumbsup.png";
+import cow_sleeping from "../../theme/cow_sleeping.png";
+import cow_dollars from "../../theme/cow_dollars.png";
+import crying_chick from "../../theme/crying_chick.png";
+import crying_chick2 from "../../theme/crying_chick2.png";
+import crying_chick3 from "../../theme/crying_chick3.png";
+import crying_chick4 from "../../theme/crying_chick4.png";
+import crying_chick5 from "../../theme/crying_chick5.png";
+import crying_cow from "../../theme/crying_cow.png";
+import crying_cow2 from "../../theme/crying_cow2.png";
+import crying_cow3 from "../../theme/crying_cow3.png";
+import chick_twothumbs from "../../theme/chick_twothumbs.png";
+import cow_twothumbs from "../../theme/cow_thumbstwo.png";
+import sleeping_chick from "../../theme/sleeping_chick.png";
+import laying_cow from "../../theme/lazy_cow.png";
+import wrong_chick from "../../theme/chick_wrong.png";
+import happy_chick from "../../theme/happy_chick.png";
+import happy_chick2 from "../../theme/happy_chick2.png"
+import happy_chick4 from "../../theme/happy_chick4.png"
+import happy_chickfamily from "../../theme/happy_chickfamily.png";
+import happy_chick3 from "../../theme/happy_chick3.png";
+import sad_chick from "../../theme/sad_chick.png";
+import happy_twochicks from "../../theme/happy_2chicks.png";
+import happy_hen from "../../theme/happy_hen.png";
+import chick_sleeping from "../../theme/chick_sleeping.png";
+import cow_greeting from "../../theme/cow_greeting.png";
+
+import cow_lightbulb from "../../theme/cow_lightbulb.png";
+import cow_question from "../../theme/cow_question.png";
+import cow_questioning from "../../theme/cow_questioning.png";
+import cow_thinking from "../../theme/cow_thinking.png";
+import chick_question from "../../theme/chick_question.png";
+import chick_question2 from "../../theme/chick_question2.png";
+import chick_question3 from "../../theme/chick_question3.png";
+import chick_question4 from "../../theme/chick_question4.png";
+import chick_thinking from "../../theme/chick_thinking.png";
+import hen_question from "../../theme/hen_question.png";
+
+
 import { useBoundStore } from "~/hooks/useBoundStore";
 import { useRouter } from "next/router";
 
@@ -43,11 +93,12 @@ const pythonLessonProblem1 = {
   type: "SELECT_1_OF_3",
   question: "Which of these is a correct way to declare a variable in Python?",
   answers: [
-    { icon: <AppleSvg/>, name: "x = 5" },
-    { icon: <AppleSvg/>, name: "int x 5" },
-    { icon: <AppleSvg/>, name: "x : 5" },
+    { icon: <Image src={three_chicks} alt="" width={212} height={212}  className="w-full" />, name: "chicks x 3" },
+    
+    { icon: <Image src={two_birds} alt="" width={212} height={212}  className="w-full" />, name: "birds = 2" },
+    { icon: <Image src={five_candles} alt="" width={212} height={212}  className="w-full" />, name: "candles : 5" },
   ],
-  correctAnswer: 0,
+  correctAnswer: 1,
 } as const;
 
 const pythonLessonProblem2 = {
@@ -58,169 +109,703 @@ const pythonLessonProblem2 = {
 } as const;
 
 const pythonLessonProblem3 = {
-  type: "SELECT_1_OF_3",
-  question: "Which keyword is used to define a function in Python?",
-  answers: [
-    { icon: <AppleSvg/>, name: "function" },
-    { icon: <AppleSvg/>, name: "def" },
-    { icon: <AppleSvg/>, name: "func" },
-  ],
-  correctAnswer: 1,
+  type: "WRITE",
+  question: "Write the Python code to print the phrase 'Goodbye!'",
+  answerTiles: ["print", "('","')", "Goodbye"],
+  correctAnswer: [0, 1, 3, 2]
 } as const;
+
+
 
 const pythonLessonProblem4 = {
   type: "SELECT_1_OF_3",
-  question: "Which of these is a valid variable name in Python?",
+  question: "Which of these is an invalid variable name in Python?",
   answers: [
-    { icon: <AppleSvg/>, name: "3myVariable" },
-    { icon: <AppleSvg/>, name: "my_variable" },
-    { icon: <AppleSvg/>, name: "@myVariable" },
+    { icon: <Image src={chick_microphone} alt="" width={212} height={212}  className="w-full" />, name: "1_microphone" },
+    { icon: <Image src={two_chicks} alt="" width={212} height={212}  className="w-full" />, name: "chicks_2" },
+    { icon: <Image src={chick_card} alt="" width={212} height={212}  className="w-full" />, name: "my_card" },
   ],
-  correctAnswer: 1,
+  correctAnswer: 2,
 } as const;
 
 
 const pythonLessonProblem5 = {
   type: "SELECT_1_OF_3",
-  question: "Which of the following is the correct syntax for a list in Python?",
+  question: "Which of the following is a correct way to declare a string variable in Python?",
   answers: [
-    { icon: <AppleSvg/>, name: "[1, 2, 3]" },
-    { icon: <AppleSvg/>, name: "(1, 2, 3)" },
-    { icon: <AppleSvg/>, name: "{1, 2, 3}" },
+    { icon:<Image src={cow_2fingers} alt="" width={212} height={212}  className="w-full" />, name: "fingers : '2'" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212}  className="w-full" />, name: "mood = 'flattered'" },
+    { icon: <Image src={three_cows} alt="" width={212} height={212}  className="w-full" />, name: "cows = 3" },
   ],
-  correctAnswer: 0,
+  correctAnswer: 1,
 } as const;
 
 
 const pythonLessonProblem6 = {
   type: "WRITE",
-  question: "Write the Python code to assign the value 10 to a variable named 'a'.",
-  answerTiles: ["a","10", "="],
-  correctAnswer: [0, 2, 1]
+  question: "Write a comment in Python that says 'This is a comment'.",
+  answerTiles: ["is", "a", "comment", "This", "#"],
+  correctAnswer: [ 4, 3, 0, 1, 2]
 } as const;
+
+
+
 
 
 const pythonLessonProblem7 = {
-  type: "SELECT_1_OF_3",
-  question: "What is the result of the following Python expression: 5 + 3 * 2?",
-  answers: [
-    { icon: <AppleSvg/>, name: "16" },
-    { icon: <AppleSvg/>, name: "11" },
-    { icon: <AppleSvg/>, name: "13" },
-  ],
-  correctAnswer: 1,
+  type: "WRITE",
+  question: "Assign the value 10 to the variable 'a'.",
+  answerTiles: ["a", "10", "="],
+  correctAnswer: [0, 2, 1]
 } as const;
 
-
 const pythonLessonProblem8 = {
-  type: "SELECT_1_OF_3",
-  question: "What is the output of the following code: print(type('hello'))?",
-  answers: [
-    { icon: <AppleSvg/>, name: "<class 'int'>" },
-    { icon: <AppleSvg/>, name: "<class 'str'>" },
-    { icon: <AppleSvg/>, name: "<class 'bool'>" },
-  ],
-  correctAnswer: 1,
+  type: "WRITE",
+  question: "Write the Python code to concatenate 'Hello' and 'World' into one string and print it.",
+  answerTiles: [")", "print", "+", "'World'", "(", "'Hello'"],
+  correctAnswer: [1, 4, 5, 2, 3, 0]
 } as const;
 
 const pythonLessonProblem9 = {
   type: "WRITE",
-  question: "Write the Python code to check if a variable 'a' is greater than 10.",
-  answerTiles: ["if", "10", ">",  "print", "( 'True' )", "a",":"],
-  correctAnswer: [0, 5, 2, 1, 6, 3, 4]
+  question: "Write a Python statement to assign the values 1, 2, and 3 to the variables 'a', 'b', and 'c' respectively in one line.",
+  answerTiles: ["=", "a,",  "3", "c",  "1,","b,", "2,", "=="],
+  correctAnswer: [1, 5, 3, 0, 4, 6, 2]
 } as const;
 
 const pythonLessonProblem10 = {
   type: "SELECT_1_OF_3",
-  question: "What does the 'len()' function do in Python?",
+  question: "Which of the following represents a Boolean value in Python?",
   answers: [
-    { icon: <AppleSvg/>, name: "Returns the length of a string or list" },
-    { icon: <AppleSvg/>, name: "Returns the first character of a string" },
-    { icon: <AppleSvg/>, name: "Converts a string into a list" },
+    { icon:<Image src={chick_thumbsup} alt="" width={212} height={212}  className="w-full" />, name: "True" },
+    { icon: <Image src={hen_thumbsup} alt="" width={212} height={212}  className="w-full" />, name: "'True'" },
+    { icon: <Image src={cake} alt="" width={212} height={212}  className="w-full" />, name: "1" },
   ],
   correctAnswer: 0,
 } as const;
-
-
 const pythonLessonProblem11 = {
+  type: "WRITE",
+  question: "Write the Python code to negate the Boolean value 'True'.",
+  answerTiles: [ "True", "not", "False"],
+  correctAnswer: [1, 0]
+} as const;
+
+
+const pythonLessonProblem12 = {
   type: "SELECT_1_OF_3",
-  question: "What is the data type of the value 5.7 in Python?",
+  question: "What is the result of 10 // 3 in Python?",
   answers: [
-    { icon: <AppleSvg/>, name: "int" },
-    { icon: <AppleSvg/>, name: "float" },
-    { icon: <AppleSvg/>, name: "str" },
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212}  className="w-full" />, name: "3.333" },
+    { icon:<Image src={three_cows} alt="" width={212} height={212}  className="w-full" />, name: "3" },
+    { icon:<Image src={cow_dollars} alt="" width={212} height={212}  className="w-full" />, name: "4" },
   ],
   correctAnswer: 1,
 } as const;
 
-const pythonLessonProblem12 = {
+const pythonLessonProblem13 = {
+  type: "WRITE",
+  question: "Write Python code to add 7 and 3.",
+  answerTiles: ["7", "3", "+", "-", "++"],
+  correctAnswer: [0, 2, 1]
+} as const;
+
+const pythonLessonProblem14 = {
   type: "SELECT_1_OF_3",
-  question: "Which of these methods is used to add an element to the end of a list in Python?",
+  question: "Which operator is used to find the remainder in Python?",
   answers: [
-    { icon: <AppleSvg/>, name: "append()" },
-    { icon: <AppleSvg/>, name: "add()" },
-    { icon: <AppleSvg/>, name: "insert()" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212}  className="w-full" />, name: "mod" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212}  className="w-full" />, name: "/" },
+    { icon:<Image src={chick_twothumbs} alt="" width={212} height={212}  className="w-full" />, name: "%" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const pythonLessonProblem15 = {
+  type: "WRITE",
+  question: "Write Python code to subtract 5 from 10.",
+  answerTiles: ["10", "--", "5", "-", "-*"],
+  correctAnswer: [0, 3,2]
+} as const;
+
+
+const pythonLessonProblem16 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 5 + 3 * 2 in Python?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212}  className="w-full" />, name: "16" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212}  className="w-full" />, name: "11" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212}  className="w-full" />, name: "13" },
+  ],
+  correctAnswer: 1,
+} as const;
+const pythonLessonProblem17 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of -10 + 5 in Python?",
+  answers: [
+    { icon: <Image src={laying_cow} alt="" width={212} height={212}  className="w-full" />, name: "-5" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212}  className="w-full" />, name: "5" },
+    { icon:<Image src={crying_chick4} alt="" width={212} height={212}  className="w-full" />, name: "15" },
   ],
   correctAnswer: 0,
 } as const;
 
-const pythonLessonProblem13 = {
+
+const pythonLessonProblem18 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to combine two Boolean conditions with 'and' in Python?",
+  answers: [
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212}  className="w-full" />, name: "condition1 && condition2" },
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212}  className="w-full" />, name: "condition1 and condition2" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212}  className="w-full" />, name: "condition1 + condition2" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const pythonLessonProblem19 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 5 != 3 in Python?",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212}  className="w-full" />, name: "True" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212}  className="w-full" />, name: "False" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212}  className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem20 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 3 < 5 in Python?",
+  answers: [
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212}  className="w-full" />, name: "False" },
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212}  className="w-full" />, name: "True" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212}  className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const pythonLessonProblem21 = {
+  type: "WRITE",
+  question: "Write Python code to calculate 2 raised to the power of 3.",
+  answerTiles: ["2", "**", "3", "^"],
+  correctAnswer: [0, 1, 2]
+} as const;
+
+
+
+const pythonLessonProblem22= {
+  type: "WRITE",
+  question: "Write Python code to convert the string '10' to an integer and store it in 'x'.",
+  answerTiles: ["x", "int", "('10')", "=", "10"],
+  correctAnswer: [0, 3, 1, 2]
+} as const;
+
+const pythonLessonProblem23 = {
+  type: "WRITE",
+  question: "Write Python code to check if 5 is equal to 5.",
+  answerTiles: ["5", "==", "5", "="],
+  correctAnswer: [0, 1, 2]
+} as const;
+const pythonLessonProblem24 = {
+  type: "WRITE",
+  question: "Write Python code to check if 3 is less than 5.",
+  answerTiles: ["3", "=<", "<", "5"],
+  correctAnswer: [0, 2, 3]
+} as const;
+
+
+
+
+const pythonLessonProblem25 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct syntax for creating a list in Python?",
+  answers: [
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212}  className="w-full" />, name: "{1, 2, 3}" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212}  className="w-full" />, name: "(1, 2, 3)" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212}  className="w-full" />, name: "[1, 2, 3]" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const pythonLessonProblem26 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is a valid tuple in Python?",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212}  className="w-full" />, name: "(1, 2, 3)" },
+    { icon: <Image src={chick_sleeping
+    } alt="" width={212} height={212}  className="w-full" />, name: "[1, 2, 3]" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212}  className="w-full" />, name: "{1, 2, 3}" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem27 = {
   type: "WRITE",
   question: "Write Python code to create a list containing the numbers 1, 2, and 3.",
   answerTiles: ["[","]", "1,", "3","2,"],
   correctAnswer: [0, 2, 5, 4, 1]
 } as const;
-
-const pythonLessonProblem14 = {
-  type: "SELECT_1_OF_3",
-  question: "What does the following code print: 'print(5 == 5)'?",
-  answers: [
-    { icon: <AppleSvg/>, name: "True" },
-    { icon: <AppleSvg/>, name: "False" },
-    { icon: <AppleSvg/>, name: "Error" },
-  ],
-  correctAnswer: 0,
-} as const;
-
-const pythonLessonProblem15 = {
+const pythonLessonProblem28 = {
   type: "SELECT_1_OF_3",
   question: "How can you access the second element of a list 'my_list'?",
   answers: [
-    { icon: <AppleSvg/>, name: "my_list[1]" },
-    { icon: <AppleSvg/>, name: "my_list(2)" },
-    { icon: <AppleSvg/>, name: "my_list[2]" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212}  className="w-full" />, name: "my_list[2]" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212}  className="w-full" />, name: "my_list(2)" },
+    { icon: <Image src={happy_twochicks} alt="" width={212} height={212}  className="w-full" />, name: "my_list[1]" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const pythonLessonProblem29 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to define a dictionary in Python?",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212}  className="w-full" />, name: "{'key': 'value'}" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212}  className="w-full" />, name: "['key', 'value']" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212}  className="w-full" />, name: "(key: 'value')" },
   ],
   correctAnswer: 0,
 } as const;
 
-const pythonLessonProblem16 = {
-  type: "WRITE",
-  question: "Write Python code to iterate over a list 'my_list' and print each element.",
-  answerTiles: [ "in", "for", "my_list",  "(element)", ":", "print", "element"],
-  correctAnswer: [1, 6, 0, 2, 4, 5, 3]
+const pythonLessonProblem30 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of accessing the second element in the tuple (10, 20, 30)?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212}  className="w-full" />, name: "10" },
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212}  className="w-full" />, name: "20" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212}  className="w-full" />, name: "30" },
+  ],
+  correctAnswer: 1,
 } as const;
 
+const pythonLessonProblem31 = {
+  type: "WRITE",
+  question: "Write Python code to add a key 'c' with value 15 to the dictionary {'a': 5, 'b': 10}.",
+  answerTiles: ["dict", "]", "=", "15", "[", "'c'",],
+  correctAnswer: [0, 4, 5, 1, 2, 3]
+} as const;
+
+const pythonLessonProblem32 = {
+  type: "WRITE",
+  question: "Write Python code to append the value 'orange' to the list ['apple', 'banana'].",
+  answerTiles: ["list", "'orange'", ")", ".append", "(",],
+  correctAnswer: [0, 3, 4, 1, 2]
+} as const;
+
+
+const pythonLessonProblem33 = {
+  type: "WRITE",
+  question: "Write an `if/else` statement to check if `x > 5` and print 'Yes' ",
+  answerTiles: ["if", "print('Yes')", "x > 5:"],
+  correctAnswer: [0, 2, 1]
+} as const;
+
+const pythonLessonProblem34 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nif 3 > 2:\n\tprint('Yes')\nelse:\n\tprint('No')",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212}  className="w-full" />, name: "Yes" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212}  className="w-full" />, name: "No" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212}  className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem35 = {
+  type: "WRITE",
+  question: "Write Python code to check if `x` is equal to 10. If it is, print 'Correct'. ",
+  answerTiles: ["if", "print('Correct')", "x==10:"],
+  correctAnswer: [0, 2, 1]
+} as const;
+
+const pythonLessonProblem36 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nfor i in range(2):\n\tprint(i)",
+  answers: [
+    { icon:<Image src={crying_chick2} alt="" width={212} height={212}  className="w-full" />, name: "0 1 2" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212}  className="w-full" />, name: "1 2" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212}  className="w-full" />, name: "0 1" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const pythonLessonProblem37 = {
+  type: "WRITE",
+  question: "Write Python code to print numbers from 1 to 3 using `range()` in a `for` loop.",
+  answerTiles: [ "(", "1,", "4", "for i in range", "):", "print(i)"],
+  correctAnswer: [3, 0, 1, 2, 4, 5]
+} as const;
+
+const pythonLessonProblem38 = {
+  type: "SELECT_1_OF_3",
+  question: `What will the following code output?\nx = 0\n\twhile x < 3:\n\t\tprint(x)\n\t\tx += 1`,
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212}  className="w-full" />, name: "0 1 2" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212}  className="w-full" />, name: "1 2 3" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212}  className="w-full" />, name: "0 1 2 3" },
+  ],
+  correctAnswer: 0,
+};
+
+
+const pythonLessonProblem39 = {
+  type: "WRITE",
+  question: "Write Python code to print 'dollar' 4 times using a `while` loop.",
+  answerTiles: [ "while i <4:", "print('dollar')", "print(dollar)"],
+  correctAnswer: [0,1]
+} as const;
+const pythonLessonProblem40 = {
+  type: "SELECT_1_OF_3",
+  question: "Which statement do you use for the following? Repeat a condition while it is true.",
+  answers: [
+    { icon: <Image src={hen_thumbsup} alt="" width={212} height={212}  className="w-full" />, name: "While loop" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212}  className="w-full" />, name: "If/Else" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212}  className="w-full" />, name: "For loop" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem41 = {
+  type: "SELECT_1_OF_3",
+  question: "What will `len([10, 20, 30])` return?",
+  answers: [
+    { icon:<Image src={three_cows} alt="" width={212} height={212}  className="w-full" />, name: "3" },
+    { icon: <Image src={two_chicks} alt="" width={212} height={212}  className="w-full" />, name: "2" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212}  className="w-full" />, name: "30" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem42 = {
+  type: "WRITE",
+  question: "Write Python code to add the number `4` to the list `[1, 2, 3]`.",
+  answerTiles: ["['1', '2', '3']", "('4')", ".append", ],
+  correctAnswer: [0,2,1]
+} as const;
+
+const pythonLessonProblem43 = {
+  type: "WRITE",
+  question: "Write Python code to define a function `greet()` ",
+  answerTiles: ["def", "()", ":", "greet"],
+  correctAnswer: [0, 3, 1,2]
+} as const;
+const pythonLessonProblem44 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code print?\n\ndef greet():\n\tprint('Hi')\ngreet()",
+  answers: [
+    { icon: <Image src={cow_question} alt="" width={212} height={212}  className="w-full" />, name: "Error" },
+    { icon: <Image src={laying_cow} alt="" width={212} height={212}  className="w-full" />, name: "Hello" },
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212}  className="w-full" />, name: "Hi" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const pythonLessonProblem45 = {
+  type: "WRITE",
+  question: "Write Python code to create a lambda function that adds 2 to a number `x`.",
+  answerTiles: [":","lambda x", "x", "2", "+"],
+  correctAnswer: [1, 0,  2, 4, 3]
+} as const;
+
+const pythonLessonProblem46 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code return?\nadd_two = lambda x: x + 2\nadd_two(3)",
+  answers: [
+    { icon: <Image src={five_candles} alt="" width={212} height={212}  className="w-full" />, name: "5" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212}  className="w-full" />, name: "6" },
+    { icon: <Image src={three_chicks} alt="" width={212} height={212}  className="w-full" />, name: "3" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem47 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to define a function `add` that takes two arguments `a` and `b` ?",
+  answers: [
+    { icon:<Image src={sleeping_chick} alt="" width={212} height={212}  className="w-full" />, name: "function add(a, b):" },
+    { icon: <Image src={cow_lightbulb} alt="" width={212} height={212}  className="w-full" />, name: "def add(a, b):" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212}  className="w-full" />, name: "define add(a, b):" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const pythonLessonProblem48 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following correctly calls the function `greet()` defined as\ndef greet():\n\tprint('Hello')",
+  answers: [
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212}  className="w-full" />, name: "greet()" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212}  className="w-full" />, name: "call greet()" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212}  className="w-full" />, name: "greet" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem49 = {
+  type: "WRITE",
+  question: "Write Python code to check if `x` is in the list `[1, 2, 3]`. If it is, print 'Found'.",
+  answerTiles: ["if", "print('Found')", "x in [1, 2, 3]:"],
+  correctAnswer: [0, 2, 1]
+} as const;
+
+const pythonLessonProblem50 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nmy_tuple = (1, 2, 3)\nprint(my_tuple[1])",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "1" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "2" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "3" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const pythonLessonProblem51 = {
+  type: "WRITE",
+  question: "Write Python code to iterate over a list `my_list = [4, 5, 6]` and print each item.",
+  answerTiles: ["for item in", "print(item)", "my_list:"],
+  correctAnswer: [0, 2, 1]
+} as const;
+
+const pythonLessonProblem52 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nmy_dict = {'a': 1, 'b': 2}\nprint(my_dict.get('b'))",
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "1" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "b" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "2" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const pythonLessonProblem53 = {
+  type: "WRITE",
+  question: "Write Python code to add the key-value pair `{'c': 3}` to the dictionary `my_dict = {'a': 1, 'b': 2}`.",
+  answerTiles: ["my_dict"," =", "3", "[","]", "'c'"],
+  correctAnswer: [0,3,5,4,1,2]
+} as const;
+
+const pythonLessonProblem54 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nmy_list = [1, 2, 3]\nmy_list.append(4)\nprint(my_list)",
+  answers: [
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "[1, 2, 3]" },
+    { icon: <Image src={hen_thumbsup} alt="" width={212} height={212} className="w-full" />, name: "[1, 2, 3, 4]" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "[4, 1, 2, 3]" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const pythonLessonProblem55 = {
+  type: "WRITE",
+  question: "Write Python code to check if a dictionary `my_dict = {'a': 1, 'b': 2}` contains the key `'a'`.",
+  answerTiles: ["if","my_dict:", "'a'","print('Key found')", " in "],
+  correctAnswer: [0, 2, 4, 1, 3]
+} as const;
+
+const pythonLessonProblem56 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nmy_tuple = (1, 2, 3, 4)\nprint(my_tuple[-1])",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "4" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "1" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "3" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem57 = {
+  type: "WRITE",
+  question: "Write Python code to create a tuple `my_tuple` containing the values `1, 2, 3`.",
+  answerTiles: ["my_tuple",  "2,", "3","(", "1,",")",  "= "],
+  correctAnswer: [0, 6, 3, 4, 1, 2, 5]
+} as const;
+
+const pythonLessonProblem58 = {
+  type: "WRITE",
+  question: "Write Python code to remove the key `'b'` from the dictionary `my_dict = {'a': 1, 'b': 2, 'c': 3}`.",
+  answerTiles: ["del", "my_dict", "'b'","[", "]" ],
+  correctAnswer: [0, 1, 3, 2, 4]
+} as const;
+
+const pythonLessonProblem59 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nmy_list = [10, 20, 30]\nmy_list.pop(1)\nprint(my_list)",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "[10, 30]" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "[20, 30]" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "[10, 20]" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem60 = {
+  type: "WRITE",
+  question: "Write Python code to create a dictionary `my_dict` with keys `'x'`, `'y'`, and `'z'` and their respective values `10`, `20`, and `30`.",
+  answerTiles: ["my_dict", "'y':", "20,", "'z':", "30", "}", " = ","{", "'x':"," 10,"],
+  correctAnswer: [0, 6, 7, 8, 9, 1, 2, 3, 4, 5]
+} as const;
+
+const pythonLessonProblem61 = {
+  type: "WRITE",
+  question: "Write Python code to create a list containing the numbers `5, 10, 15` and then append the number `20` to it.",
+  answerTiles: ["[5, 10, 15]","(20)",".append"],
+  correctAnswer: [0, 2, 1]
+} as const;
+
+const pythonLessonProblem62 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nmy_tuple = (10, 20, 30)\nprint(my_tuple[1:3])",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "(10, 20)" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "(20, 30)" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "(20, 30, 10)" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const pythonLessonProblem63 = {
+  type: "WRITE",
+  question: "Write Python code to prints if a key `'name'` exists in the dictionary `my_dict = {'age': 25, 'name': 'John'}`.",
+  answerTiles: ["if","my_dict:", "'name'", "in",],
+  correctAnswer: [0, 3, 4, 1]
+} as const;
+
+const pythonLessonProblem64 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nmy_list = [1, 2, 3, 4]\nmy_list.remove(3)\nprint(my_list)",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "[1, 2, 4]" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "[1, 2, 3]" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "[2, 3, 4]" },
+  ],
+  correctAnswer: 0,
+} as const;
+const pythonLessonProblem65 = {
+  type: "WRITE",
+  question: "Write Python code that returns the sum of `a` and `b` in a function defined as `add_numbers(a, b)`",
+  answerTiles: ["a", "+","return", "b", "send"],
+  correctAnswer: [2, 0, 1, 3]
+} as const;
+
+const pythonLessonProblem66 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\ndef greet():\n\treturn 'Hello'\nprint(greet())",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={hen_thumbsup} alt="" width={212} height={212} className="w-full" />, name: "Hello" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const pythonLessonProblem67 = {
+  type: "WRITE",
+  question: "Write Python code to define a function `multiply(a, b)` that will print the result of `a * b`.",
+  answerTiles: ["def", "a,", "b:", "multiply"],
+  correctAnswer: [0, 3, 1, 2]
+} as const;
+
+const pythonLessonProblem68 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\ndef square(x):\n\treturn x ** 2\nprint(square(3))",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "9" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "6" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "3" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem69 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\ndef greet(name='Alice'):\n\treturn f'Hello, {name}!'\nprint(greet('Bob'))",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "Hello, Bob!" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "Hello, Alice!" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+} as const;
+
+const pythonLessonProblem70 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\ndef subtract(x, y):\n\treturn x - y\nprint(subtract(10, 5))",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "5" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "10" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "15" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem71 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\n\ndef multiply(x, y=1):\n\treturn x * y\nprint(multiply(5))",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "5" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "1" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem72 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\ndef greet(name='World'):\n\treturn f'Hello, {name}!'\nprint(greet())",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "Hello, World!" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "Hello, name!" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblem73 = {
+  type: "WRITE",
+  question: "Write Python code to create a class `Car` with a method `start()` that prints 'Car started'.",
+  answerTiles: ["class", "Car:", "def start(self):", "print('Car started')"],
+  correctAnswer: [0, 1, 2, 3]
+} as const;
+const pythonLessonProblem74 = {
+  type: "WRITE",
+  question: "Write Python code to create a `Person` class with an `__init__` method that accepts `name` and `age` parameters and assigns them to the instance.",
+  answerTiles: ["class", "Person:", "def __init__(self, name, age):", "self.name = name", "self.age = age"],
+  correctAnswer: [0, 1, 2, 3, 4]
+} as const;
+
+const pythonLessonProblem75 = {
+  type: "WRITE",
+  question: "Write Python code to create an object of the `Car` class and call the `start()` method.",
+  answerTiles: ["car = Car()", "car.start()", "Car()"],
+  correctAnswer: [0, 2, 1]
+} as const;
+const pythonLessonProblem76 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Dog:\n\tdef __init__(self, name):\n\t\tself.name = name\nd = Dog('Buddy')\nprint(d.name)",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "Buddy" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "None" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+
+
+
+
+
+const getJavaScriptLessonProblems = (lessonsCompleted: number) => {};
+const getCsLessonProblems = (lessonsCompleted: number) => {};
+const getJavaLessonProblems  = (lessonsCompleted: number) => {};
+const getCLessonProblems = (lessonsCompleted: number) => {};
 
 const getPythonLessonProblems = (lessonsCompleted: number) => {
   // Define the full set of Python problems
   const pythonLessonProblems = [
-    pythonLessonProblem1,
-    pythonLessonProblem2,
-    pythonLessonProblem3,
-    pythonLessonProblem4,
-    pythonLessonProblem5,
-    pythonLessonProblem6,
-    pythonLessonProblem7,
-    pythonLessonProblem8,
-    pythonLessonProblem9,
-    pythonLessonProblem10,
-    pythonLessonProblem11,
+    pythonLessonProblem1, pythonLessonProblem2,pythonLessonProblem3,pythonLessonProblem4,pythonLessonProblem5,pythonLessonProblem6,pythonLessonProblem7,pythonLessonProblem8, pythonLessonProblem9,pythonLessonProblem10,pythonLessonProblem11,pythonLessonProblem12,pythonLessonProblem13,pythonLessonProblem14,pythonLessonProblem15,pythonLessonProblem16,pythonLessonProblem17,pythonLessonProblem18,pythonLessonProblem19,pythonLessonProblem20,pythonLessonProblem21,pythonLessonProblem22,pythonLessonProblem23,pythonLessonProblem24,pythonLessonProblem25,pythonLessonProblem26,pythonLessonProblem27,pythonLessonProblem28,pythonLessonProblem29,pythonLessonProblem30,pythonLessonProblem31,pythonLessonProblem32,pythonLessonProblem33,pythonLessonProblem34,pythonLessonProblem35,pythonLessonProblem36,pythonLessonProblem37, pythonLessonProblem38,pythonLessonProblem39,pythonLessonProblem40, pythonLessonProblem41,pythonLessonProblem42,pythonLessonProblem43,pythonLessonProblem44,pythonLessonProblem45,pythonLessonProblem46,pythonLessonProblem47,pythonLessonProblem48,
+    pythonLessonProblem49,pythonLessonProblem50,pythonLessonProblem51,pythonLessonProblem52,pythonLessonProblem53,pythonLessonProblem54,pythonLessonProblem55,pythonLessonProblem56,pythonLessonProblem57,pythonLessonProblem58,pythonLessonProblem59,pythonLessonProblem60,pythonLessonProblem61,pythonLessonProblem62,pythonLessonProblem63,pythonLessonProblem64,pythonLessonProblem65,pythonLessonProblem66,pythonLessonProblem67,pythonLessonProblem68,pythonLessonProblem69,pythonLessonProblem70,pythonLessonProblem71,pythonLessonProblem72
   ];
 
-  // Calculate the number of problems to remove (n)
   const n = lessonsCompleted * 2;
 
-  // Slice the array to remove the first n problems
   return pythonLessonProblems.slice(n);
 };
 
@@ -251,20 +836,27 @@ const Lesson: NextPage = () => {
     lessonProblem1, lessonProblem2,
   ];
 
-  const pythonLessonProblems = [
-    // Your Python lesson problems go here, as before
-    pythonLessonProblem1, pythonLessonProblem2, pythonLessonProblem3, pythonLessonProblem4,
-    pythonLessonProblem5, pythonLessonProblem6, pythonLessonProblem7, pythonLessonProblem8,
-    pythonLessonProblem9, pythonLessonProblem10, pythonLessonProblem11, pythonLessonProblem1, pythonLessonProblem2, pythonLessonProblem3, pythonLessonProblem4,
-    pythonLessonProblem5, pythonLessonProblem6, pythonLessonProblem7, pythonLessonProblem8,
-    pythonLessonProblem9, pythonLessonProblem10, pythonLessonProblem11
-  ];
 
   // Check lesson type dynamically
-  const isPythonLesson = router.query["lessonType"] === "python";    
   const lessonsCompleted = useBoundStore((x)=> x.lessonsCompleted);
-  const lessonSet = isPythonLesson ? getPythonLessonProblems(lessonsCompleted): lessonProblems;
+  const lessonType = router.query["lessonType"];
 
+  const lessonSet = (() => {
+    switch (lessonType) {
+      case "Python":
+        return getPythonLessonProblems(lessonsCompleted);
+      case "JavaScript":
+        return getJavaScriptLessonProblems(lessonsCompleted);
+      case "C":
+        return getCsLessonProblems(lessonsCompleted);
+      case "Java":
+        return getJavaLessonProblems(lessonsCompleted);
+      case "C#":
+        return getCLessonProblems(lessonsCompleted);
+      default:
+        return lessonProblems;  // Default lesson problems if no valid language is selected
+    }
+  })();
 
   const [lessonProblem, setLessonProblem] = useState(0); // Start at the first question
   const [correctAnswerCount, setCorrectAnswerCount] = useState(0);
@@ -480,14 +1072,14 @@ const ProgressBar = ({
       >
         <div
           className={
-            "h-full rounded-full bg-green-500 transition-all duration-700 " +
+            "h-full rounded-full bg-[#CC5742] transition-all duration-700 " +
             (correctAnswerCount > 0 ? "px-2 pt-1 " : "")
           }
           style={{
             width: `${(correctAnswerCount / totalCorrectAnswersNeeded) * 100}%`,
           }}
         >
-          <div className="h-[5px] w-full rounded-full bg-green-400"></div>
+          <div className="h-[5px] w-full rounded-full bg-[#CC5742]"></div>
         </div>
       </div>
       {hearts !== null &&
@@ -593,7 +1185,7 @@ const CheckAnswer = ({
           ) : (
             <button
               onClick={onCheckAnswer}
-              className="grow rounded-2xl border-b-4 border-green-600 bg-green-500 p-3 font-bold uppercase text-white sm:min-w-[150px] sm:max-w-fit sm:grow-0"
+              className="grow rounded-2xl border-b-4 border-[#CC5742] bg-[#CC5742] p-3 font-bold uppercase text-white sm:min-w-[150px] sm:max-w-fit sm:grow-0"
             >
               Check
             </button>
@@ -605,7 +1197,7 @@ const CheckAnswer = ({
         className={
           correctAnswerShown
             ? isAnswerCorrect
-              ? "fixed bottom-0 left-0 right-0 bg-lime-100 font-bold text-green-600 transition-all"
+              ? "fixed bottom-0 left-0 right-0 bg-yellow-100 font-bold text-[#CC5742] transition-all"
               : "fixed bottom-0 left-0 right-0 bg-red-100 font-bold text-red-500 transition-all"
             : "fixed -bottom-52 left-0 right-0"
         }
@@ -614,7 +1206,7 @@ const CheckAnswer = ({
           <>
             {isAnswerCorrect ? (
               <div className="mb-2 flex flex-col gap-5 sm:flex-row sm:items-center">
-                <div className="hidden rounded-full bg-white p-5 text-green-500 sm:block">
+                <div className="hidden rounded-full bg-white p-5 text-[#CC5742] sm:block">
                   <DoneSvg />
                 </div>
                 <div className="text-2xl">Good job!</div>
@@ -635,7 +1227,7 @@ const CheckAnswer = ({
             onClick={onFinish}
             className={
               isAnswerCorrect
-                ? "w-full rounded-2xl border-b-4 border-green-600 bg-green-500 p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit"
+                ? "w-full rounded-2xl border-b-4 border-[#df5742] bg-[#CC5742] p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit"
                 : "w-full rounded-2xl border-b-4 border-red-600 bg-red-500 p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit"
             }
           >
@@ -676,6 +1268,7 @@ const ProblemSelect1Of3 = ({
   onSkip: () => void;
   hearts: number | null;
 }) => {
+
   const { question, answers, correctAnswer } = problem;
 
   return (
@@ -691,7 +1284,32 @@ const ProblemSelect1Of3 = ({
         </div>
         <section className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24 sm:px-5">
           <h1 className="self-start text-2xl font-bold sm:text-3xl">
-            {question}
+            {/* Render the question: ensure the first line is not formatted as code */}
+            {question.split("\n").map((line, index) => {
+              // Replace tab characters with 4 spaces for consistent indentation
+              const formattedLine = line.replace(/\t/g, "    "); // Replace tabs with 4 spaces
+  
+              // If it's the first line (the question part), render as plain text
+              if (index === 0) {
+                return <p key={index} className="text-lg">{formattedLine}</p>;
+              }
+  
+              // Check if the line contains any non-whitespace code (match any non-empty line)
+              const isCodeLine = /\S/.test(formattedLine.trim()); // Matches any non-whitespace line
+  
+              // Render code lines with <pre> tag for proper formatting
+              return isCodeLine ? (
+                <pre
+                  key={index}
+                  className="bg-gray-300 text-white p-1  whitespace-pre-wrap break-words w-full text-sm leading-snug"
+                >
+                  {formattedLine}
+                </pre>
+              ) : (
+                // Otherwise render it as a regular paragraph (for any extra text)
+                <p key={index} className="text-lg">{formattedLine}</p>
+              );
+            })}
           </h1>
           <div
             className="grid grid-cols-2 gap-2 sm:grid-cols-3"
@@ -719,6 +1337,11 @@ const ProblemSelect1Of3 = ({
           </div>
         </section>
       </div>
+
+  
+
+
+
 
       <CheckAnswer
         correctAnswer={answers[correctAnswer].name}
@@ -768,6 +1391,10 @@ const ProblemWriteInEnglish = ({
   hearts: number | null;
 }) => {
   const { question, correctAnswer, answerTiles } = problem;
+  const images = [cow_lightbulb, cow_question, cow_questioning, cow_thinking, chick_question, chick_question2, chick_question3, chick_question4, chick_thinking, hen_question];
+
+  // Randomly pick an image
+  const imagePng = images[Math.floor(Math.random() * images.length)];
 
   return (
     <div className="flex min-h-screen flex-col gap-5 px-4 py-5 sm:px-0 sm:py-0">
@@ -782,12 +1409,12 @@ const ProblemWriteInEnglish = ({
         </div>
         <section className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24">
           <h1 className="mb-2 text-2xl font-bold sm:text-3xl">
-            Write this in English
+            Write the code:
           </h1>
 
           <div className="w-full">
             <div className="flex items-center gap-2 px-2">
-              <Image src={womanPng} alt="" width={92} height={115} />
+              <Image src={imagePng} alt="" width={92} height={115} />
               <div className="relative ml-2 w-fit rounded-2xl border-2 border-gray-200 p-4">
                 {question}
                 <div
@@ -909,9 +1536,9 @@ const LessonComplete = ({
               {formatTime(endTime.current - startTime.current)}
             </div>
           </div>
-          <div className="min-w-[110px] rounded-xl border-2 border-green-400 bg-green-400">
+          <div className="min-w-[110px] rounded-xl border-2 border-[#CC5742] bg-[#CC5742]">
             <h2 className="py-1 text-center text-white">Amazing</h2>
-            <div className="flex justify-center rounded-xl bg-white py-4 text-green-400">
+            <div className="flex justify-center rounded-xl bg-white py-4 text-[#CC5742]">
               {Math.round(
                 (correctAnswerCount /
                   (correctAnswerCount + incorrectAnswerCount)) *
@@ -932,7 +1559,7 @@ const LessonComplete = ({
           </button>
           <Link
             className={
-              "flex w-full items-center justify-center rounded-2xl border-b-4 border-green-600 bg-green-500 p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit"
+              "flex w-full items-center justify-center rounded-2xl border-b-4 border-[#CC5742] bg-[#CC5742] p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit"
             }
             href="/learn"
             onClick={() => {
@@ -1130,7 +1757,7 @@ const LessonFastForwardEndFail = ({
             Review lesson
           </button>
           <Link
-            className="flex w-full items-center justify-center rounded-2xl border-b-4 border-green-600 bg-green-500 p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit"
+            className="flex w-full items-center justify-center rounded-2xl border-b-4 border-[#CC5742] bg-[#CC5742] p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit"
             href="/learn"
           >
             Continue
@@ -1176,7 +1803,7 @@ const LessonFastForwardEndPass = ({
             Review lesson
           </button>
           <Link
-            className="flex w-full items-center justify-center rounded-2xl border-b-4 border-green-600 bg-green-500 p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit"
+            className="flex w-full items-center justify-center rounded-2xl border-b-4 border-[#CC5742] bg-[#CC5742] p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit"
             href="/learn"
             onClick={() => jumpToUnit(unitNumber)}
           >

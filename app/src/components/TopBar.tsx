@@ -65,8 +65,8 @@ const AddLanguageSvg = (props: ComponentProps<"svg">) => {
 type MenuState = "HIDDEN" | "LANGUAGES" | "STREAK" | "GEMS" ;
 //"MORE"
 export const TopBar = ({
-  backgroundColor = "bg-[#58cc02]",
-  borderColor = "border-[#46a302]",
+  backgroundColor = "bg-[#CC5742]",
+  borderColor = "border-[#CC5742]",
 }: {
   backgroundColor?: `bg-${string}`;
   borderColor?: `border-${string}`;
@@ -132,7 +132,7 @@ export const TopBar = ({
                 return (
                   <div className="flex gap-5 p-5">
                     <div className="flex flex-col items-center justify-between gap-2">
-                      <div className="rounded-2xl border-4 border-blue-400">
+                      <div className="rounded-2xl border-4 border-[#CC5742]">
                         <Flag language={language} width={80} />
                       </div>
                       <span className="font-bold">{language.name}</span>
@@ -173,7 +173,7 @@ export const TopBar = ({
                         {progots === 1 ? "progot" : "progots"}.
                       </p>
                       <Link
-                        className="font-bold uppercase text-blue-400 transition hover:brightness-110"
+                        className="font-bold uppercase text-[#CC5742] transition hover:brightness-110"
                         href="/shop"
                       >
                         Go to shop
