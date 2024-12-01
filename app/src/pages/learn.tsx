@@ -396,12 +396,13 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
                           onClick={() => {
                             if (tile.type === "fast-forward" && status === "LOCKED") {
                               // Conditional logic based on unit number and lessons completed
-                              if (unit.unitNumber === 2 && lessonsCompleted < 40) {
+                              if (unit.unitNumber === 2 && lessonsCompleted < 20) {
                                 // If the user is on unit 2 and has completed less than 40 lessons
                                 const increment = 24 - lessonsCompleted;
                                 increaseLessonsCompleted(increment); // Increment lessons by the calculated amount
-                              } else if (unit.unitNumber === 3) {
-                                increaseLessonsCompleted(4); // Increment lessons by 4 for unit 3
+                              } else if (unit.unitNumber === 3  && lessonsCompleted < 56) {
+                                const increment = 68 - lessonsCompleted;
+                                increaseLessonsCompleted(increment);
                               }
                               
                               // Navigate to the lesson with lesson type and other parameters
