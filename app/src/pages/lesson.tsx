@@ -1774,27 +1774,27 @@ const javascriptLessonProblemA11 = {
   type: "WRITE",
   question: "Write the JavaScript code to add a comment about the following line of code: 'let x = 10;'",
   answerTiles: ["//", "Assign", "10", "to x", "let x = 10;"],
-  correctAnswer: [0, 4, 1, 2, 3],
+  correctAnswer: [4, 0, 1, 2, 3],
 } as const;
 
 const javascriptLessonProblemA12 = {
   type: "WRITE",
   question: "Write the JavaScript code to concatenate 'Hello' and 'World' into one string and print it.",
-  answerTiles: ["console.log", "'", "Hello", "+", "'", "World", "'"],
-  correctAnswer: [0, 1, 2, 3, 6, 4, 5],
+  answerTiles: ["console.log", "('", "Hello'", "+",  "'World", "')"],
+  correctAnswer: [0, 1, 2, 3, 4, 5],
 } as const;
 
 const javascriptLessonProblemA13 = {
   type: "WRITE",
   question: "Write a JavaScript statement to assign the values 1, 2, and 3 to the variables 'a', 'b', and 'c' respectively in one line.",
   answerTiles: ["let", "a", "=", "1,", "b", "=", "2,", "c", "=", "3;"],
-  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
 } as const;
 
 const javascriptLessonProblemA14 = {
   type: "WRITE",
   question: "Write the JavaScript code to print the result of adding 5 and 8.",
-  answerTiles: ["console.log", "5", "+", "8"],
+  answerTiles: ["console.log", "(5", "+", "8)"],
   correctAnswer: [0, 1, 2, 3],
 } as const;
 
@@ -1802,7 +1802,7 @@ const javascriptLessonProblemA15 = {
   type: "WRITE",
   question: "Write JavaScript code to assign the values 'apple', 'banana', and 'cherry' to the variables 'x', 'y', and 'z' respectively in one line.",
   answerTiles: ["let", "x", "=", "'apple',", "y", "=", "'banana',", "z", "=", "'cherry';"],
-  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
 } as const;
 
 const javascriptLessonProblemA16 = {
@@ -1826,7 +1826,7 @@ const javascriptLessonProblemB1 = {
 const javascriptLessonProblemB2 = {
   type: "WRITE",
   question: "Write the JavaScript code to assign the value 20 to the variable 'a' and then subtract 5 from it.",
-  answerTiles: ["a", "-", "5", "=", "20"],
+  answerTiles: ["let a", "-", "5;", "=", "20"],
   correctAnswer: [0, 3, 4, 1, 2],
 } as const;
 
@@ -1978,11 +1978,11 @@ const javascriptLessonProblemC3 = {
   type: "SELECT_1_OF_3",
   question: "Which of the following is the correct way to combine two Boolean conditions with 'and' in JavaScript?",
   answers: [
-    { icon: <Image src={crying_cow2} alt="" width={212} height={212}  className="w-full" />, name: "condition1 && condition2" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212}  className="w-full" />, name: "condition1 and condition2" },
     { icon: <Image src={happy_chick2} alt="" width={212} height={212}  className="w-full" />, name: "condition1 && condition2" },
     { icon: <Image src={crying_cow3} alt="" width={212} height={212}  className="w-full" />, name: "condition1 + condition2" },
   ],
-  correctAnswer: 0,
+  correctAnswer: 1,
 } as const;
 
 const javascriptLessonProblemC4 = {
@@ -2083,7 +2083,7 @@ const javascriptLessonProblemC14 = {
   type: "WRITE",
   question: "Write JavaScript code to check if a variable 'age' is between 18 and 25 (inclusive).",
   answerTiles: ["age >", "age", "<=", "25", "18", "&&"],
-  correctAnswer: [0, 3, 4, 5,  1, 2]
+  correctAnswer: [0, 4, 5,  1, 2,  3]
 } as const;
 
 const javascriptLessonProblemC15 = {
@@ -2129,7 +2129,7 @@ const javascriptLessonProblemD2 = {
 const javascriptLessonProblemD3 = {
   type: "WRITE",
   question: "Write JavaScript code to create an array containing the numbers 1, 2, and 3.",
-  answerTiles: ["[", "]", "1,", "3", "2,", "=", "Array"],
+  answerTiles: ["[", "]", "1,", "3", "2,", "=", "let array"],
   correctAnswer: [6, 5, 0, 2, 4, 3, 1]
 } as const;
 
@@ -2142,13 +2142,13 @@ const javascriptLessonProblemD4 = {
 
 const javascriptLessonProblemD5 = {
   type: "SELECT_1_OF_3",
-  question: "Which of the following is a valid tuple (or similar structure) in JavaScript?",
+  question: "Which of the following is a valid array in JavaScript?",
   answers: [
-    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "(1, 2, 3)" },
-    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "[1, 2, 3]" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "(1, 2, 3)" },
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "[1, 2, 3]" },
     { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "{1, 2, 3}" },
   ],
-  correctAnswer: 0,
+  correctAnswer: 1,
 } as const;
 
 const javascriptLessonProblemD6 = {
@@ -2186,7 +2186,7 @@ const javascriptLessonProblemD9 = {
   answers: [
     { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "obj['key']" },
     { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "obj{key}" },
-    { icon: <Image src={wrong_chick} alt="" width={212} height={212} className="w-full" />, name: "obj.key" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212} className="w-full" />, name: "obj(key)" },
   ],
   correctAnswer: 0,
 } as const;
