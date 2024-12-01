@@ -55,7 +55,7 @@ export const units: readonly Unit[] = [
       { type: "star", description: "Loops" },
       { type: "book", description: "Loops" },
       { type: "star", description: "Functions" },
-      { type: "book", description: "Functions" },
+      { type: "book", description: "Functions and Review" },
       { type: "treasure" },
       { type: "dumbbell", description: "Review" },
       { type: "trophy", description: "Review" },

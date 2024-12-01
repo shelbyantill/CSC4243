@@ -89,6 +89,7 @@ const lessonProblem2 = {
 
 const lessonProblems = [lessonProblem1, lessonProblem2];
 
+{}
 const pythonLessonProblemA1 = {
   type: "SELECT_1_OF_3",
   question: "Which of these is a correct way to declare a variable in Python?",
@@ -1122,163 +1123,6 @@ const pythonLessonProblemG16 = {
 } as const;
 
 
-const pythonLessonProblemH1 = {
-  type: "WRITE",
-  question: "Write the Python code to concatenate 'Hello' and 'World' into one string and print it.",
-  answerTiles: [")", "print", "+", "'World'", "(", "'Hello'"],
-  correctAnswer: [1, 4, 5, 2, 3, 0]
-  
-  
-}as const;
-
-const pythonLessonProblemH2 = {
-  type: "WRITE",
-    question: "Write a comment in Python that says 'This is a comment'.",
-    answerTiles: ["is", "a", "comment", "This", "#"],
-    correctAnswer: [ 4, 3, 0, 1, 2]
-  
-   
-}as const;
-const pythonLessonProblemH3 = {
-  type: "WRITE",
-  question: "Write the Python code to concatenate 'Python' and 'rocks' into a single string and print it.",
-  answerTiles: ["print", "'Python'", "'rocks'", ")", "+","("],
-  correctAnswer: [0, 5, 1,4, 2, 3],
-}as const;
-
-const pythonLessonProblemH4 = {
-  type: "SELECT_1_OF_3",
-question: "What is the result of 5 + 3 * 2 in Python?",
-answers: [
-  { icon: <Image src={crying_chick2} alt="" width={212} height={212}  className="w-full" />, name: "16" },
-  { icon: <Image src={cow_twothumbs} alt="" width={212} height={212}  className="w-full" />, name: "11" },
-  { icon: <Image src={crying_chick5} alt="" width={212} height={212}  className="w-full" />, name: "13" },
-],
-correctAnswer: 1,
-
-
-}as const;
-const pythonLessonProblemH5 = {
-  type: "SELECT_1_OF_3",
-  question: "What is the result of 8 % 3 in Python?",
-  answers: [
-    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "3" },
-    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "1" },
-    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "2" },
-  ],
-  correctAnswer: 2,
-  
- 
-}as const;
-
-const pythonLessonProblemH6 = {
-  type: "WRITE",
-  question: "Write Python code to assign the value 100 to the variable 'b' and then divide it by 4.",
-  answerTiles: [ "=", "b","100", "//", "4", "/"],
-  correctAnswer: [1,0, 2, 5, 4]
-}as const;
-const pythonLessonProblemH7 = {
-  type: "SELECT_1_OF_3",
-  question: "Which of these expressions checks if a value is not equal to another in Python?",
-  answers: [
-    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "!=" },
-    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "==" },
-    { icon: <Image src={chick_question3} alt="" width={212} height={212} className="w-full" />, name: ">" },
-  ],
-  correctAnswer: 0,
-}as const;
-
-const pythonLessonProblemH8 = {
-  type: "WRITE",
-  question: "Write Python code to check if a number 'x' is less than 10 and 'y' is greater than 5.",
-  answerTiles: ["x", "y", ">", "5", "<", "10", "and"],
-  correctAnswer: [0, 4, 5, 6, 1, 2, 3 ]
-}as const;
-const pythonLessonProblemH9 = {
-
-  type: "WRITE",
-  question: "Write Python code to check if 5 is equal to 5.",
-  answerTiles: ["5", "==", "5", "="],
-  correctAnswer: [0, 1, 2]
-}as const;
-
-const pythonLessonProblemH10 = {
-  type: "SELECT_1_OF_3",
-question: "Which of the following is the correct syntax for creating a list in Python?",
-answers: [
-  { icon: <Image src={crying_cow3} alt="" width={212} height={212}  className="w-full" />, name: "{1, 2, 3}" },
-  { icon: <Image src={wrong_chick} alt="" width={212} height={212}  className="w-full" />, name: "(1, 2, 3)" },
-  { icon: <Image src={happy_chick4} alt="" width={212} height={212}  className="w-full" />, name: "[1, 2, 3]" },
-],
-correctAnswer: 2,
-
-
-}as const;
-const pythonLessonProblemH11 = {
-  type: "SELECT_1_OF_3",
-question: "Which of the following is a valid tuple in Python?",
-answers: [
-  { icon: <Image src={happy_chick3} alt="" width={212} height={212}  className="w-full" />, name: "(1, 2, 3)" },
-  { icon: <Image src={chick_sleeping
-  } alt="" width={212} height={212}  className="w-full" />, name: "[1, 2, 3]" },
-  { icon: <Image src={crying_chick4} alt="" width={212} height={212}  className="w-full" />, name: "{1, 2, 3}" },
-],
-correctAnswer: 0,
-}as const;
-
-const pythonLessonProblemH12 = {
-  type: "SELECT_1_OF_3",
-question: "What will the following code print?\nif 10 > 5 and 5 > 3:\n\tprint('Both are true')\nelse:\n\tprint('One is false')",
-answers: [
-  { icon: <Image src={happy_chick4} alt="" width={212} height={212}  className="w-full" />, name: "Both are true" },
-  { icon: <Image src={crying_cow2} alt="" width={212} height={212}  className="w-full" />, name: "One is false" },
-  { icon: <Image src={crying_chick5} alt="" width={212} height={212}  className="w-full" />, name: "Error" },
-],
-correctAnswer: 0,
-
-
-}as const;
-const pythonLessonProblemH13 = {
-  type: "WRITE",
-  question: "Write the missing `if` statement to check if `x` is not equal to 0. ",
-  answerTiles: ["if", "=","0","==","!", "x"],
-  correctAnswer: [0, 5, 4, 1, 2]
-}as const;
-
-const pythonLessonProblemH14 = {
-  type: "SELECT_1_OF_3",
-  question: "What is the output of the following code?\nfor i in range(1, 4):\n\tprint(i)",
-  answers: [
-    { icon: <Image src={crying_cow} alt="" width={212} height={212}  className="w-full" />, name: "0 1 2" },
-    { icon: <Image src={happy_twochicks} alt="" width={212} height={212}  className="w-full" />, name: "1 2 3" },
-    { icon: <Image src={crying_chick3} alt="" width={212} height={212}  className="w-full" />, name: "Error" },
-  ],
-  correctAnswer: 1,
-  
-
-}as const;
-const pythonLessonProblemH15 = {
-  type: "SELECT_1_OF_3",
-  question: "What will the following code print?\n\ndef greet():\n\tprint('Hi')\ngreet()",
-  answers: [
-    { icon: <Image src={cow_question} alt="" width={212} height={212}  className="w-full" />, name: "Error" },
-    { icon: <Image src={laying_cow} alt="" width={212} height={212}  className="w-full" />, name: "Hello" },
-    { icon: <Image src={cow_greeting} alt="" width={212} height={212}  className="w-full" />, name: "Hi" },
-  ],
-  correctAnswer: 2,
-}as const;
-
-const pythonLessonProblemH16 = {
-  type: "SELECT_1_OF_3",
-  question: "What does the following code do?\n\ndef multiply(x, y):\n\treturn x * y\nresult = multiply(3, 4)",
-  answers: [
-    { icon: <Image src={crying_chick5} alt="" width={212} height={212}  className="w-full" />, name: "Adds 3 and 4" },
-    { icon: <Image src={sad_chick} alt="" width={212} height={212}  className="w-full" />, name: "Prints the result of 3 * 4" },
-    { icon: <Image src={chick_flattered} alt="" width={212} height={212}  className="w-full" />, name: "Returns the product of 3 and 4" },
-  ],
-  correctAnswer: 2,
-}as const;
-
 
 
 
@@ -1400,7 +1244,7 @@ const pythonLessonProblemI12 = {
   type: "SELECT_1_OF_3",
   question: "What will the following code output?\nclass Car:\n\tdef __init__(self, make, model):\n\t\tself.make = make\n\t\tself.model = model\nc = Car('Toyota', 'Corolla')\nprint(c.make)",
   answers: [
-    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "Toyota" },
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "Toyota" },
     { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "Corolla" },
     { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
   ],
@@ -1458,19 +1302,1959 @@ const pythonLessonProblemI17={
   correctAnswer: 2,
 } as const;
 
+const pythonLessonProblemI18 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of the `self` keyword in Python classes?",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "To refer to the instance of the class" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "To refer to the class itself" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "To call methods of other classes" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemI19 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Dog:\n\tdef __init__(self, name):\n\t\tself.name = name\n\tdef speak(self):\n\t\treturn f'{self.name} barks'\n\ndog = Dog('Buddy')\nprint(dog.speak())",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "Buddy barks" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemI20 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nclass Car:\n\tdef __init__(self, make, model):\n\t\tself.make = make\n\t\tself.model = model\ncar = Car('Ford', 'Mustang')\nprint(car.model)",
+  answers: [
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "Mustang" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "Ford" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemI21 = {
+  type: "WRITE",
+  question: "Write Python code to add a method `drive` to the `Car` class that prints 'Driving!'",
+  answerTiles: ["func","def", "drive", "(self):" ],
+  correctAnswer: [ 1, 2, 3],
+} as const;
+
+const pythonLessonProblemI22 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is correct for creating a new object of a class?",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "object.create()" },
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "object = ClassName()" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "object.new()" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const pythonLessonProblemI23 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Person:\n\tdef __init__(self, name):\n\t\tself.name = name\nperson = Person('John')\nprint(person.name)",
+  answers: [
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "None" },
+    { icon: <Image src={hen_thumbsup} alt="" width={212} height={212} className="w-full" />, name: "John" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const pythonLessonProblemI24 = {
+  type: "WRITE",
+  question: "Write Python code to modify the `Dog` class to add a method `eat` that prints 'Eating food!'",
+  answerTiles: ["def", "eat", "(self):", "self:"],
+  correctAnswer: [0, 1, 2],
+} as const;
 
 
+const pythonLessonProblemJ1 = {
+  type: "SELECT_1_OF_3",
+  question: "What is inheritance in Python?",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "A way to create a new class from an existing class" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "A method to assign variables" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "A function that combines two classes" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemJ2 = {
+  type: "SELECT_1_OF_3",
+  question: "What does the `super()` function do in Python?",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "It allows access to methods from a parent class" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "It creates a new instance of a class" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "It deletes an object from memory" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemJ3 = {
+  type: "WRITE",
+  question: "Write Python code to create a subclass `Dog` that inherits from `Animal`.",
+  answerTiles: [":", "class", "Dog", "Animal","(",")"],
+  correctAnswer: [1,2,4, 3,5,0 ],
+} as const;
+
+const pythonLessonProblemJ4 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Animal:\n\tdef __init__(self, species):\n\t\tself.species = species\nclass Dog(Animal):\n\tdef __init__(self, species, breed):\n\t\tsuper().__init__(species)\n\t\tself.breed = breed\nmy_dog = Dog('Canine', 'Bulldog')\nprint(my_dog.species)",
+  answers: [
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "Bulldog" },
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "Canine" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 1,
+} as const;
+const pythonLessonProblemJ5 = {
+  type: "WRITE",
+  question: "Write Python code to call the `__init__` method of the parent class inside the subclass `Dog`.",
+  answerTiles: ["(",")", "super()",".","__init__" , "="],
+  correctAnswer: [2, 3, 4, 0, 1],
+} as const;
+
+const pythonLessonProblemJ6 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following correctly demonstrates method overriding in Python?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "override speak(): " },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "func speak(override): " },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "def speak(self): " },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const pythonLessonProblemJ7 = {
+  type: "WRITE",
+  question: "Write Python function declaration to override the `speak` behaior of the parent class in a `Dog` subclass.",
+  answerTiles: ["def", "speak", "(self):", "self:"],
+  correctAnswer: [0, 1, 2],
+} as const;
+
+const pythonLessonProblemJ8 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Animal:\n\tdef __init__(self, species):\n\t\tself.species = species\n\tdef speak(self):\n\t\treturn f'{self.species} makes a sound'\nclass Dog(Animal):\n\tdef speak(self):\n\t\treturn f'{self.species} barks'\nd = Dog('Dog')\nprint(d.speak())",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "Dog barks" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "Dog makes a sound" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemJ9 = {
+  type: "WRITE",
+  question: "Write Python code to override the `speak` method, a subclass `Cat` can 'meow'",
+  answerTiles: ["def", "return", "'Meow'", "speak", "(self):"],
+  correctAnswer: [0,3, 4, 1, 2],
+} as const;
+
+const pythonLessonProblemJ10 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Vehicle:\n\tdef __init__(self, make, model):\n\t\tself.make = make\n\t\tself.model = model\nclass Car(Vehicle):\n\tdef drive(self):\n\t\treturn f'Driving {self.make} {self.model}'\nmy_car = Car('Toyota', 'Camry')\nprint(my_car.drive())",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "Driving Toyota Camry" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "Toyota Camry" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemJ11 = {
+  type: "WRITE",
+  question: "Write Python code to create a method `stop` for the `Car` class that prints 'Stopping the car!'",
+  answerTiles: ["def", "print", "'Stopping the car!'", "stop", "(self):"],
+  correctAnswer: [0,  3, 4, 1, 2],
+} as const;
+
+const pythonLessonProblemJ12 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Person:\n\tdef __init__(self, name, age):\n\t\tself.name = name\n\t\tself.age = age\nclass Employee(Person):\n\tdef __init__(self, name, age, job_title):\n\t\tsuper().__init__(name, age)\n\t\tself.job_title = job_title\nemployee = Employee('John', 30, 'Engineer')\nprint(employee.name, employee.age, employee.job_title)",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "John 30 Engineer" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "John 30" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemJ13 = {
+  type: "SELECT_1_OF_3",
+  question: "In Python, which method is called when a new object is created from a class?",
+  answers: [
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "__call__" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "__new__" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "__init__" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const pythonLessonProblemJ14 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of method resolution order (MRO) in Python?",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "To determine the order in which methods are inherited" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "To prioritize class names" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "To define the constructor of a class" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemJ15 = {
+  type: "WRITE",
+  question: "Write Python code to print the method resolution order (MRO) for a class `Child` that inherits from classes `Parent1` and `Parent2`.",
+  answerTiles: ["print", ".__mro__","Child"],
+  correctAnswer: [0, 2, 1],
+} as const;
+
+const pythonLessonProblemJ16 = {
+  type: "SELECT_1_OF_3",
+  question: "Which function can be used to call a parent class method inside a subclass method?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "call()" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "super()" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "parent()" },
+  ],
+  correctAnswer: 1,
+} as const;
 
 
+const pythonLessonProblemK1 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of the `pip` command in Python?",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "To install, update, or uninstall Python packages" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "To run Python scripts" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "To debug Python code" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemK2 = {
+  type: "WRITE",
+  question: "Write a `pip` command to install the `requests` library.",
+  answerTiles: ["pip", "requests", "download", "install"],
+  correctAnswer: [0, 3, 1],
+} as const;
+const pythonLessonProblemK3 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is a valid regular expression in Python?",
+  answers: [
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212} className="w-full" />, name: "abc[123]}" },
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "\\d{3}-\\d{2}-\\d{4}" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "def*ghi" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const pythonLessonProblemK4 = {
+  type: "WRITE",
+  question: "Write Python code using `re` import to match an email address from the string 'Contact us at support@example.com'.",
+  answerTiles: [ "(regex,", ".match", "re","'Contact us at support@example.com')"],
+  correctAnswer: [2,1, 0, 3],
+} as const;
+
+const pythonLessonProblemK5 = {
+  type: "SELECT_1_OF_3",
+  question: "What does the `re.sub()` function do in Python?",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "It replaces parts of a string that match a regex pattern" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "It splits a string based on a regex pattern" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "It returns all matches of a regex pattern in a list" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemK6 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of the `__del__()` method in Python?",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "It is called when an object is about to be destroyed" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "It initializes a new object" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "It modifies the object’s attributes" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemK7 = {
+  type: "WRITE",
+  question: "Write Python code to define a `__del__()` method in a class `Book` that prints 'Object deleted'.",
+  answerTiles: [  "(self):", "print", "'Object deleted'", "def", "__del__"],
+  correctAnswer: [3, 4, 0, 1, 2],
+} as const;
+
+const pythonLessonProblemK8 = {
+  type: "SELECT_1_OF_3",
+  question: "What does the `zip()` function do in Python?",
+  answers: [
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "It pairs elements from two or more iterables" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "It sorts elements of an iterable" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "It merges two lists" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemK9 = {
+  type: "WRITE",
+  question: "Write Python code to zip two lists: `names = ['Alice', 'Bob', 'Charlie']` and `scores = [85, 90, 78]`.",
+  answerTiles: [ " scores", ")","zip", "(", "names,"],
+  correctAnswer: [ 2, 3, 4, 0, 1],
+} as const;
+
+const pythonLessonProblemK10 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct syntax to define a lambda function in Python?",
+  answers: [
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "function(x): x + 1" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "def lambda(x): x + 1" },
+    { icon: <Image src={chick_microphone} alt="" width={212} height={212} className="w-full" />, name: "lambda x: x + 1" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const pythonLessonProblemK11 = {
+  type: "WRITE",
+  question: "Write Python code to define a lambda function that multiplies two numbers and call it with arguments 5 and 6.",
+  answerTiles: [ "x,", "y", ":", "x * y", "multiply", "=", "lambda"],
+  correctAnswer: [ 4, 5, 6, 0, 1, 2, 3],
+} as const;
+
+const pythonLessonProblemK12 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of the following expression in Python:\n [i**2 for i in range(3)]",
+  answers: [
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212} className="w-full" />, name: "[0, 1, 4]" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "[1, 4, 9]" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "[0, 1, 2]" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemK13 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to install a package using pip?",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "install pip package_name" },
+    { icon: <Image src={cow_lightbulb} alt="" width={212} height={212} className="w-full" />, name: "pip install package_name" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "pip add package_name" },
+  ],
+  correctAnswer: 1,
+} as const;
+//cow_lightbulb
+const pythonLessonProblemK14 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\n{x: x**2 for x in range(3)}",
+  answers: [
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212} className="w-full" />, name: "{1: 1, 2: 4, 3: 9}" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "{0: 0, 1: 1, 2: 4}" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "{0: 1, 1: 2, 2: 3}" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const pythonLessonProblemK15 = {
+  type: "SELECT_1_OF_3",
+  question: "Which regular expression pattern matches one or more digits in Python?",
+  answers: [
+    { icon: <Image src={ happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "\\d+" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "[0-9]" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "\\d" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const pythonLessonProblemK16 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following Python code?\nbool('Hello')",
+  answers: [
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "False" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "True" },
+  ],
+  correctAnswer: 2,
+} as const;
 
 
+const javascriptLessonProblemA1 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of these is a correct way to declare a variable in JavaScript?",
+  answers: [
+    { icon: <Image src={three_chicks} alt="" width={212} height={212} className="w-full" />, name: "chicks x 3" },
+    { icon: <Image src={two_birds} alt="" width={212} height={212} className="w-full" />, name: "let birds = 2;" },
+    { icon: <Image src={five_candles} alt="" width={212} height={212} className="w-full" />, name: "var candles : 5" },
+  ],
+  correctAnswer: 1,
+} as const;
 
-const getJavaScriptLessonProblems = (lessonsCompleted: number) => {};
-const getCsLessonProblems = (lessonsCompleted: number) => {};
+const javascriptLessonProblemA2 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is NOT a valid JavaScript variable name?",
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "chick_count" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "2thumbs" },
+    { icon: <Image src={three_cows} alt="" width={212} height={212} className="w-full" />, name: "total_cows" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemA3 = {
+  type: "WRITE",
+  question: "Write the JavaScript code to print 'Hello, World!'",
+  answerTiles: ["console.log", "(", "'Hello, World!'", ");"],
+  correctAnswer: [0, 1, 2, 3],
+} as const;
+
+const javascriptLessonProblemA4 = {
+  type: "WRITE",
+  question: "Write the JavaScript code to print the phrase 'Goodbye!'",
+  answerTiles: ["console.log", "(", "'Goodbye!'", ");"],
+  correctAnswer: [0, 1, 2, 3],
+} as const;
+
+const javascriptLessonProblemA5 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of these is a valid variable name in JavaScript?",
+  answers: [
+    { icon: <Image src={chick_microphone} alt="" width={212} height={212} className="w-full" />, name: "1_microphone" },
+    { icon: <Image src={two_chicks} alt="" width={212} height={212} className="w-full" />, name: "chicks 2" },
+    { icon: <Image src={chick_card} alt="" width={212} height={212} className="w-full" />, name: "my_card" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemA6 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is a correct way to declare a string variable in JavaScript?",
+  answers: [
+    { icon: <Image src={cow_2fingers} alt="" width={212} height={212} className="w-full" />, name: "fingers : '2'" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "let mood = 'flattered';" },
+    { icon: <Image src={three_cows} alt="" width={212} height={212} className="w-full" />, name: "let cows = 3;" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemA7 = {
+  type: "WRITE",
+  question: "Write a comment in JavaScript that says 'This is a comment'.",
+  answerTiles: ["//", "This is a comment"],
+  correctAnswer: [0, 1],
+} as const;
+
+const javascriptLessonProblemA8 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is a correct way to declare a float (number) variable in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "let price = 3.5;" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "let temperature = '25.3';" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "let height = 5,5;" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemA9 = {
+  type: "WRITE",
+  question: "Write the JavaScript code to concatenate 'JavaScript' and 'rocks' into a single string and print it.",
+  answerTiles: ["console.log", "'JavaScript'", "'rocks'", "+", "(", ");"],
+  correctAnswer: [0, 4, 1, 3, 2, 5],
+} as const;
+
+const javascriptLessonProblemA10 = {
+  type: "WRITE",
+  question: "Assign the value 10 to the variable 'a'.",
+  answerTiles: ["let", "a", "=", "10"],
+  correctAnswer: [0, 1, 2, 3],
+} as const;
+
+const javascriptLessonProblemA11 = {
+  type: "WRITE",
+  question: "Write the JavaScript code to add a comment about the following line of code: 'let x = 10;'",
+  answerTiles: ["//", "Assign", "10", "to x", "let x = 10;"],
+  correctAnswer: [0, 4, 1, 2, 3],
+} as const;
+
+const javascriptLessonProblemA12 = {
+  type: "WRITE",
+  question: "Write the JavaScript code to concatenate 'Hello' and 'World' into one string and print it.",
+  answerTiles: ["console.log", "'", "Hello", "+", "'", "World", "'"],
+  correctAnswer: [0, 1, 2, 3, 6, 4, 5],
+} as const;
+
+const javascriptLessonProblemA13 = {
+  type: "WRITE",
+  question: "Write a JavaScript statement to assign the values 1, 2, and 3 to the variables 'a', 'b', and 'c' respectively in one line.",
+  answerTiles: ["let", "a", "=", "1,", "b", "=", "2,", "c", "=", "3;"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+} as const;
+
+const javascriptLessonProblemA14 = {
+  type: "WRITE",
+  question: "Write the JavaScript code to print the result of adding 5 and 8.",
+  answerTiles: ["console.log", "5", "+", "8"],
+  correctAnswer: [0, 1, 2, 3],
+} as const;
+
+const javascriptLessonProblemA15 = {
+  type: "WRITE",
+  question: "Write JavaScript code to assign the values 'apple', 'banana', and 'cherry' to the variables 'x', 'y', and 'z' respectively in one line.",
+  answerTiles: ["let", "x", "=", "'apple',", "y", "=", "'banana',", "z", "=", "'cherry';"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+} as const;
+
+const javascriptLessonProblemA16 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is a valid data type in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "decimal" },
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "integer" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "word" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemB1 = {
+  type: "WRITE",
+  question: "Write JavaScript code to add 7 and 3.",
+  answerTiles: ["7", "3", "+", "-", "++"],
+  correctAnswer: [0, 2, 1]
+} as const;
+
+const javascriptLessonProblemB2 = {
+  type: "WRITE",
+  question: "Write the JavaScript code to assign the value 20 to the variable 'a' and then subtract 5 from it.",
+  answerTiles: ["a", "-", "5", "=", "20"],
+  correctAnswer: [0, 3, 4, 1, 2],
+} as const;
+
+const javascriptLessonProblemB3 = {
+  type: "WRITE",
+  question: "Write JavaScript code to multiply 6 and 4.",
+  answerTiles: ["6", "*", "4", "**"],
+  correctAnswer: [0, 1, 2]
+} as const;
+
+const javascriptLessonProblemB4 = {
+  type: "WRITE",
+  question: "Write JavaScript code to divide 20 and 2.",
+  answerTiles: ["20", "//", "2", "/"],
+  correctAnswer: [0, 3, 2]
+} as const;
+
+const javascriptLessonProblemB5 = {
+  type: "SELECT_1_OF_3",
+  question: "Which operator is used to find the remainder in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212}  className="w-full" />, name: "mod" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212}  className="w-full" />, name: "/" },
+    { icon:<Image src={chick_twothumbs} alt="" width={212} height={212}  className="w-full" />, name: "%" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemB6 = {
+  type: "WRITE",
+  question: "Write JavaScript code to subtract 5 from 10.",
+  answerTiles: ["10", "--", "5", "-", "-*"],
+  correctAnswer: [0, 3,2]
+} as const;
+
+const javascriptLessonProblemB7 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 5 + 3 * 2 in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212}  className="w-full" />, name: "16" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212}  className="w-full" />, name: "11" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212}  className="w-full" />, name: "13" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemB8 = {
+  type: "SELECT_1_OF_3",
+  question: "Which operator is used to perform exponentiation in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "*" },
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212} className="w-full" />, name: "**" },
+    { icon: <Image src={three_cows} alt="" width={212} height={212} className="w-full" />, name: "^" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemB9 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of -10 + 5 in JavaScript?",
+  answers: [
+    { icon: <Image src={laying_cow} alt="" width={212} height={212}  className="w-full" />, name: "-5" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212}  className="w-full" />, name: "5" },
+    { icon:<Image src={crying_chick4} alt="" width={212} height={212}  className="w-full" />, name: "15" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemB10 = {
+  type: "WRITE",
+  question: "Write JavaScript code to subtract 12 from 25 and then multiply the result by 3.",
+  answerTiles: ["25",  "*", "3", "-", "12", "**"],
+  correctAnswer: [0, 3, 4, 1, 2]
+} as const;
+
+const javascriptLessonProblemB11 = {
+  type: "WRITE",
+  question: "Write JavaScript code to calculate 2 raised to the power of 3.",
+  answerTiles: ["2", "**", "3", "^"],
+  correctAnswer: [0, 1, 2]
+} as const;
+
+const javascriptLessonProblemB12 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 5 ** 2 in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "25" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "10" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "5" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemB13 = {
+  type: "WRITE",
+  question: "Write JavaScript code to assign the value 100 to the variable 'b' and then divide it by 4.",
+  answerTiles: [ "=", "b","100", "//", "4", "/"],
+  correctAnswer: [1,0, 2, 5, 4]
+} as const;
+
+const javascriptLessonProblemB14 = {
+  type: "WRITE",
+  question: "Write JavaScript code to convert the string '10' to an integer and store it in 'x'.",
+  answerTiles: ["x", "parseInt", "('10')", "=", "10"],
+  correctAnswer: [0, 3, 1, 2]
+} as const;
+
+const javascriptLessonProblemB15 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 8 % 3 in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "3" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "1" },
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "2" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemB16 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 10 // 3 in JavaScript?",
+  answers: [
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212}  className="w-full" />, name: "3.333" },
+    { icon:<Image src={three_cows} alt="" width={212} height={212}  className="w-full" />, name: "3" },
+    { icon:<Image src={cow_dollars} alt="" width={212} height={212}  className="w-full" />, name: "4" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemC1 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following represents a Boolean value in JavaScript?",
+  answers: [
+    { icon:<Image src={chick_thumbsup} alt="" width={212} height={212}  className="w-full" />, name: "true" },
+    { icon: <Image src={hen_thumbsup} alt="" width={212} height={212}  className="w-full" />, name: "'true'" },
+    { icon: <Image src={cake} alt="" width={212} height={212}  className="w-full" />, name: "1" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemC2 = {
+  type: "WRITE",
+  question: "Write the JavaScript code to negate the Boolean value 'true'.",
+  answerTiles: [ "true", "!", "false"],
+  correctAnswer: [1, 0]
+} as const;
+
+const javascriptLessonProblemC3 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to combine two Boolean conditions with 'and' in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212}  className="w-full" />, name: "condition1 && condition2" },
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212}  className="w-full" />, name: "condition1 && condition2" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212}  className="w-full" />, name: "condition1 + condition2" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemC4 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of these expressions checks if a value is not equal to another in JavaScript?",
+  answers: [
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "!=" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "==" },
+    { icon: <Image src={chick_question3} alt="" width={212} height={212} className="w-full" />, name: ">" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemC5 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the expression '9 == 9' in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "false" },
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "true" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemC6 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 5 != 3 in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212}  className="w-full" />, name: "true" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212}  className="w-full" />, name: "false" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212}  className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemC7 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 3 < 5 in JavaScript?",
+  answers: [
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212}  className="w-full" />, name: "false" },
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212}  className="w-full" />, name: "true" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212}  className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemC8 = {
+  type: "WRITE",
+  question: "Write JavaScript code to check if 5 is equal to 5.",
+  answerTiles: ["5", "==", "5", "="],
+  correctAnswer: [0, 1, 2]
+} as const;
+
+const javascriptLessonProblemC9 = {
+  type: "WRITE",
+  question: "Write JavaScript code to check if 3 is less than 5.",
+  answerTiles: ["3", "=<", "<", "5"],
+  correctAnswer: [0, 2, 3]
+} as const;
+
+const javascriptLessonProblemC10 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is used to check if two values are equal in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "==" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212} className="w-full" />, name: "=" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "!=" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemC11 = {
+  type: "WRITE",
+  question: "Write JavaScript code to check if 7 is greater than or equal to 5.",
+  answerTiles: ["7", ">", "5", ">="],
+  correctAnswer: [0, 3, 2]
+} as const;
+
+const javascriptLessonProblemC12 = {
+  type: "WRITE",
+  question: "Write JavaScript code to check if a number 'x' is less than 10 and 'y' is greater than 5.",
+  answerTiles: ["x", "y", ">", "5", "<", "10", "&&"],
+  correctAnswer: [0, 4, 5, 6, 1, 2, 3 ]
+} as const;
+
+const javascriptLessonProblemC13 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following expressions will return false in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "'true' == 'true'" },
+    { icon: <Image src={cow_question} alt="" width={212} height={212} className="w-full" />, name: "5 == 3" },
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212} className="w-full" />, name: "3 == 3" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemC14 = {
+  type: "WRITE",
+  question: "Write JavaScript code to check if a variable 'age' is between 18 and 25 (inclusive).",
+  answerTiles: ["age >", "age", "<=", "25", "18", "&&"],
+  correctAnswer: [0, 3, 4, 5,  1, 2]
+} as const;
+
+const javascriptLessonProblemC15 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of the expression 'false || true' in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "true" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "false" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemC16 = {
+  type: "WRITE",
+  question: "Write JavaScript code to check if a variable 'score' is less than or equal to 50 and greater than 30.",
+  answerTiles: ["score <=", "score", ">", "30", "50", "&&"],
+  correctAnswer: [0, 4, 5, 1, 2, 3]
+} as const;
+
+const javascriptLessonProblemD1 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct syntax for creating an array in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "{1, 2, 3}" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212} className="w-full" />, name: "(1, 2, 3)" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "[1, 2, 3]" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemD2 = {
+  type: "SELECT_1_OF_3",
+  question: "How can you access the second element of an array 'myArray' in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "myArray[2]" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "myArray(2)" },
+    { icon: <Image src={happy_twochicks} alt="" width={212} height={212} className="w-full" />, name: "myArray[1]" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemD3 = {
+  type: "WRITE",
+  question: "Write JavaScript code to create an array containing the numbers 1, 2, and 3.",
+  answerTiles: ["[", "]", "1,", "3", "2,", "=", "Array"],
+  correctAnswer: [6, 5, 0, 2, 4, 3, 1]
+} as const;
+
+const javascriptLessonProblemD4 = {
+  type: "WRITE",
+  question: "Write JavaScript code to add the value 'orange' to the array ['apple', 'banana'].",
+  answerTiles: ["array", "'orange'", ")", ".push", "("],
+  correctAnswer: [0, 3, 4, 1, 2]
+} as const;
+
+const javascriptLessonProblemD5 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is a valid tuple (or similar structure) in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "(1, 2, 3)" },
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "[1, 2, 3]" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "{1, 2, 3}" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemD6 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to define an object in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "{'key': 'value'}" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "['key', 'value']" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "(key: 'value')" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemD7 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of accessing the second element in the array [10, 20, 30] in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "10" },
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "20" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "30" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemD8 = {
+  type: "WRITE",
+  question: "Write JavaScript code to add a key 'c' with value 15 to the object {'a': 5, 'b': 10}.",
+  answerTiles: ["obj", "]", "=", "15", "[", "'c'"],
+  correctAnswer: [0, 4, 5, 1, 2, 3]
+} as const;
+
+const javascriptLessonProblemD9 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is used to access values in an object in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "obj['key']" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "obj{key}" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212} className="w-full" />, name: "obj.key" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemD10 = {
+  type: "WRITE",
+  question: "Write JavaScript code to remove the element 'banana' from the array ['apple', 'banana', 'orange'].",
+  answerTiles: ["array", ".splice", "('banana')", "[", "]"],
+  correctAnswer: [0, 1, 2]
+} as const;
+
+const javascriptLessonProblemD11 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the code 'array.length' in JavaScript for the array [1, 2, 3]?",
+  answers: [
+    { icon: <Image src={chick_thumbsup} alt="" width={212} height={212} className="w-full" />, name: "3" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "2" },
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemD12 = {
+  type: "WRITE",
+  question: "Write JavaScript code to create an array containing the elements 'apple', 'banana', and 'orange'.",
+  answerTiles: ["[", "]", "'apple',", "'banana',", "'orange'"],
+  correctAnswer: [0, 2, 3, 4, 1]
+} as const;
+
+const javascriptLessonProblemD13 = {
+  type: "SELECT_1_OF_3",
+  question: "How do you define an empty object in JavaScript?",
+  answers: [
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "()" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "[]" },
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "{}" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemD14 = {
+  type: "WRITE",
+  question: "Write JavaScript code to access the value associated with the key 'b' in the object {'a': 1, 'b': 2, 'c': 3}.",
+  answerTiles: ["obj", "['b']", "('b')"],
+  correctAnswer: [0, 1]
+} as const;
+
+const javascriptLessonProblemD15 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is used to change the value of a key in an object in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "obj.add('key', value)" },
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "obj['key'] = value" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212} className="w-full" />, name: "obj.set('key', value)" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemD16 = {
+  type: "WRITE",
+  question: "Write JavaScript code to add the number `4` to the array [1, 2, 3].",
+  answerTiles: ["[1, 2, 3]", ".push", "4"],
+  correctAnswer: [0, 1, 2]
+} as const;
+const javascriptLessonProblemE1 = {
+  type: "WRITE",
+  question: "Write an `if/else` statement to check if `x > 5` ",
+  answerTiles: ["if", ">", ":", "x", "5"],
+  correctAnswer: [0, 3, 1, 4, 2]
+} as const;
+
+const javascriptLessonProblemE2 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nif (3 > 2) {\n\tconsole.log('Yes');\n} else {\n\tconsole.log('No');\n}",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "Yes" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "No" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemE3 = {
+  type: "WRITE",
+  question: "Write JavaScript code to check if `x` is equal to 10. ",
+  answerTiles: ["if", "x", "10", "==", "=", ":"],
+  correctAnswer: [0, 1, 3, 2, 5]
+} as const;
+
+const javascriptLessonProblemE4 = {
+  type: "WRITE",
+  question: "Write JavaScript code to check if the key 'apple' exists in the object `{'apple': 5, 'banana': 10}`.",
+  answerTiles: ["'apple'", "in", "obj", "key", "if"],
+  correctAnswer: [4, 0, 1, 2]
+} as const;
+
+const javascriptLessonProblemE5 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nif (5 === 5) {\n\tconsole.log('True');\n} else {\n\tconsole.log('False');\n}",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "True" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "False" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemE6 = {
+  type: "WRITE",
+  question: "Write JavaScript code to check if `x` is less than 5 and `y` is greater than 0.",
+  answerTiles: ["&&", "y", ">", "if", "x", "<", "5", "0", ":"],
+  correctAnswer: [3, 4, 5, 6, 0, 1, 2, 7, 8],
+} as const;
+
+const javascriptLessonProblemE7 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code print?\nif (10 > 5 && 5 > 3) {\n\tconsole.log('Both are true');\n} else {\n\tconsole.log('One is false');\n}",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "Both are true" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "One is false" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemE8 = {
+  type: "WRITE",
+  question: "Write the missing `if` statement to check if `x` is not equal to 0. ",
+  answerTiles: ["if", "=", "0", "==", "!", "x"],
+  correctAnswer: [0, 5, 4, 1, 2]
+} as const;
+
+const javascriptLessonProblemE9 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to handle multiple conditions using `if/else`?",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "if (x > 5 && x < 10) {" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "if (x = 5 || x = 10) {" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212} className="w-full" />, name: "if (x > 10 && x === 0) {" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemE10 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nif (5 < 10) {\n\tconsole.log('Correct');\n} else {\n\tconsole.log('Incorrect');\n}",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "Correct" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "Incorrect" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemE11 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following statements checks if `x` is equal to 0 or `y` is greater than 10?",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "if (x === 0 || y > 10) {" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "if (x = 0 && y = 10) {" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "if (x === 0 && y > 10) {" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemE12 = {
+  type: "WRITE",
+  question: "Write the missing `if` statement to check if `x` is greater than 10. \nif(x > 10) {\n\tconsole.log('High');\n} else {\n\tconsole.log('Low');\n}",
+  answerTiles: ["x", ">", ">=", "10"],
+  correctAnswer: [0, 1, 3]
+} as const;
+
+const javascriptLessonProblemF1 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the correct syntax for a `for` loop that loops from 1 to 5?",
+  answers: [
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "for (let i = 1; i < 5; i++) {}" },
+    { icon: <Image src={happy_twochicks} alt="" width={212} height={212} className="w-full" />, name: "for (let i = 1; i <= 5; i++) {}" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "for (let i = 0; i < 5; i++) {}" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemF2 = {
+  type: "WRITE",
+  question: "Write a `for` loop from 1 to 7.",
+  answerTiles: ["for", "let", "i", "=", "1", "i", "<", "7", ";", "i++", "{", "console.log(i);", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+} as const;
+
+const javascriptLessonProblemF3 = {
+  type: "SELECT_1_OF_3",
+  question: "Which loop is used to iterate over a sequence such as a list or an array?",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "For loop" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "While loop" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "Do-while loop" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemF4 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nfor (let i = 1; i < 4; i++) {\n\tconsole.log(i);\n}",
+  answers: [
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "0 1 2" },
+    { icon: <Image src={happy_twochicks} alt="" width={212} height={212} className="w-full" />, name: "1 2 3" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemF5 = {
+  type: "WRITE",
+  question: "Write a `for` loop to iterate through the array `numbers = [2, 4, 6]`.",
+  answerTiles: ["for", "let", "i", "in", "numbers", "{", "console.log(i);", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7],
+} as const;
+
+const javascriptLessonProblemF6 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nfor (let i = 0; i < 2; i++) {\n\tconsole.log(i);\n}",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "0 1 2" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "1 2" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "0 1" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemF7 = {
+  type: "WRITE",
+  question: "Write JavaScript code using `for` and `range()` logic to loop from 1 to 3.",
+  answerTiles: ["for", "let", "i", "=", "1", "i", "<", "4", "i++", "{", "console.log(i);", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+} as const;
+
+const javascriptLessonProblemF8 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nfor (let i = 0; i < 5; i += 2) {\n\tconsole.log(i);\n}",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "0 2 4" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "1 3 5" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "0 1 2 3 4" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemF9 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of the following code?\n\nlet x = 0;\nwhile (x < 3) {\n\tconsole.log(x);\n\tx++;\n}",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "0 1 2" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "1 2 3" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemF10 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nlet x = 0;\nwhile (x < 3) {\n\tconsole.log(x);\n\tx++;\n}",
+  answers: [
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "1 2 3" },
+    { icon: <Image src={happy_twochicks} alt="" width={212} height={212} className="w-full" />, name: "0 1 2" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "0 1 2 3" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemF11 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nfor (let i = 1; i < 3; i++) {\n\tfor (let j = 1; j < 2; j++) {\n\t\tconsole.log(i, j);\n\t}\n}",
+  answers: [
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "1 1, 1 2" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "1 1, 2 1" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemF12 = {
+  type: "WRITE",
+  question: "Write JavaScript code to loop 4 times using a `while` loop.",
+  answerTiles: ["while", "(i < 4)", "{", "console.log(i);", "i++", "}"],
+  correctAnswer: [0, 3, 4, 1, 2],
+} as const;
+
+const javascriptLessonProblemF13 = {
+  type: "SELECT_1_OF_3",
+  question: "Which statement do you use for the following? Repeat a condition while it is true.",
+  answers: [
+    { icon: <Image src={hen_thumbsup} alt="" width={212} height={212} className="w-full" />, name: "While loop" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "If/Else" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "For loop" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemF14 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the correct way to stop a loop prematurely in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "break" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "stop" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "exit" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemF15 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\n\nconst d = {a: 1, b: 2, c: 3};\nfor (let key in d) {\n\tconsole.log(key, d[key]);\n}",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "a 1, b 2, c 3" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "a, b, c" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "1, 2, 3" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemF16 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of using `else` after a loop?",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "To execute code when the loop completes normally without breaking" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "To execute code every time the loop runs" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "To break the loop when a condition is met" },
+  ],
+  correctAnswer: 0,
+} as const;
+const javascriptLessonProblemG1 = {
+  type: "WRITE",
+  question: "Write JavaScript code to define a function `greet()`",
+  answerTiles: ["function", "greet", "()", "{", "console.log('Hello');", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5],
+} as const;
+
+const javascriptLessonProblemG2 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code print?\n\nfunction greet() {\n\tconsole.log('Hi');\n}\ngreet();",
+  answers: [
+    { icon: <Image src={cow_question} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={laying_cow} alt="" width={212} height={212} className="w-full" />, name: "Hello" },
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212} className="w-full" />, name: "Hi" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemG3 = {
+  type: "WRITE",
+  question: "Write JavaScript code to create a lambda function that adds 2 to a number `x`.",
+  answerTiles: ["let", "addTwo", "=", "(x) =>", "x", "+", "2"],
+  correctAnswer: [0, 1, 2, 3, 4, 5],
+} as const;
+
+const javascriptLessonProblemG4 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code return?\n\nlet addTwo = (x) => x + 2;\naddTwo(3);",
+  answers: [
+    { icon: <Image src={five_candles} alt="" width={212} height={212} className="w-full" />, name: "5" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "6" },
+    { icon: <Image src={three_chicks} alt="" width={212} height={212} className="w-full" />, name: "3" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemG5 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to define a function `add` that takes two arguments `a` and `b`?",
+  answers: [
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "function add(a, b) {}" },
+    { icon: <Image src={cow_lightbulb} alt="" width={212} height={212} className="w-full" />, name: "function add(a, b):" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "define add(a, b) {}" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemG6 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following correctly calls the function `greet()` defined as:\n\nfunction greet() {\n\tconsole.log('Hello');\n}",
+  answers: [
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212} className="w-full" />, name: "greet()" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "call greet()" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "greet" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemG7 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code return?\n\nfunction square(x) {\n\treturn x * x;\n}\nconsole.log(square(4));",
+  answers: [
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "4" },
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212} className="w-full" />, name: "16" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemG8 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to call a lambda function?\n\nlet addTwo = (x) => x + 2;",
+  answers: [
+    { icon: <Image src={cow_question} alt="" width={212} height={212} className="w-full" />, name: "addTwo" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "lambda addTwo(3)" },
+    { icon: <Image src={cow_dollars} alt="" width={212} height={212} className="w-full" />, name: "addTwo(3)" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemG9 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code print?\n\nfunction greet() {\n\treturn 'Hi';\n}\nconsole.log(greet());",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "Hello" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "None" },
+    { icon: <Image src={cow_questioning} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemG10 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of `return` in a function?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "It ends the function" },
+    { icon: <Image src={cow_lightbulb} alt="" width={212} height={212} className="w-full" />, name: "It returns a value to the caller" },
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "It prints a value" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemG11 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code print?\n\nfunction greet(name) {\n\treturn 'Hello, ' + name;\n}\nconsole.log(greet('Alice'));",
+  answers: [
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "Hello, Alice" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212} className="w-full" />, name: "Hello, name" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemG12 = {
+  type: "SELECT_1_OF_3",
+  question: "What does the following code do?\n\nfunction multiply(x, y) {\n\treturn x * y;\n}\nlet result = multiply(3, 4);",
+  answers: [
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "Adds 3 and 4" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Prints the result of 3 * 4" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "Returns the product of 3 and 4" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemG13 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of the following code?\n\nfunction multiply(x, y = 2) {\n\treturn x * y;\n}\nconsole.log(multiply(5));",
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "10" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "5" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemG14 = {
+  type: "WRITE",
+  question: "Write JavaScript code that returns the sum of `a` and `b` in a function defined as `addNumbers(a, b)`",
+  answerTiles: ["function", "addNumbers", "(", "a", "+", "b", ")", "{", "return", ";", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+} as const;
+
+const javascriptLessonProblemG15 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nfunction greet() {\n\treturn 'Hello';\n}\nconsole.log(greet());",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={hen_thumbsup} alt="" width={212} height={212} className="w-full" />, name: "Hello" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemG16 = {
+  type: "WRITE",
+  question: "Write JavaScript code to define a function `multiply(a, b)` that will print the result of `a * b`.",
+  answerTiles: ["function", "multiply", "(", "a", ",", "b", ")", "{", "console.log(a * b);", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+} as const;
+const javascriptLessonProblemI1 = {
+  type: "SELECT_1_OF_3",
+  question: "What is a class in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "A blueprint for creating objects" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "A type of variable" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "A way to store lists of data" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemI2 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is an example of creating a class in JavaScript?",
+  answers: [
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "Dog = {};" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "function Dog() {}" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "class Dog {}" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemI3 = {
+  type: "WRITE",
+  question: "Write JavaScript code to create a class `Car`",
+  answerTiles: [":", "class", "Car", "{", "}"],
+  correctAnswer: [1, 2, 0, 3, 4]
+} as const;
+
+const javascriptLessonProblemI4 = {
+  type: "SELECT_1_OF_3",
+  question: "What is an object in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "An instance of a class" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "A type of function" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "A list of values" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemI5 = {
+  type: "WRITE",
+  question: "Write JavaScript code to create an object of the `Car` class",
+  answerTiles: ["new", "Car", "car", "=", "()"],
+  correctAnswer: [2, 3, 1, 0, 4]
+} as const;
+
+const javascriptLessonProblemI6 = {
+  type: "SELECT_1_OF_3",
+  question: "What do you use the `constructor` method for in a JavaScript class?",
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "To initialize the object's properties" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "To define the class's behavior" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "To run code every time an object is printed" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemI7 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the main purpose of using classes in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "To store variables" },
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212} className="w-full" />, name: "To bundle data and functions together" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "To organize loops" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemI8 = {
+  type: "SELECT_1_OF_3",
+  question: "In JavaScript, what does `this` refer to inside a class?",
+  answers: [
+    { icon: <Image src={chick_microphone} alt="" width={212} height={212} className="w-full" />, name: "The current object of the class" },
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "A reference to all objects in the program" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "The class itself" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemI9 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Cat {\n\tconstructor(name) {\n\t\tthis.name = name;\n\t}\nc = new Cat('Whiskers');\nconsole.log(c.name);",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "Whiskers" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "None" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemI10 = {
+  type: "WRITE",
+  question: "Write a constructor method that accepts 'name' and 'age' parameters.",
+  answerTiles: ["constructor", "(name,", "age)", "{", "this.name", "=", "name;", "this.age", "=", "age;}",],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+} as const;
+
+const javascriptLessonProblemI11 = {
+  type: "WRITE",
+  question: "Within a constructor method, assign the 'name' parameter to `this.name`.",
+  answerTiles: ["this.", "name", "=", "name;"],
+  correctAnswer: [0, 1, 2, 3]
+} as const;
+
+const javascriptLessonProblemI12 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Car {\n\tconstructor(make, model) {\n\t\tthis.make = make;\n\t\tthis.model = model;\n}\nlet c = new Car('Toyota', 'Corolla');\nconsole.log(c.make);",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "Toyota" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "Corolla" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemI13 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Employee {\n\tconstructor(name, position) {\n\t\tthis.name = name;\n\t\tthis.position = position;\n}\nlet e = new Employee('John', 'Manager');\nconsole.log(e.position);",
+  answers: [
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "John" },
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "Manager" },
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemI14 = {
+  type: "WRITE",
+  question: "Write JavaScript code to call the `start` method on the object 'car'",
+  answerTiles: ["car.", "start", "()"],
+  correctAnswer: [0, 2, 1]
+} as const;
+const javascriptLessonProblemI15 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Person {\n\tconstructor(name, age) {\n\t\tthis.name = name;\n\t\tthis.age = age;\n}\np = new Person('Alice', 30);\nconsole.log(p.age);",
+  answers: [
+    { icon: <Image src={cow_thinking} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "Alice" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "30" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemI16 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Animal {\n\tconstructor(species) {\n\t\tthis.species = species;\n}\na = new Animal('Lion');\nconsole.log(a.species);",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "Lion" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "None" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemI17 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Animal {\n\tconstructor(name) {\n\t\tthis.name = name;\n\t}\nspeak() {\n\t\treturn `${this.name} makes a sound`;\n}\n\nlet animal = new Animal('Dog');\nconsole.log(animal.speak());",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "'Animal makes a sound'" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "'Dog barks'" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "'Dog makes a sound'" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemI18 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of the `self` keyword in JavaScript classes?",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "To refer to the instance of the class" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "To refer to the class itself" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "To call methods of other classes" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemI19 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Dog {\n\tconstructor(name) {\n\t\tthis.name = name;\n\t}\nspeak() {\n\t\treturn `${this.name} barks`;\n}\n\ndog = new Dog('Buddy');\nconsole.log(dog.speak());",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "Buddy barks" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemI20 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nclass Car {\n\tconstructor(make, model) {\n\t\tthis.make = make;\n\t\tthis.model = model;\n}\ncar = new Car('Ford', 'Mustang');\nconsole.log(car.model);",
+  answers: [
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "Mustang" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "Ford" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const javascriptLessonProblemI21 = {
+  type: "WRITE",
+  question: "Write JavaScript code to add a method `drive` to the `Car` class that prints 'Driving!'",
+  answerTiles: ["drive", "function", "(self) {", "console.log('Driving!');", "}"],
+  correctAnswer: [0, 1, 2, 3, 4],
+} as const;
+
+const javascriptLessonProblemI22 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is correct for creating a new object of a class?",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "object.create()" },
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "object = new ClassName()" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "object.new()" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const javascriptLessonProblemI23 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Person {\n\tconstructor(name) {\n\t\tthis.name = name;\n}\nperson = new Person('John');\nconsole.log(person.name);",
+  answers: [
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "None" },
+    { icon: <Image src={hen_thumbsup} alt="" width={212} height={212} className="w-full" />, name: "John" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const javascriptLessonProblemI24 = {
+  type: "WRITE",
+  question: "Write JavaScript code to modify the `Dog` class to add a method `eat` that prints 'Eating food!'",
+  answerTiles: ["eat", "function", "(self) {", "console.log('Eating food!');", "}"],
+  correctAnswer: [0, 1, 2, 3, 4],
+} as const;
+
+const javascriptLessonProblemJ1 = {
+  type: "SELECT_1_OF_3",
+  question: "What is inheritance in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "A way to create a new class from an existing class" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "A method to assign variables" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "A function that combines two classes" },
+  ],
+  correctAnswer: 0,
+};
+
+const javascriptLessonProblemJ2 = {
+  type: "SELECT_1_OF_3",
+  question: "What does the `super()` function do in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "It allows access to methods from a parent class" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "It creates a new instance of a class" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "It deletes an object from memory" },
+  ],
+  correctAnswer: 0,
+};
+
+const javascriptLessonProblemJ3 = {
+  type: "WRITE",
+  question: "Write JavaScript code to create a subclass `Dog` that inherits from `Animal`.",
+  answerTiles: ["class", "Dog", "extends", "Animal", "{", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5],
+};
+
+const javascriptLessonProblemJ4 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Animal {\n\tconstructor(species) {\n\t\tthis.species = species; }\n}\nclass Dog extends Animal {\n\tconstructor(species, breed) {\n\t\tsuper(species);\n\t\tthis.breed = breed; }\n}\nconst my_dog = new Dog('Canine', 'Bulldog');\nconsole.log(my_dog.species);",
+  answers: [
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "Bulldog" },
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "Canine" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 1,
+};
+
+const javascriptLessonProblemJ5 = {
+  type: "WRITE",
+  question: "Write JavaScript code to call the parent class constructor inside the subclass `Dog`.",
+  answerTiles: ["super()", "(", ")", ";"],
+  correctAnswer: [0, 1, 2, 3],
+};
+
+const javascriptLessonProblemJ6 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following correctly demonstrates method overriding in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "override speak() {}" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "function speak(override) {}" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "speak() {}" },
+  ],
+  correctAnswer: 2,
+};
+
+const javascriptLessonProblemJ7 = {
+  type: "WRITE",
+  question: "Write JavaScript function declaration to override the `speak` behavior of the parent class in a `Dog` subclass.",
+  answerTiles: ["speak", "() {", "return", "'Woof!'", "}"],
+  correctAnswer: [0, 1, 2, 3],
+};
+
+const javascriptLessonProblemJ8 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Animal {\n\tconstructor(species) {\n\t\tthis.species = species; }\n\t speak() {\n\t\treturn `${this.species} makes a sound`; }\n}\nclass Dog extends Animal {\n\t speak() {\n\t\treturn `${this.species} barks`; }\n}\nconst my_dog = new Dog('Dog');\nconsole.log(my_dog.speak());",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "Dog barks" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "Dog makes a sound" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+};
+
+const javascriptLessonProblemJ9 = {
+  type: "WRITE",
+  question: "Write JavaScript code to override the `speak` method, a subclass `Cat` can 'meow'.",
+  answerTiles: ["speak", "() {", "return", "'Meow!'", "}"],
+  correctAnswer: [0, 1, 2, 3],
+};
+
+const javascriptLessonProblemJ10 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Vehicle {\n\tconstructor(make, model) {\n\t\tthis.make = make;\n\t\tthis.model = model; }\n}\nclass Car extends Vehicle {\n\t drive() {\n\t\treturn `Driving ${this.make} ${this.model}`; }\n}\nconst my_car = new Car('Toyota', 'Camry');\nconsole.log(my_car.drive());",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "Driving Toyota Camry" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "Toyota Camry" },
+  ],
+  correctAnswer: 0,
+};
+
+const javascriptLessonProblemJ11 = {
+  type: "WRITE",
+  question: "Write JavaScript code to create a method `stop` for the `Car` class that prints 'Stopping the car!'",
+  answerTiles: ["stop", "() {", "console.log", "'Stopping the car!'", "}"],
+  correctAnswer: [0, 1, 2, 3, 4],
+};
+
+const javascriptLessonProblemJ12 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nclass Person {\n\tconstructor(name, age) {\n\t\tthis.name = name;\n\t\tthis.age = age; }\n}\nclass Employee extends Person {\n\tconstructor(name, age, job_title) {\n\t\tsuper(name, age);\n\t\tthis.job_title = job_title; }\n}\nconst employee = new Employee('John', 30, 'Engineer');\nconsole.log(employee.name, employee.age, employee.job_title);",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "John 30 Engineer" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "John 30" },
+  ],
+  correctAnswer: 0,
+};
+
+const javascriptLessonProblemJ13 = {
+  type: "SELECT_1_OF_3",
+  question: "In JavaScript, which method is called when a new object is created from a class?",
+  answers: [
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "constructor" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "new" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "init" },
+  ],
+  correctAnswer: 0,
+};
+
+const javascriptLessonProblemJ14 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of method resolution order (MRO) in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "To determine the order in which methods are inherited" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "To prioritize class names" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "To define the constructor of a class" },
+  ],
+  correctAnswer: 0,
+};
+
+const javascriptLessonProblemJ15 = {
+  type: "WRITE",
+  question: "Write JavaScript code to print the method resolution order (MRO) for a class `Child` that inherits from classes `Parent1` and `Parent2`.",
+  answerTiles: ["console.log", "Child", ".__proto__"],
+  correctAnswer: [0, 1, 2],
+};
+
+const javascriptLessonProblemJ16 = {
+  type: "SELECT_1_OF_3",
+  question: "Which function can be used to call a parent class method inside a subclass method?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "call()" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "super()" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "parent()" },
+  ],
+  correctAnswer: 1,
+};
+
+const javascriptLessonProblemK1 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of the `npm` command in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "To install, update, or uninstall JavaScript packages" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "To run JavaScript scripts" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "To debug JavaScript code" },
+  ],
+  correctAnswer: 0,
+};
+
+const javascriptLessonProblemK2 = {
+  type: "WRITE",
+  question: "Write an `npm` command to install the `axios` library.",
+  answerTiles: ["npm", "install", "axios"],
+  correctAnswer: [0, 1, 2],
+};
+
+const javascriptLessonProblemK3 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is a valid regular expression in JavaScript?",
+  answers: [
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212} className="w-full" />, name: "abc[123]}" },
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "\\d{3}-\\d{2}-\\d{4}" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "def*ghi" },
+  ],
+  correctAnswer: 1,
+};
+
+const javascriptLessonProblemK4 = {
+  type: "WRITE",
+  question: "Write JavaScript code using `RegExp` to match an email address from the string 'Contact us at support@example.com'.",
+  answerTiles: ["const", "regex", " = ", "/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}/", ".exec", "'Contact us at support@example.com'"],
+  correctAnswer: [0, 1, 2, 3, 4, 5],
+};
+
+const javascriptLessonProblemK5 = {
+  type: "SELECT_1_OF_3",
+  question: "What does the `replace()` function do in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "It replaces parts of a string that match a regex pattern" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "It splits a string based on a regex pattern" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "It returns all matches of a regex pattern in an array" },
+  ],
+  correctAnswer: 0,
+};
+
+const javascriptLessonProblemK6 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of the `finalize()` method in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "It is called when an object is about to be garbage collected" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "It initializes a new object" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "It modifies the object’s attributes" },
+  ],
+  correctAnswer: 0,
+};
+
+const javascriptLessonProblemK7 = {
+  type: "WRITE",
+  question: "Write JavaScript code to define a `finalize()` method in a class `Book` that logs 'Object deleted'.",
+  answerTiles: ["finalize", "() {", "console.log", "'Object deleted'", "}"],
+  correctAnswer: [0, 1, 2, 3, 4],
+};
+
+const javascriptLessonProblemK8 = {
+  type: "SELECT_1_OF_3",
+  question: "What does the `map()` function do in JavaScript?",
+  answers: [
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "It applies a function to each element in an array" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "It filters elements of an array" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "It merges two arrays" },
+  ],
+  correctAnswer: 0,
+};
+
+const javascriptLessonProblemK9 = {
+  type: "WRITE",
+  question: "Write JavaScript code to `map` two arrays: `names = ['Alice', 'Bob', 'Charlie']` and `scores = [85, 90, 78]`.",
+  answerTiles: ["names", ".map", "(name, index) => ", "`Name: ${name}, Score: ${scores[index]}`"],
+  correctAnswer: [0, 1, 2, 3],
+};
+
+const javascriptLessonProblemK10 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct syntax to define a lambda function in JavaScript?",
+  answers: [
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "function(x) { return x + 1; }" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "function lambda(x) { return x + 1; }" },
+    { icon: <Image src={chick_microphone} alt="" width={212} height={212} className="w-full" />, name: "(x) => x + 1" },
+  ],
+  correctAnswer: 2,
+};
+
+const javascriptLessonProblemK11 = {
+  type: "WRITE",
+  question: "Write JavaScript code to define a lambda function that multiplies two numbers and call it with arguments 5 and 6.",
+  answerTiles: ["multiply", "=", "(x, y) =>", "x * y", "(5, 6)"],
+  correctAnswer: [0, 1, 2, 3, 4],
+};
+
+const javascriptLessonProblemK12 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of the following expression in JavaScript:\n [i**2 for i in [0, 1, 2]]",
+  answers: [
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212} className="w-full" />, name: "[0, 1, 4]" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "[1, 4, 9]" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "[0, 1, 2]" },
+  ],
+  correctAnswer: 0,
+};
+
+const javascriptLessonProblemK13 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to install a package using npm?",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "install npm package_name" },
+    { icon: <Image src={cow_lightbulb} alt="" width={212} height={212} className="w-full" />, name: "npm install package_name" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "npm add package_name" },
+  ],
+  correctAnswer: 1,
+};
+
+const javascriptLessonProblemK14 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\n{0: 0, 1: 1, 2: 4}.map(x => x**2)",
+  answers: [
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212} className="w-full" />, name: "{1: 1, 2: 4, 3: 9}" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "{0: 0, 1: 1, 2: 4}" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "{0: 1, 1: 2, 2: 3}" },
+  ],
+  correctAnswer: 1,
+};
+
+const javascriptLessonProblemK15 = {
+  type: "SELECT_1_OF_3",
+  question: "Which regular expression pattern matches one or more digits in JavaScript?",
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "\\d+" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "[0-9]" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "\\d" },
+  ],
+  correctAnswer: 0,
+};
+
+const javascriptLessonProblemK16 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following JavaScript code?\nBoolean('Hello')",
+  answers: [
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "False" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "True" },
+  ],
+  correctAnswer: 2,
+};
+
+
+const getJavaScriptLessonProblems = (lessonsCompleted: number) => {
+  const javascriptLessonProblems = [
+    javascriptLessonProblemA1, javascriptLessonProblemA2, javascriptLessonProblemA3, javascriptLessonProblemA4, javascriptLessonProblemA5, javascriptLessonProblemA6, javascriptLessonProblemA7, javascriptLessonProblemA8, javascriptLessonProblemA9, javascriptLessonProblemA10, javascriptLessonProblemA11, javascriptLessonProblemA12, javascriptLessonProblemA13, javascriptLessonProblemA14, javascriptLessonProblemA15, javascriptLessonProblemA16,
+    javascriptLessonProblemB1, javascriptLessonProblemB2, javascriptLessonProblemB3, javascriptLessonProblemB4, javascriptLessonProblemB5, javascriptLessonProblemB6, javascriptLessonProblemB7, javascriptLessonProblemB8, javascriptLessonProblemB9, javascriptLessonProblemB10, javascriptLessonProblemB11, javascriptLessonProblemB12, javascriptLessonProblemB13, javascriptLessonProblemB14, javascriptLessonProblemB15, javascriptLessonProblemB16,
+    javascriptLessonProblemC1, javascriptLessonProblemC2, javascriptLessonProblemC3, javascriptLessonProblemC4, javascriptLessonProblemC5, javascriptLessonProblemC6, javascriptLessonProblemC7, javascriptLessonProblemC8, javascriptLessonProblemC9, javascriptLessonProblemC10, javascriptLessonProblemC11, javascriptLessonProblemC12, javascriptLessonProblemC13, javascriptLessonProblemC14, javascriptLessonProblemC15, javascriptLessonProblemC16,
+    javascriptLessonProblemD1, javascriptLessonProblemD2, javascriptLessonProblemD3, javascriptLessonProblemD4, javascriptLessonProblemD5, javascriptLessonProblemD6, javascriptLessonProblemD7, javascriptLessonProblemD8, javascriptLessonProblemD9, javascriptLessonProblemD10, javascriptLessonProblemD11, javascriptLessonProblemD12, javascriptLessonProblemD13, javascriptLessonProblemD14, javascriptLessonProblemD15, javascriptLessonProblemD16,
+    javascriptLessonProblemE1, javascriptLessonProblemE2, javascriptLessonProblemE3, javascriptLessonProblemE4, javascriptLessonProblemE5, javascriptLessonProblemE6, javascriptLessonProblemE7, javascriptLessonProblemE8, javascriptLessonProblemE9, javascriptLessonProblemE10, javascriptLessonProblemE11, javascriptLessonProblemE12,
+    javascriptLessonProblemF1, javascriptLessonProblemF2, javascriptLessonProblemF3, javascriptLessonProblemF4, javascriptLessonProblemF5, javascriptLessonProblemF6, javascriptLessonProblemF7, javascriptLessonProblemF8, javascriptLessonProblemF9, javascriptLessonProblemF10, javascriptLessonProblemF11, javascriptLessonProblemF12, javascriptLessonProblemF13, javascriptLessonProblemF14, javascriptLessonProblemF15, javascriptLessonProblemF16,
+    javascriptLessonProblemG1, javascriptLessonProblemG2, javascriptLessonProblemG3, javascriptLessonProblemG4, javascriptLessonProblemG5, javascriptLessonProblemG6, javascriptLessonProblemG7, javascriptLessonProblemG8, javascriptLessonProblemG9, javascriptLessonProblemG10, javascriptLessonProblemG11, javascriptLessonProblemG12, javascriptLessonProblemG13, javascriptLessonProblemG14, javascriptLessonProblemG15, javascriptLessonProblemG16,
+    // review 1
+    javascriptLessonProblemA1, javascriptLessonProblemA2, javascriptLessonProblemA3, javascriptLessonProblemA4, javascriptLessonProblemB1, javascriptLessonProblemB2, javascriptLessonProblemB3, javascriptLessonProblemB4, javascriptLessonProblemC1, javascriptLessonProblemC2, javascriptLessonProblemC3, javascriptLessonProblemC4, javascriptLessonProblemD1, javascriptLessonProblemD2, javascriptLessonProblemE2, javascriptLessonProblemE3, javascriptLessonProblemF1, javascriptLessonProblemF2, javascriptLessonProblemF3, javascriptLessonProblemF4, javascriptLessonProblemG1, javascriptLessonProblemG2, javascriptLessonProblemG3, javascriptLessonProblemG4, javascriptLessonProblemG1, javascriptLessonProblemG2,
+    javascriptLessonProblemI1, javascriptLessonProblemI2, javascriptLessonProblemI3, javascriptLessonProblemI4, javascriptLessonProblemI5, javascriptLessonProblemI6, javascriptLessonProblemI7, javascriptLessonProblemI8, javascriptLessonProblemI9, javascriptLessonProblemI10, javascriptLessonProblemI11, javascriptLessonProblemI12, javascriptLessonProblemI13, javascriptLessonProblemI14, javascriptLessonProblemI15, javascriptLessonProblemI16, javascriptLessonProblemI17, javascriptLessonProblemI18, javascriptLessonProblemI19, javascriptLessonProblemI20, javascriptLessonProblemI21, javascriptLessonProblemI22, javascriptLessonProblemI23, javascriptLessonProblemI24,
+    javascriptLessonProblemJ1, javascriptLessonProblemJ2, javascriptLessonProblemJ3, javascriptLessonProblemJ4, javascriptLessonProblemJ5, javascriptLessonProblemJ6, javascriptLessonProblemJ7, javascriptLessonProblemJ8, javascriptLessonProblemJ9, javascriptLessonProblemJ10, javascriptLessonProblemJ11, javascriptLessonProblemJ12, javascriptLessonProblemJ13, javascriptLessonProblemJ14, javascriptLessonProblemJ15, javascriptLessonProblemJ16,
+    javascriptLessonProblemK1, javascriptLessonProblemK2, javascriptLessonProblemK3, javascriptLessonProblemK4, javascriptLessonProblemK5, javascriptLessonProblemK6, javascriptLessonProblemK7, javascriptLessonProblemK8, javascriptLessonProblemK9, javascriptLessonProblemK10, javascriptLessonProblemK11, javascriptLessonProblemK12, javascriptLessonProblemK13, javascriptLessonProblemK14, javascriptLessonProblemK15, javascriptLessonProblemK16,
+    // review 2
+    javascriptLessonProblemA1, javascriptLessonProblemB1, javascriptLessonProblemC1, javascriptLessonProblemD1, javascriptLessonProblemE1, javascriptLessonProblemF1, javascriptLessonProblemG1, javascriptLessonProblemI1, javascriptLessonProblemJ1, javascriptLessonProblemA6, javascriptLessonProblemB6, javascriptLessonProblemC7, javascriptLessonProblemD6, javascriptLessonProblemE6, javascriptLessonProblemF6, javascriptLessonProblemG6, javascriptLessonProblemI6, javascriptLessonProblemJ6, javascriptLessonProblemK6,
+    // extras
+    javascriptLessonProblemA1, javascriptLessonProblemB1, javascriptLessonProblemC1, javascriptLessonProblemD1, javascriptLessonProblemE1, javascriptLessonProblemF1, javascriptLessonProblemG1, javascriptLessonProblemI1, javascriptLessonProblemJ1, javascriptLessonProblemA6, javascriptLessonProblemB6, javascriptLessonProblemC7, javascriptLessonProblemD6, javascriptLessonProblemE6, javascriptLessonProblemF6, javascriptLessonProblemG6, javascriptLessonProblemI6, javascriptLessonProblemJ6, javascriptLessonProblemK6
+  ];
+  
+  
+
+  const n = lessonsCompleted * 2;
+
+  return javascriptLessonProblems.slice(n);
+};
+const getCsLessonProblems = (lessonsCompleted: number) => {
+  
+};
 
 const getPythonLessonProblems = (lessonsCompleted: number) => {
   // Define the full set of Python problems
   const pythonLessonProblems = [
+
     pythonLessonProblemA1, pythonLessonProblemA2, pythonLessonProblemA3, pythonLessonProblemA4, pythonLessonProblemA5, pythonLessonProblemA6, pythonLessonProblemA7, pythonLessonProblemA8, pythonLessonProblemA9, pythonLessonProblemA10, pythonLessonProblemA11, pythonLessonProblemA12, pythonLessonProblemA13, pythonLessonProblemA14, pythonLessonProblemA15, pythonLessonProblemA16,
     pythonLessonProblemB1, pythonLessonProblemB2, pythonLessonProblemB3, pythonLessonProblemB4, pythonLessonProblemB5, pythonLessonProblemB6, pythonLessonProblemB7, pythonLessonProblemB8, pythonLessonProblemB9, pythonLessonProblemB10, pythonLessonProblemB11, pythonLessonProblemB12, pythonLessonProblemB13, pythonLessonProblemB14, pythonLessonProblemB15, pythonLessonProblemB16,
     pythonLessonProblemC1, pythonLessonProblemC2, pythonLessonProblemC3, pythonLessonProblemC4, pythonLessonProblemC5, pythonLessonProblemC6, pythonLessonProblemC7, pythonLessonProblemC8, pythonLessonProblemC9, pythonLessonProblemC10, pythonLessonProblemC11, pythonLessonProblemC12, pythonLessonProblemC13, pythonLessonProblemC14, pythonLessonProblemC15, pythonLessonProblemC16,
@@ -1478,7 +3262,15 @@ const getPythonLessonProblems = (lessonsCompleted: number) => {
     pythonLessonProblemE1, pythonLessonProblemE2, pythonLessonProblemE3, pythonLessonProblemE4, pythonLessonProblemE5, pythonLessonProblemE6, pythonLessonProblemE7, pythonLessonProblemE8, pythonLessonProblemE9, pythonLessonProblemE10, pythonLessonProblemE11, pythonLessonProblemE12,
     pythonLessonProblemF1, pythonLessonProblemF2, pythonLessonProblemF3, pythonLessonProblemF4, pythonLessonProblemF5, pythonLessonProblemF6, pythonLessonProblemF7, pythonLessonProblemF8, pythonLessonProblemF9, pythonLessonProblemF10, pythonLessonProblemF11, pythonLessonProblemF12, pythonLessonProblemF13, pythonLessonProblemF14, pythonLessonProblemF15, pythonLessonProblemF16,
     pythonLessonProblemG1, pythonLessonProblemG2, pythonLessonProblemG3, pythonLessonProblemG4, pythonLessonProblemG5, pythonLessonProblemG6, pythonLessonProblemG7, pythonLessonProblemG8, pythonLessonProblemG9, pythonLessonProblemG10, pythonLessonProblemG11, pythonLessonProblemG12, pythonLessonProblemG13, pythonLessonProblemG14, pythonLessonProblemG15, pythonLessonProblemG16,
-    pythonLessonProblemH1, pythonLessonProblemH2, pythonLessonProblemH3, pythonLessonProblemH4, pythonLessonProblemH5, pythonLessonProblemH6, pythonLessonProblemH7, pythonLessonProblemH8, pythonLessonProblemH9, pythonLessonProblemH10, pythonLessonProblemH11, pythonLessonProblemH12, pythonLessonProblemH13, pythonLessonProblemH14, pythonLessonProblemH15, pythonLessonProblemH16
+    //review 1
+    pythonLessonProblemA1, pythonLessonProblemA2, pythonLessonProblemA3, pythonLessonProblemA4,pythonLessonProblemB1, pythonLessonProblemB2,pythonLessonProblemB3, pythonLessonProblemB4,pythonLessonProblemC1, pythonLessonProblemC2, pythonLessonProblemC3, pythonLessonProblemC4,pythonLessonProblemD1, pythonLessonProblemD2,pythonLessonProblemE2, pythonLessonProblemE3,pythonLessonProblemF1, pythonLessonProblemF2, pythonLessonProblemF3, pythonLessonProblemF4, pythonLessonProblemG1, pythonLessonProblemG2, pythonLessonProblemG3, pythonLessonProblemG4,pythonLessonProblemG1, pythonLessonProblemG2,
+    pythonLessonProblemI1, pythonLessonProblemI2, pythonLessonProblemI3, pythonLessonProblemI4, pythonLessonProblemI5, pythonLessonProblemI6, pythonLessonProblemI7, pythonLessonProblemI8, pythonLessonProblemI9, pythonLessonProblemI10, pythonLessonProblemI11, pythonLessonProblemI12, pythonLessonProblemI13, pythonLessonProblemI14, pythonLessonProblemI15, pythonLessonProblemI16,pythonLessonProblemI17, pythonLessonProblemI18, pythonLessonProblemI19, pythonLessonProblemI20, pythonLessonProblemI21, pythonLessonProblemI22,pythonLessonProblemI23,  pythonLessonProblemI24,
+    pythonLessonProblemJ1, pythonLessonProblemJ2, pythonLessonProblemJ3, pythonLessonProblemJ4, pythonLessonProblemJ5, pythonLessonProblemJ6, pythonLessonProblemJ7, pythonLessonProblemJ8, pythonLessonProblemJ9, pythonLessonProblemJ10, pythonLessonProblemJ11, pythonLessonProblemJ12, pythonLessonProblemJ13, pythonLessonProblemJ14, pythonLessonProblemJ15, pythonLessonProblemJ16,
+    pythonLessonProblemK1, pythonLessonProblemK2, pythonLessonProblemK3, pythonLessonProblemK4, pythonLessonProblemK5, pythonLessonProblemK6, pythonLessonProblemK7, pythonLessonProblemK8, pythonLessonProblemK9, pythonLessonProblemK10, pythonLessonProblemK11, pythonLessonProblemK12, pythonLessonProblemK13, pythonLessonProblemK14, pythonLessonProblemK15, pythonLessonProblemK16,
+    //review 2
+    pythonLessonProblemA1, pythonLessonProblemB1, pythonLessonProblemC1, pythonLessonProblemD1, pythonLessonProblemE1, pythonLessonProblemF1, pythonLessonProblemG1, pythonLessonProblemI1, pythonLessonProblemJ1, pythonLessonProblemA6, pythonLessonProblemB6, pythonLessonProblemC7, pythonLessonProblemD6, pythonLessonProblemE6, pythonLessonProblemF6, pythonLessonProblemG6,pythonLessonProblemI6, pythonLessonProblemJ6, pythonLessonProblemK6,
+    //extras
+    pythonLessonProblemA1, pythonLessonProblemB1, pythonLessonProblemC1, pythonLessonProblemD1, pythonLessonProblemE1, pythonLessonProblemF1, pythonLessonProblemG1, pythonLessonProblemI1, pythonLessonProblemJ1, pythonLessonProblemA6, pythonLessonProblemB6, pythonLessonProblemC7, pythonLessonProblemD6, pythonLessonProblemE6, pythonLessonProblemF6, pythonLessonProblemG6,pythonLessonProblemI6, pythonLessonProblemJ6, pythonLessonProblemK6
 
   ];
   
