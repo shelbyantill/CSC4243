@@ -133,7 +133,7 @@ export const RightBar = () => {
             >
               <LingotsTreasureChestSvg className="w-24" />
               <div className="flex flex-col gap-3">
-                <h2 className="text-xl font-bold text-black">Lingots</h2>
+                <h2 className="text-xl font-bold text-black">Progots</h2>
                 <p className="text-sm font-normal text-gray-400">
                   You have {lingots} {lingots === 1 ? "lingot" : "lingots"}.
                 </p>
@@ -141,7 +141,7 @@ export const RightBar = () => {
                   className="uppercase text-blue-400 transition hover:brightness-110"
                   href="/shop"
                 >
-                  Go to shop
+                  Go to badges
                 </Link>
               </div>
             </div>

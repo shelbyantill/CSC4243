@@ -290,23 +290,28 @@ const TileTooltip = ({
               activeTextColor,
             ].join(" ")}
           >
-            Start +10 XP
+            Start +8 XP
           </Link>
-        ) : status === "LOCKED" ? (
+        ) : 
+        //status === "LOCKED" ? 
+        (
           <button
             className="w-full rounded-xl bg-gray-200 p-3 uppercase text-gray-400"
             disabled
           >
             Locked
           </button>
-        ) : (
-          <Link
-          href={`/lesson?lessonType=${lessonType}`}
-            className="flex w-full items-center justify-center rounded-xl border-b-4 border-yellow-200 bg-white p-3 uppercase text-yellow-400"
-          >
-            Practice +5 XP
-          </Link>
-        )}
+        ) 
+        // : 
+        // (
+        //   <Link
+        //   href={`/lesson?lessonType=${lessonType}`}
+        //     className="flex w-full items-center justify-center rounded-xl border-b-4 border-yellow-200 bg-white p-3 uppercase text-yellow-400"
+        //   >
+        //     Practice +5 XP
+        //   </Link>
+        // )
+        }
       </div>
     </div>
   );

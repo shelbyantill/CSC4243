@@ -176,7 +176,7 @@ export const TopBar = ({
                         className="font-bold uppercase text-[#CC5742] transition hover:brightness-110"
                         href="/shop"
                       >
-                        Go to shop
+                        Go to badges
                       </Link>
                     </div>
                   </div>
