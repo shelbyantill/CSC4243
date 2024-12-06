@@ -150,14 +150,8 @@ export const LoginScreen = ({
                       ?
                       {ageTooltipShown && (
                         <div className="absolute -right-5 top-full z-10 w-72 rounded-2xl border-2 border-gray-200 bg-white p-4 text-center text-xs leading-5 text-gray-800">
-                          Providing your age ensures you get the right Duolingo
-                          experience. For more details, please visit our{" "}
-                          <Link
-                            href="https://www.duolingo.com/privacy"
-                            className="text-blue-700"
-                          >
-                            Privacy Policy
-                          </Link>
+                          Providing your age ensures you get the right
+                          experience.
                         </div>
                       )}
                     </div>
@@ -222,21 +216,7 @@ export const LoginScreen = ({
             </button>
           </div>
           <p className="text-center text-xs leading-5 text-gray-400">
-            By signing in to Duolingo, you agree to our{" "}
-            <Link
-              className="font-bold"
-              href="https://www.duolingo.com/terms?wantsPlainInfo=1"
-            >
-              Terms
-            </Link>{" "}
-            and{" "}
-            <Link
-              className="font-bold"
-              href="https://www.duolingo.com/privacy?wantsPlainInfo=1"
-            >
-              Privacy Policy
-            </Link>
-            .
+            By signing in, you agree to our terms.
           </p>
           <p className="text-center text-xs leading-5 text-gray-400">
             This site is protected by reCAPTCHA Enterprise and the Google{" "}
