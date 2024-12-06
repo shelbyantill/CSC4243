@@ -43,7 +43,7 @@ export const LeftBar = ({ selectedTab }: { selectedTab: Tab | null }) => {
           href="/learn"
           className="mb-5 ml-5 mt-5 hidden text-3xl font-bold text-[#CC5742] lg:block"
         >
-          coding game
+          Codelingo
         </Link>
         <ul className="flex flex-col items-stretch gap-3">
           {bottomBarItems.map((item) => {
