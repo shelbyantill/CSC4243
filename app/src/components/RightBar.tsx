@@ -135,7 +135,7 @@ export const RightBar = () => {
               <div className="flex flex-col gap-3">
                 <h2 className="text-xl font-bold text-black">Progots</h2>
                 <p className="text-sm font-normal text-gray-400">
-                  You have {lingots} {lingots === 1 ? "lingot" : "lingots"}.
+                  You have {lingots} {lingots === 1 ? "progot" : "progots"}.
                 </p>
                 <Link
                   className="uppercase text-blue-400 transition hover:brightness-110"
