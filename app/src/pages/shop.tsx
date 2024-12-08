@@ -11,13 +11,13 @@ const Badges: NextPage = () => {
   const badges = [
     {
       title: "Coding Beginner",
-      description: "Awarded for completing your first coding lesson",
+      description: "You completed your first coding lesson!",
       imgSrc: "/icons/.png",
       isUnlocked: true,
     },
     {
       title: "Master of the Python Basics",
-      description: "Awarded for completing the first unit of Python",
+      description: "You completed the first unit of Python! You're practically a pro!",
       imgSrc: "/icons/.png",
       isUnlocked: false,
     },
