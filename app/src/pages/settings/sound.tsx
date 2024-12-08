@@ -5,38 +5,21 @@ import { LeftBar } from "~/components/LeftBar";
 import { TopBar } from "~/components/TopBar";
 import { SettingsRightNav } from "~/components/SettingsRightNav";
 import { useBoundStore } from "~/hooks/useBoundStore";
+import { useSound } from "~/hooks/useSound";
 
 const Sound: NextPage = () => {
   const soundEffects = useBoundStore((x) => x.soundEffects);
   const setSoundEffects = useBoundStore((x) => x.setSoundEffects);
   const [localSoundEffects, setLocalSoundEffects] = useState(soundEffects);
 
-  const speakingExercises = useBoundStore((x) => x.speakingExercises);
-  const setSpeakingExercises = useBoundStore((x) => x.setSpeakingExercises);
-  const [localSpeakingExercises, setLocalSpeakingExercises] =
-    useState(speakingExercises);
-
-  const listeningExercises = useBoundStore((x) => x.listeningExercises);
-  const setListeningExercises = useBoundStore((x) => x.setListeningExercises);
-  const [localListeningExercises, setLocalListeningExercises] =
-    useState(listeningExercises);
+  const playSound = useSound(localSoundEffects);
 
   const soundOptions = [
     {
       title: "Sound effects",
       value: localSoundEffects,
       setValue: setLocalSoundEffects,
-    },
-    {
-      title: "Speaking exercises",
-      value: localSpeakingExercises,
-      setValue: setLocalSpeakingExercises,
-    },
-    {
-      title: "Listening exercises",
-      value: localListeningExercises,
-      setValue: setLocalListeningExercises,
-    },
+    }
   ];
 
   return (
@@ -51,13 +34,10 @@ const Sound: NextPage = () => {
             className="rounded-2xl border-b-4 border-green-600 bg-green-500 px-5 py-3 font-bold uppercase text-white transition hover:brightness-110 disabled:border-b-0 disabled:bg-gray-200 disabled:text-gray-400 disabled:hover:brightness-100"
             onClick={() => {
               setSoundEffects(localSoundEffects);
-              setSpeakingExercises(localSpeakingExercises);
-              setListeningExercises(localListeningExercises);
+              playSound("/sounds/click.mp3");
             }}
             disabled={
-              localSoundEffects === soundEffects &&
-              localSpeakingExercises === speakingExercises &&
-              localListeningExercises === listeningExercises
+              localSoundEffects === soundEffects
             }
           >
             Save changes
