@@ -519,7 +519,7 @@ const pythonLessonProblemC14 = {
   type: "WRITE",
   question: "Write Python code to check if a variable 'age' is between 18 and 25 (inclusive).",
   answerTiles: ["age >", "age", "<=", "25", "18", "and"],
-  correctAnswer: [0, 3, 4, 5,  1, 2]
+  correctAnswer: [0,  4,  5, 1, 2, 3]
 } as const;
 const pythonLessonProblemC15 = {
   type: "SELECT_1_OF_3",
