@@ -30,7 +30,6 @@ const ForgotPassword: NextPage = () => {
       <header className="flex h-[70px] w-full justify-center bg-blue-400 font-bold text-white">
         <div className="flex max-w-5xl grow items-center justify-between px-5">
           <Link className="text-3xl" href="/">
-            duolingo
           </Link>
           <div className="hidden items-center gap-5 md:flex">
             <LanguageDropDown />
