@@ -35,6 +35,7 @@ import { LoginScreen, useLoginScreen } from "~/components/LoginScreen";
 import { useBoundStore } from "~/hooks/useBoundStore";
 import type { Tile, TileType, Unit } from "~/utils/units";
 import { units } from "~/utils/units";
+import { useSound } from "~/hooks/useSound";
 
 type TileStatus = "LOCKED" | "ACTIVE" | "COMPLETE";
 
@@ -336,6 +337,9 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
   const increaseLingots = useBoundStore((x) => x.increaseLingots);
   const lessonType = useBoundStore((x) => x.language.name);
 
+  const soundEffects = useBoundStore((x) => x.soundEffects);
+  const playSound = useSound(soundEffects);
+
   return (
     <>
       <UnitHeader
@@ -399,6 +403,7 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
                             }),
                           ].join(" ")}
                           onClick={() => {
+                            playSound("/sounds/click.mp3");
                             if (tile.type === "fast-forward" && status === "LOCKED") {
                               // Conditional logic based on unit number and lessons completed
                               if (unit.unitNumber === 2 && lessonsCompleted < 20) {

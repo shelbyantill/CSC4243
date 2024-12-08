@@ -15,6 +15,7 @@ import {
   LessonTopBarHeart,
   WomanSvg,
 } from "~/components/Svgs";
+import { useSound } from "~/hooks/useSound";
 
 import two_birds from "../../theme/two_birds.png";
 import three_chicks from "../../theme/three_chicks.png";
@@ -3300,6 +3301,8 @@ const formatTime = (timeMs: number): string => {
 
 const Lesson: NextPage = () => {
   const router = useRouter();
+  const soundEffects = useBoundStore((x) => x.soundEffects);
+  const playSound = useSound(soundEffects);
 
   // Define lesson sets here before use
   const lessonProblems = [
@@ -3360,8 +3363,10 @@ const Lesson: NextPage = () => {
     setCorrectAnswerShown(true);
     if (isAnswerCorrect) {
       setCorrectAnswerCount((x) => x + 1);
+      playSound("/sounds/yay.mp3");
     } else {
       setIncorrectAnswerCount((x) => x + 1);
+      playSound("/sounds/wrongclick.mp3");
     }
     setQuestionResults((questionResults) => [
       ...questionResults,
@@ -3382,6 +3387,7 @@ const Lesson: NextPage = () => {
   };
 
   const onFinish = () => {
+    playSound("/sounds/click.mp3");
     setSelectedAnswer(null);
     setSelectedAnswers([]);
     setCorrectAnswerShown(false);
@@ -3977,6 +3983,8 @@ const LessonComplete = ({
 }) => {
   const router = useRouter();
   const isPractice = "practice" in router.query;
+  const soundEffects = useBoundStore((x) => x.soundEffects);
+  const playSound = useSound(soundEffects);
 
   const increaseXp = useBoundStore((x) => x.increaseXp);
   const addToday = useBoundStore((x) => x.addToday);
@@ -4020,7 +4028,10 @@ const LessonComplete = ({
         <div className="mx-auto flex max-w-5xl sm:justify-between">
           <button
             className="hidden rounded-2xl border-2 border-b-4 border-gray-200 bg-white p-3 font-bold uppercase text-gray-400 transition hover:border-gray-300 hover:bg-gray-200 sm:block sm:min-w-[150px] sm:max-w-fit"
-            onClick={() => setReviewLessonShown(true)}
+            onClick={() => {
+              setReviewLessonShown(true);
+              playSound("/sounds/click.mp3");
+            }}
           >
             Review lesson
           </button>
@@ -4030,6 +4041,7 @@ const LessonComplete = ({
             }
             href="/learn"
             onClick={() => {
+              playSound("/sounds/lessonfinish.mp3");
               increaseXp(correctAnswerCount);
               addToday();
               increaseLingots(isPractice ? 0 : 1);

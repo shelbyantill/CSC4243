@@ -6,6 +6,7 @@ import { LeftBar } from "~/components/LeftBar";
 import { TopBar } from "~/components/TopBar";
 import { useBoundStore } from "~/hooks/useBoundStore";
 import { SettingsRightNav } from "~/components/SettingsRightNav";
+import { useSound } from "~/hooks/useSound";
 
 const CoachSvg = (props: ComponentProps<"img">) => {
   return (
@@ -30,6 +31,8 @@ const goalXpOptions = [
 const Coach: NextPage = () => {
   const goalXp = useBoundStore((x) => x.goalXp);
   const setGoalXp = useBoundStore((x) => x.setGoalXp);
+  const soundEffects = useBoundStore((x) => x.soundEffects);
+  const playSound = useSound(soundEffects);
 
   const [localGoalXp, setLocalGoalXp] = useState(goalXp);
   return (
@@ -44,7 +47,10 @@ const Coach: NextPage = () => {
           </h1>
           <button
             className="rounded-2xl border-b-4 border-green-600 bg-green-500 px-5 py-3 font-bold uppercase text-white transition hover:brightness-110 disabled:border-b-0 disabled:bg-gray-200 disabled:text-gray-400 disabled:hover:brightness-100"
-            onClick={() => setGoalXp(localGoalXp)}
+            onClick={() => {
+              setGoalXp(localGoalXp);
+              playSound("/sounds/click.mp3");
+            }}
             disabled={localGoalXp === goalXp}
           >
             Save changes
