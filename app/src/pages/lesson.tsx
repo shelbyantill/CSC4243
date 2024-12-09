@@ -3409,6 +3409,7 @@ const Lesson: NextPage = () => {
   
 
   const onSkip = () => {
+    playSound("/sounds/click.mp3");
     setSelectedAnswer(null);
     setCorrectAnswerShown(true);
   };
