@@ -294,7 +294,6 @@ const TileTooltip = ({
             Start +8 XP
           </Link>
         ) : 
-        //status === "LOCKED" ? 
         (
           <button
             className="w-full rounded-xl bg-gray-200 p-3 uppercase text-gray-400"
@@ -303,15 +302,6 @@ const TileTooltip = ({
             Locked
           </button>
         ) 
-        // : 
-        // (
-        //   <Link
-        //   href={`/lesson?lessonType=${lessonType}`}
-        //     className="flex w-full items-center justify-center rounded-xl border-b-4 border-yellow-200 bg-white p-3 uppercase text-yellow-400"
-        //   >
-        //     Practice +5 XP
-        //   </Link>
-        // )
         }
       </div>
     </div>
@@ -405,19 +395,9 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
                           onClick={() => {
                             playSound("/sounds/click.mp3");
                             if (tile.type === "fast-forward" && status === "LOCKED") {
-                              // Conditional logic based on unit number and lessons completed
-                              if (unit.unitNumber === 2 && lessonsCompleted < 20) {
-                                // If the user is on unit 2 and has completed less than 40 lessons
-                                const increment = 24 - lessonsCompleted;
-                                increaseLessonsCompleted(increment); // Increment lessons by the calculated amount
-                              } else if (unit.unitNumber === 3  && lessonsCompleted < 56) {
-                                const increment = 68 - lessonsCompleted;
-                                increaseLessonsCompleted(increment);
-                              }
-                              
                               // Navigate to the lesson with lesson type and other parameters
                               void router.push(
-                                `/lesson?lessonType=${lessonType}&unit=${unit.unitNumber}&tile=${tile.type}`
+                                `/lesson?fast-forward=${unit.unitNumber}&lessonType=${lessonType}`,
                               );
                               return;
                             }
@@ -540,13 +520,6 @@ const Learn: NextPage = () => {
             <UnitSection unit={unit} key={unit.unitNumber} />
           ))}
           <div className="sticky bottom-28 left-0 right-0 flex items-end justify-between">
-            {/* <Link
-              href="/lesson?practice"
-              className="absolute left-4 flex h-16 w-16 items-center justify-center rounded-full border-2 border-b-4 border-gray-200 bg-white transition hover:bg-gray-50 hover:brightness-90 md:left-0"
-            >
-              <span className="sr-only">Practice exercise</span>
-              <PracticeExerciseSvg className="h-8 w-8" />
-            </Link> */}
             {scrollY > 100 && (
               <button
                 className="absolute right-4 flex h-14 w-14 items-center justify-center self-end rounded-2xl border-2 border-b-4 border-gray-200 bg-white transition hover:bg-gray-50 hover:brightness-90 md:right-0"
@@ -655,18 +628,6 @@ const UnitHeader = ({
           <h2 className="text-2xl font-bold">Unit {unitNumber}</h2>
           <p className="text-lg">{description}</p>
         </div>
-        {/* <Link
-          href={`https://duolingo.com/guidebook/${language.code}/${unitNumber}`}
-          className={[
-            "flex items-center gap-3 rounded-2xl border-2 border-b-4 p-3 transition hover:text-gray-100",
-            borderColor,
-          ].join(" ")}
-        >
-          <GuidebookSvg />
-          <span className="sr-only font-bold uppercase lg:not-sr-only">
-            Guidebook
-          </span>
-        </Link> */}
       </header>
     </article>
   );
