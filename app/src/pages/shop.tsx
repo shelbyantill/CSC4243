@@ -6,6 +6,7 @@ import { BottomBar } from "~/components/BottomBar";
 import { LeftBar } from "~/components/LeftBar";
 import { RightBar } from "~/components/RightBar";
 import { TopBar } from "~/components/TopBar";
+import { useProgress } from "~/components/ProgressContext";
 
 const badges = [
   {
@@ -13,7 +14,7 @@ const badges = [
     title: "Coding Beginner",
     description: "You completed your first coding lesson!",
     imgSrc: "/icons/beginner.png",
-    unlockCondition: (state) => state.lessonsCompleted >= 1,
+    unlockCondition: (state) => state.lessonsCompleted >= 4 || state.unitsCompleted >= 1 || state.hasUsedFastForward,
   },
   {
     id: "master-basics",
@@ -27,7 +28,7 @@ const badges = [
     title: "10 is a big number",
     description: "You completed 10 lessons! That's incredible!",
     imgSrc: "/icons/lessons_master.png",
-    unlockCondition: (state) => state.lessonsCompleted >= 10,
+    unlockCondition: (state) => state.lessonsCompleted >= 40 || state.unitsCompleted >= 2,
   },
   {
     id: "fast-forward",
@@ -185,11 +186,8 @@ const DoubleOrNothingSvg = (props: ComponentProps<"svg">) => {
 
 const Shop: NextPage = () => {
   const streakFreezes = 0;
-  const state = {
-    lessonsCompleted: 0,
-    unitsCompleted: 0,
-    hasUsedFastForward: false,
-  };
+  const { lessonsCompleted, unitsCompleted, hasUsedFastForward } = useProgress();
+  const state = { lessonsCompleted, unitsCompleted, hasUsedFastForward };
 
   const unlockedBadges = badges.filter((badge) => badge.unlockCondition(state));
 
