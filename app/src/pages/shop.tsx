@@ -6,6 +6,38 @@ import { BottomBar } from "~/components/BottomBar";
 import { LeftBar } from "~/components/LeftBar";
 import { RightBar } from "~/components/RightBar";
 import { TopBar } from "~/components/TopBar";
+import { useProgress } from "~/components/ProgressContext";
+
+const badges = [
+  {
+    id: "beginner",
+    title: "Coding Beginner",
+    description: "You completed your first coding lesson!",
+    imgSrc: "/icons/beginner.png",
+    unlockCondition: (state) => state.lessonsCompleted >= 4 || state.unitsCompleted >= 1 || state.hasUsedFastForward,
+  },
+  {
+    id: "master-basics",
+    title: "Master of the Basics",
+    description: "You completed your first unit!",
+    imgSrc: "/icons/master.png",
+    unlockCondition: (state) => state.unitsCompleted >= 1,
+  },
+  {
+    id: "10-lessons",
+    title: "10 is a big number",
+    description: "You completed 10 lessons! That's incredible!",
+    imgSrc: "/icons/lessons_master.png",
+    unlockCondition: (state) => state.lessonsCompleted >= 40 || state.unitsCompleted >= 2,
+  },
+  {
+    id: "fast-forward",
+    title: "Time Traveler",
+    description: "You used the fast-forward feature to skip ahead.",
+    imgSrc: "/icons/fast-forward.png",
+    unlockCondition: (state) => state.hasUsedFastForward,
+  },
+];
 
 const StreakFreezeSvg = (props: ComponentProps<"svg">) => {
   return (
@@ -154,6 +186,10 @@ const DoubleOrNothingSvg = (props: ComponentProps<"svg">) => {
 
 const Shop: NextPage = () => {
   const streakFreezes = 0;
+  const { lessonsCompleted, unitsCompleted, hasUsedFastForward } = useProgress();
+  const state = { lessonsCompleted, unitsCompleted, hasUsedFastForward };
+
+  const unlockedBadges = badges.filter((badge) => badge.unlockCondition(state));
 
   return (
     <div>
@@ -197,6 +233,39 @@ const Shop: NextPage = () => {
                   Get for: <EmptyGemSvg /> 5
                 </button>
               </section>
+            </div>
+            <div className="py-7">
+              <h2 className="mb-5 text-2xl font-bold">Badges</h2>
+              {badges.map((badge) => {
+                const isUnlocked = badge.unlockCondition(state);
+                return (
+                  <div key={badge.id} className="flex border-t-2 border-gray-300 py-5">
+                    <img
+                      src={isUnlocked ? badge.imgSrc : "/icons/question.png"}
+                      alt={isUnlocked ? badge.title : "Locked Badge"}
+                      className="shrink-0 w-20 h-20 mt-2 ml=4"
+                    />
+                    <section className="flex flex-col gap-3 ml-6">
+                      <h3 className="text-lg font-bold">
+                        {isUnlocked ? badge.title :  badge.title}
+                      </h3>
+                      <p className="text-sm text-gray-500">
+                        {isUnlocked ? badge.description : "???"}
+                      </p>
+                      <button
+                        className={`flex w-fit items-center gap-1 rounded-2xl border-2 px-4 py-2 text-sm font-bold uppercase ${
+                          isUnlocked
+                            ? "border-green-400 bg-green-100 text-green-400"
+                            : "border-gray-300 bg-white text-gray-300"
+                        }`}
+                        disabled
+                      >
+                        {isUnlocked ? "Unlocked" : "Locked"}
+                      </button>
+                    </section>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

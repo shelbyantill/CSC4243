@@ -2,6 +2,7 @@ import { type AppType } from "next/dist/shared/lib/utils";
 import Head from "next/head";
 
 import "~/styles/globals.css";
+import { ProgressProvider } from "~/components/ProgressContext";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
@@ -16,7 +17,9 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         <meta name="theme-color" content="#0A0" />
         <link rel="manifest" href="/app.webmanifest" /> */}
       </Head>
-      <Component {...pageProps} />
+      <ProgressProvider>
+        <Component {...pageProps} />
+      </ProgressProvider>
     </>
   );
 };
