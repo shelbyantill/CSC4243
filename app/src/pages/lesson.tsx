@@ -69,6 +69,7 @@ import hen_question from "../../theme/hen_question.png";
 
 import { useBoundStore } from "~/hooks/useBoundStore";
 import { useRouter } from "next/router";
+import { useBadgeContext } from "../components/BadgeContext";
 
 const lessonProblem1 = {
   type: "SELECT_1_OF_3",
@@ -3981,6 +3982,7 @@ const LessonComplete = ({
   setReviewLessonShown: React.Dispatch<React.SetStateAction<boolean>>;
   questionResults: QuestionResult[];
 }) => {
+  const { lessonsCompleted, incrementLessonsCompleted, unlockBadge } = useBadgeContext();
   const router = useRouter();
   const isPractice = "practice" in router.query;
   const soundEffects = useBoundStore((x) => x.soundEffects);
@@ -3992,6 +3994,20 @@ const LessonComplete = ({
   const increaseLessonsCompleted = useBoundStore(
     (x) => x.increaseLessonsCompleted,
   );
+
+  React.useEffect(() => {
+    const newLessonsCompleted = lessonsCompleted + 1;
+    if (newLessonsCompleted === 1) {
+      unlockBadge("beginner");
+    }
+    if (newLessonsCompleted === 4) {
+      unlockBadge("master-basics");
+    }
+    if (newLessonsCompleted === 10) {
+      unlockBadge("10-lessons");
+    }
+  }, [lessonsCompleted, unlockBadge]);
+
   return (
     <div className="flex min-h-screen flex-col gap-5 px-4 py-5 sm:px-0 sm:py-0">
       <div className="flex grow flex-col items-center justify-center gap-8 font-bold">
@@ -4047,6 +4063,7 @@ const LessonComplete = ({
               increaseLingots(isPractice ? 0 : 1);
               if (!isPractice) {
                 increaseLessonsCompleted();
+                incrementLessonsCompleted(1);
               }
             }}
           >
@@ -4263,6 +4280,7 @@ const LessonFastForwardEndPass = ({
   setReviewLessonShown: React.Dispatch<React.SetStateAction<boolean>>;
   questionResults: QuestionResult[];
 }) => {
+  const { unlockBadge, markFastForwardUsed } = useBadgeContext();
   const jumpToUnit = useBoundStore((x) => x.jumpToUnit);
   return (
     <div className="flex min-h-screen flex-col px-5 py-8 text-center">
@@ -4284,7 +4302,10 @@ const LessonFastForwardEndPass = ({
           <Link
             className="flex w-full items-center justify-center rounded-2xl border-b-4 border-[#CC5742] bg-[#CC5742] p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit"
             href="/learn"
-            onClick={() => jumpToUnit(unitNumber)}
+            onClick={() => {
+              jumpToUnit(unitNumber);
+              unlockBadge("fast-forward");
+            }}
           >
             Continue
           </Link>

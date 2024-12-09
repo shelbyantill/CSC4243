@@ -36,6 +36,7 @@ import { useBoundStore } from "~/hooks/useBoundStore";
 import type { Tile, TileType, Unit } from "~/utils/units";
 import { units } from "~/utils/units";
 import { useSound } from "~/hooks/useSound";
+import { useContext } from "react";
 
 type TileStatus = "LOCKED" | "ACTIVE" | "COMPLETE";
 

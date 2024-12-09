@@ -6,6 +6,7 @@ import { BottomBar } from "~/components/BottomBar";
 import { LeftBar } from "~/components/LeftBar";
 import { RightBar } from "~/components/RightBar";
 import { TopBar } from "~/components/TopBar";
+import { useBadgeContext } from "~/components/BadgeContext";
 
 const StreakFreezeSvg = (props: ComponentProps<"svg">) => {
   return (
@@ -154,6 +155,8 @@ const DoubleOrNothingSvg = (props: ComponentProps<"svg">) => {
 
 const Shop: NextPage = () => {
   const streakFreezes = 0;
+  const { lessonsCompleted } = useBadgeContext();
+  const { badges } = useBadgeContext();
 
   return (
     <div>
@@ -198,6 +201,30 @@ const Shop: NextPage = () => {
                 </button>
               </section>
             </div>
+          </div>
+          <div className="py-7">
+            <h2 className="mb-5 text-2xl font-bold">Badges</h2>
+            {badges.map((badge) => (
+              <div key={badge.id} className="flex border-t-2 border-gray-300 py-5 items-center">
+                <img
+                  src={badge.imgSrc}
+                  alt={badge.title}
+                  className="shrink-0 w-16 h-16"
+                  onError={(e) => (e.currentTarget.src = '/icons/default.png')}
+                />
+                <section className="flex flex-col gap-3 pl-5">
+                  <h3 className="text-lg font-bold">{badge.title}</h3>
+                  <p className="text-sm text-gray-500">{badge.description}</p>
+                  <div
+                    className={`w-fit rounded-full px-3 py-1 text-sm font-bold uppercase ${
+                      badge.isUnlocked ? "bg-green-200 text-green-600" : "bg-gray-200 text-gray-400"
+                    }`}
+                  >
+                    {badge.isUnlocked ? "Unlocked" : "Locked"}
+                  </div>
+                </section>
+              </div>
+            ))}
           </div>
         </div>
         <RightBar />
