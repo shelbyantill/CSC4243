@@ -186,9 +186,9 @@ const DoubleOrNothingSvg = (props: ComponentProps<"svg">) => {
 const Shop: NextPage = () => {
   const streakFreezes = 0;
   const state = {
-    lessonsCompleted: 10,
-    unitsCompleted: 1,
-    hasUsedFastForward: true,
+    lessonsCompleted: 0,
+    unitsCompleted: 0,
+    hasUsedFastForward: false,
   };
 
   const unlockedBadges = badges.filter((badge) => badge.unlockCondition(state));
@@ -236,21 +236,38 @@ const Shop: NextPage = () => {
                 </button>
               </section>
             </div>
-          </div>
-          <div className="py-7">
-            <h2 className="mb-5 text-2xl font-bold">Badges</h2>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {unlockedBadges.map((badge) => (
-                <div key={badge.id} className="flex flex-col items-center text-center">
-                  <img
-                    src={badge.imgSrc}
-                    alt={badge.title}
-                    className="w-16 h-16"
-                  />
-                  <h3 className="mt-2 text-lg font-bold">{badge.title}</h3>
-                  <p className="text-sm text-gray-500">{badge.description}</p>
-                </div>
-              ))}
+            <div className="py-7">
+              <h2 className="mb-5 text-2xl font-bold">Badges</h2>
+              {badges.map((badge) => {
+                const isUnlocked = badge.unlockCondition(state);
+                return (
+                  <div key={badge.id} className="flex border-t-2 border-gray-300 py-5">
+                    <img
+                      src={isUnlocked ? badge.imgSrc : "/icons/question.png"}
+                      alt={isUnlocked ? badge.title : "Locked Badge"}
+                      className="shrink-0 w-20 h-20 mt-2 ml=4"
+                    />
+                    <section className="flex flex-col gap-3 ml-6">
+                      <h3 className="text-lg font-bold">
+                        {isUnlocked ? badge.title :  badge.title}
+                      </h3>
+                      <p className="text-sm text-gray-500">
+                        {isUnlocked ? badge.description : "???"}
+                      </p>
+                      <button
+                        className={`flex w-fit items-center gap-1 rounded-2xl border-2 px-4 py-2 text-sm font-bold uppercase ${
+                          isUnlocked
+                            ? "border-green-400 bg-green-100 text-green-400"
+                            : "border-gray-300 bg-white text-gray-300"
+                        }`}
+                        disabled
+                      >
+                        {isUnlocked ? "Unlocked" : "Locked"}
+                      </button>
+                    </section>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
