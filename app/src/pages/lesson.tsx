@@ -4177,10 +4177,19 @@ const LessonFastForwardStart = ({
   unitNumber: number;
   setIsStartingLesson: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
+  const getImageSrc = () => {
+    if (unitNumber === 2) return "/icons/forward.png"; // Example for unit-specific logic
+    if (unitNumber === 3) return "/icons/forward2.png";
+    return "/icons/forward.png";
+  };
   return (
     <div className="flex min-h-screen flex-col px-5 py-8 text-center">
       <div className="flex grow flex-col items-center justify-center gap-5">
-        <LessonFastForwardStartSvg />
+        <img
+          src={getImageSrc()}
+          alt="Fast forward time"
+          className="w-70 h-40"
+        />
         <h1 className="text-lg font-bold">
           Want to jump to Unit {unitNumber}?
         </h1>
