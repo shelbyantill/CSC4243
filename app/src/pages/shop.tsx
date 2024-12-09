@@ -7,6 +7,37 @@ import { LeftBar } from "~/components/LeftBar";
 import { RightBar } from "~/components/RightBar";
 import { TopBar } from "~/components/TopBar";
 
+const badges = [
+  {
+    id: "beginner",
+    title: "Coding Beginner",
+    description: "You completed your first coding lesson!",
+    imgSrc: "/icons/beginner.png",
+    unlockCondition: (state) => state.lessonsCompleted >= 1,
+  },
+  {
+    id: "master-basics",
+    title: "Master of the Basics",
+    description: "You completed your first unit!",
+    imgSrc: "/icons/master.png",
+    unlockCondition: (state) => state.unitsCompleted >= 1,
+  },
+  {
+    id: "10-lessons",
+    title: "10 is a big number",
+    description: "You completed 10 lessons! That's incredible!",
+    imgSrc: "/icons/lessons_master.png",
+    unlockCondition: (state) => state.lessonsCompleted >= 10,
+  },
+  {
+    id: "fast-forward",
+    title: "Time Traveler",
+    description: "You used the fast-forward feature to skip ahead.",
+    imgSrc: "/icons/fast-forward.png",
+    unlockCondition: (state) => state.hasUsedFastForward,
+  },
+];
+
 const StreakFreezeSvg = (props: ComponentProps<"svg">) => {
   return (
     <svg width="124" height="124" viewBox="0 0 124 124" {...props}>
@@ -154,6 +185,13 @@ const DoubleOrNothingSvg = (props: ComponentProps<"svg">) => {
 
 const Shop: NextPage = () => {
   const streakFreezes = 0;
+  const state = {
+    lessonsCompleted: 10,
+    unitsCompleted: 1,
+    hasUsedFastForward: true,
+  };
+
+  const unlockedBadges = badges.filter((badge) => badge.unlockCondition(state));
 
   return (
     <div>
@@ -197,6 +235,22 @@ const Shop: NextPage = () => {
                   Get for: <EmptyGemSvg /> 5
                 </button>
               </section>
+            </div>
+          </div>
+          <div className="py-7">
+            <h2 className="mb-5 text-2xl font-bold">Badges</h2>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {unlockedBadges.map((badge) => (
+                <div key={badge.id} className="flex flex-col items-center text-center">
+                  <img
+                    src={badge.imgSrc}
+                    alt={badge.title}
+                    className="w-16 h-16"
+                  />
+                  <h3 className="mt-2 text-lg font-bold">{badge.title}</h3>
+                  <p className="text-sm text-gray-500">{badge.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
