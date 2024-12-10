@@ -44,9 +44,9 @@ export const units: readonly Unit[] = [
   {
     unitNumber: 2,
     description: "Intermediate Programming Concepts",
-    backgroundColor: "bg-[#FFD668]",
-    textColor: "text-[#CC5742]",
-    borderColor: "border-[#FFD668]",
+    backgroundColor: "bg-[#CC5742]",
+    textColor: "text-[#FFD668]",
+    borderColor: "border-[#CC5742]",
     tiles: [
       { type: "fast-forward", description: "Basic data structures" },
       { type: "dumbbell", description: "Basic data structures" },
