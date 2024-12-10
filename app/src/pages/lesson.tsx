@@ -3222,6 +3222,1549 @@ const javascriptLessonProblemK16 = {
   correctAnswer: 2,
 };
 
+const csharpLessonProblemA1 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of these is a correct way to declare a variable in C#?",
+  answers: [
+    { icon: <Image src={three_chicks} alt="" width={212} height={212} className="w-full" />, name: "int chicks = 3;" },
+    { icon: <Image src={two_birds} alt="" width={212} height={212} className="w-full" />, name: "int birds == 2;" },
+    { icon: <Image src={five_candles} alt="" width={212} height={212} className="w-full" />, name: "candles : int = 5;" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemA2 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is NOT a valid C# variable name?",
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "chickCount" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "2thumbs" },
+    { icon: <Image src={three_cows} alt="" width={212} height={212} className="w-full" />, name: "totalCows" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemA3 = {
+  type: "WRITE",
+  question: "Write the C# code to print 'Hello, World!'",
+  answerTiles: ["Console.WriteLine", "(", "\"Hello, World!\"", ")", ";"],
+  correctAnswer: [0, 1, 2, 3, 4],
+} as const;
+
+const csharpLessonProblemA4 = {
+  type: "WRITE",
+  question: "Write the C# code to print the phrase 'Goodbye!'",
+  answerTiles: ["Console.WriteLine", "(", "\"Goodbye!\"", ")", ";"],
+  correctAnswer: [0, 1, 2, 3, 4],
+} as const;
+
+const csharpLessonProblemA5 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of these is a valid variable name in C#?",
+  answers: [
+    { icon: <Image src={chick_microphone} alt="" width={212} height={212} className="w-full" />, name: "1Microphone" },
+    { icon: <Image src={two_chicks} alt="" width={212} height={212} className="w-full" />, name: "chicks 2" },
+    { icon: <Image src={chick_card} alt="" width={212} height={212} className="w-full" />, name: "myCard" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemA6 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is a correct way to declare a string variable in C#?",
+  answers: [
+    { icon: <Image src={cow_2fingers} alt="" width={212} height={212} className="w-full" />, name: "string fingers : \"2\";" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "string mood = \"flattered\";" },
+    { icon: <Image src={three_cows} alt="" width={212} height={212} className="w-full" />, name: "string cows = 3;" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemA7 = {
+  type: "WRITE",
+  question: "Write a comment in C# that says 'This is a comment'.",
+  answerTiles: ["//", "This", "is", "a", "comment"],
+  correctAnswer: [0, 1, 2, 3, 4],
+} as const;
+
+const csharpLessonProblemA8 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is a correct way to declare a float variable in C#?",
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "float price = 3.5f;" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "float temperature = \"25.3\";" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "float height = 5,5;" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemA9 = {
+  type: "WRITE",
+  question: "Write the C# code to concatenate 'Python' and 'rocks' into a single string and print it.",
+  answerTiles: ["Console.WriteLine", "(", "\"Python\"", " + ", "\"rocks\"", ")", ";"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6],
+} as const;
+
+const csharpLessonProblemA10 = {
+  type: "WRITE",
+  question: "Assign the value 10 to the variable 'a'.",
+  answerTiles: ["int", "a", "=", "10", ";"],
+  correctAnswer: [0, 1, 2, 3, 4],
+} as const;
+
+const csharpLessonProblemA11 = {
+  type: "WRITE",
+  question: "Write the C# code to add a comment about the following line of code: 'int x = 10;'.",
+  answerTiles: ["//", "Assign", "10", "to x", "int x = 10;"],
+  correctAnswer: [4, 0, 1, 2, 3],
+} as const;
+
+const csharpLessonProblemA12 = {
+  type: "WRITE",
+  question: "Write the C# code to concatenate 'Hello' and 'World' into one string and print it.",
+  answerTiles: ["Console.WriteLine", "(", "\"Hello\"", " + ", "\"World\"", ")", ";"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6],
+} as const;
+
+const csharpLessonProblemA13 = {
+  type: "WRITE",
+  question: "Write a C# statement to assign the values 1, 2, and 3 to the variables 'a', 'b', and 'c' respectively in one line.",
+  answerTiles: ["=", "a,", "3", "c", "1,", "b,", "2,", "=="],
+  correctAnswer: [1, 5, 3, 0, 4, 6, 2],
+} as const;
+
+const csharpLessonProblemA14 = {
+  type: "WRITE",
+  question: "Write the C# code to print the result of adding 5 and 8.",
+  answerTiles: ["Console.WriteLine", "5", "+", "(", "8", ")"],
+  correctAnswer: [0, 3, 1, 2, 4, 5],
+} as const;
+
+const csharpLessonProblemA15 = {
+  type: "WRITE",
+  question: "Write C# code to assign the values 'apple', 'banana', and 'cherry' to the variables 'x', 'y', and 'z' respectively in one line.",
+  answerTiles: ["x,", "y,", "apple,", "banana,", "cherry", "z", "="],
+  correctAnswer: [0, 1, 5, 6, 2, 3, 4],
+} as const;
+
+const csharpLessonProblemA16 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is a valid data type in C#?",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "decimal" },
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "int" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "word" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemB1 = {
+  type: "WRITE",
+  question: "Write C# code to add 7 and 3.",
+  answerTiles: ["7", "3", "+", "-", "++"],
+  correctAnswer: [0, 2, 1],
+} as const;
+
+const csharpLessonProblemB2 = {
+  type: "WRITE",
+  question: "Write the C# code to assign the value 20 to the variable 'a' and then subtract 5 from it.",
+  answerTiles: ["a", "-", "5", "=", "20"],
+  correctAnswer: [0, 3, 4, 1, 2],
+} as const;
+
+const csharpLessonProblemB3 = {
+  type: "WRITE",
+  question: "Write C# code to multiply 6 and 4.",
+  answerTiles: ["6", "*", "4", "**"],
+  correctAnswer: [0, 1, 2],
+} as const;
+
+const csharpLessonProblemB4 = {
+  type: "WRITE",
+  question: "Write C# code to divide 20 by 2.",
+  answerTiles: ["20", "//", "2", "/"],
+  correctAnswer: [0, 3, 2],
+} as const;
+
+const csharpLessonProblemB5 = {
+  type: "SELECT_1_OF_3",
+  question: "Which operator is used to find the remainder in C#?",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "mod" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "/" },
+    { icon: <Image src={chick_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "%" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemB6 = {
+  type: "WRITE",
+  question: "Write C# code to subtract 5 from 10.",
+  answerTiles: ["10", "--", "5", "-", "-*"],
+  correctAnswer: [0, 3, 2],
+} as const;
+
+const csharpLessonProblemB7 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 5 + 3 * 2 in C#?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "16" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "11" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "13" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemB8 = {
+  type: "SELECT_1_OF_3",
+  question: "Which operator is used to perform exponentiation in C#?",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "*" },
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212} className="w-full" />, name: "Math.Pow" },
+    { icon: <Image src={three_cows} alt="" width={212} height={212} className="w-full" />, name: "^" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemB9 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of -10 + 5 in C#?",
+  answers: [
+    { icon: <Image src={laying_cow} alt="" width={212} height={212} className="w-full" />, name: "-5" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "5" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "15" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemB10 = {
+  type: "WRITE",
+  question: "Write C# code to subtract 12 from 25 and then multiply the result by 3.",
+  answerTiles: ["25", "*", "3", "-", "12"],
+  correctAnswer: [0, 3, 4, 1, 2],
+} as const;
+
+const csharpLessonProblemB11 = {
+  type: "WRITE",
+  question: "Write C# code to calculate 2 raised to the power of 3.",
+  answerTiles: ["Math.Pow", "(", "2", ",", "3", ")"],
+  correctAnswer: [0, 1, 2, 3, 4, 5],
+} as const;
+
+const csharpLessonProblemB12 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of Math.Pow(5, 2) in C#?",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "25" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "10" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "5" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemB13 = {
+  type: "WRITE",
+  question: "Write C# code to assign the value 100 to the variable 'b' and then divide it by 4.",
+  answerTiles: ["b", "=", "100", "/", "4", ";"],
+  correctAnswer: [0, 1, 2, 3, 4, 5],
+} as const;
+
+const csharpLessonProblemB14 = {
+  type: "WRITE",
+  question: "Write C# code to convert the string \"10\" to an integer and store it in 'x'.",
+  answerTiles: ["x", "=", "int.Parse", "(", "\"10\"", ")", ";"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6],
+} as const;
+
+const csharpLessonProblemB15 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 8 % 3 in C#?",
+  answers: [
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "3" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "1" },
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "2" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemB16 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 10 / 3 in C# when using integer division?",
+  answers: [
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212} className="w-full" />, name: "3.333" },
+    { icon: <Image src={three_cows} alt="" width={212} height={212} className="w-full" />, name: "3" },
+    { icon: <Image src={cow_dollars} alt="" width={212} height={212} className="w-full" />, name: "4" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemC1 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following represents a Boolean value in C#?",
+  answers: [
+    { icon: <Image src={chick_thumbsup} alt="" width={212} height={212} className="w-full" />, name: "true" },
+    { icon: <Image src={hen_thumbsup} alt="" width={212} height={212} className="w-full" />, name: "\"True\"" },
+    { icon: <Image src={cake} alt="" width={212} height={212} className="w-full" />, name: "1" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemC2 = {
+  type: "WRITE",
+  question: "Write C# code to negate the Boolean value 'true'.",
+  answerTiles: ["!", "true"],
+  correctAnswer: [0, 1],
+} as const;
+
+const csharpLessonProblemC3 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to combine two Boolean conditions with 'and' in C#?",
+  answers: [
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "condition1 && condition2" },
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "condition1 and condition2" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "condition1 + condition2" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemC4 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of these expressions checks if a value is not equal to another in C#?",
+  answers: [
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "!=" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "==" },
+    { icon: <Image src={chick_question3} alt="" width={212} height={212} className="w-full" />, name: ">" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemC5 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the expression '9 == 9' in C#?",
+  answers: [
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "False" },
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "True" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemC6 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 5 != 3 in C#?",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212}  className="w-full" />, name: "True" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212}  className="w-full" />, name: "False" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212}  className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemC7 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of 3 < 5 in C#?",
+  answers: [
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212}  className="w-full" />, name: "False" },
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212}  className="w-full" />, name: "True" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212}  className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemC8 = {
+  type: "WRITE",
+  question: "Write C# code to check if 5 is equal to 5.",
+  answerTiles: ["5", "==", "5", "="],
+  correctAnswer: [0, 1, 2],
+} as const;
+
+const csharpLessonProblemC9 = {
+  type: "WRITE",
+  question: "Write C# code to check if 3 is less than 5.",
+  answerTiles: ["3", "<=", "<", "5"],
+  correctAnswer: [0, 2, 3],
+} as const;
+
+const csharpLessonProblemC10 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is used to check if two values are equal in C#?",
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "==" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212} className="w-full" />, name: "=" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "!=" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemC11 = {
+  type: "WRITE",
+  question: "Write C# code to check if 7 is greater than or equal to 5.",
+  answerTiles: ["7", ">", "5", ">="],
+  correctAnswer: [0, 3, 2],
+} as const;
+
+const csharpLessonProblemC12 = {
+  type: "WRITE",
+  question: "Write C# code to check if a number 'x' is less than 10 and 'y' is greater than 5.",
+  answerTiles: ["x", "y", ">", "5", "<", "10", "&&"],
+  correctAnswer: [0, 4, 5, 6, 1, 2, 3],
+} as const;
+
+const csharpLessonProblemC13 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following expressions will return False in C#?",
+  answers: [
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "\"True\" == \"True\"" },
+    { icon: <Image src={cow_question} alt="" width={212} height={212} className="w-full" />, name: "5 == 3" },
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212} className="w-full" />, name: "3 == 3" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemC14 = {
+  type: "WRITE",
+  question: "Write C# code to check if a variable 'age' is between 18 and 25 (inclusive).",
+  answerTiles: ["age >=", "age", "<=", "25", "18", "&&"],
+  correctAnswer: [0, 4, 5, 1, 2, 3],
+} as const;
+
+const csharpLessonProblemC15 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of the expression 'false || true' in C#?",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "True" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "False" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemC16 = {
+  type: "WRITE",
+  question: "Write C# code to check if a variable 'score' is less than or equal to 50 and greater than 30.",
+  answerTiles: ["score <=", "score", ">", "30", "50", "&&"],
+  correctAnswer: [0, 4, 5, 1, 2, 3],
+} as const;
+
+const csharpLessonProblemD1 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct syntax for creating an array in C#?",
+  answers: [
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "{1, 2, 3}" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212} className="w-full" />, name: "(1, 2, 3)" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "new int[] {1, 2, 3}" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemD2 = {
+  type: "SELECT_1_OF_3",
+  question: "How can you access the second element of an array 'myArray' in C#?",
+  answers: [
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "myArray[2]" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "myArray(2)" },
+    { icon: <Image src={happy_twochicks} alt="" width={212} height={212} className="w-full" />, name: "myArray[1]" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemD3 = {
+  type: "WRITE",
+  question: "Write C# code to create an array containing the numbers 1, 2, and 3.",
+  answerTiles: ["new", "int[]", "{", "}", "1,", "2,", "3"],
+  correctAnswer: [0, 1, 2, 4, 5, 6, 3],
+} as const;
+
+const csharpLessonProblemD4 = {
+  type: "WRITE",
+  question: "Write C# code to add the value 'orange' to the list ['apple', 'banana'].",
+  answerTiles: ["list", ".Add", "(", "'orange'", ")"],
+  correctAnswer: [0, 1, 2, 3, 4],
+} as const;
+
+const csharpLessonProblemD5 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is a valid tuple in C#?",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "(1, 2, 3)" },
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "[1, 2, 3]" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "{1, 2, 3}" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemD6 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to define a dictionary in C#?",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "new Dictionary<string, string> { {\"key\", \"value\"} }" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "[\"key\", \"value\"]" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "(\"key\", \"value\")" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemD7 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of accessing the second element in the tuple (10, 20, 30) in C#?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "10" },
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "20" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "30" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemD8 = {
+  type: "WRITE",
+  question: "Write C# code to add a key 'c' with value 15 to the dictionary {'a': 5, 'b': 10}.",
+  answerTiles: ["dictionary", ".Add", "(", "'c'", ",", "15", ")"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6],
+} as const;
+
+const csharpLessonProblemD9 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is used to access values in a dictionary in C#?",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "dictionary[\"key\"]" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "dictionary{key}" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212} className="w-full" />, name: "dictionary.key" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemD10 = {
+  type: "WRITE",
+  question: "Write C# code to remove the element 'banana' from the list ['apple', 'banana', 'orange'].",
+  answerTiles: ["list", ".Remove", "(", "'banana'", ")"],
+  correctAnswer: [0, 1, 2, 3, 4],
+} as const;
+
+const csharpLessonProblemD11 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the code 'new int[] {1, 2, 3}.Length' in C#?",
+  answers: [
+    { icon: <Image src={chick_thumbsup} alt="" width={212} height={212} className="w-full" />, name: "3" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "2" },
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemD12 = {
+  type: "WRITE",
+  question: "Write C# code to create a tuple containing the elements 'apple', 'banana', and 'orange'.",
+  answerTiles: ["(", ")", "\"apple\",", "\"banana\",", "\"orange\""],
+  correctAnswer: [0, 2, 3, 4, 1],
+} as const;
+
+const csharpLessonProblemD13 = {
+  type: "SELECT_1_OF_3",
+  question: "How do you define an empty dictionary in C#?",
+  answers: [
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "()" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "[]" },
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "new Dictionary<string, string>()" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemD14 = {
+  type: "WRITE",
+  question: "Write C# code to access the value associated with the key 'b' in the dictionary {'a': 1, 'b': 2, 'c': 3}.",
+  answerTiles: ["dictionary", "[\"b\"]"],
+  correctAnswer: [0, 1],
+} as const;
+
+const csharpLessonProblemD15 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is used to change the value of a key in a dictionary in C#?",
+  answers: [
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "dictionary.Add(\"key\", value)" },
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "dictionary[\"key\"] = value" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212} className="w-full" />, name: "dictionary.set(\"key\", value)" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemD16 = {
+  type: "WRITE",
+  question: "Write C# code to add the number 4 to the list [1, 2, 3].",
+  answerTiles: ["list", ".Add", "(4)"],
+  correctAnswer: [0, 1, 2],
+} as const;
+
+const csharpLessonProblemE1 = {
+  type: "WRITE",
+  question: "Write an `if/else` statement to check if `x > 5` in C#.",
+  answerTiles: ["if", "(", "x", ">", "5", ")", "{", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7],
+} as const;
+
+const csharpLessonProblemE2 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nif (3 > 2)\n{\n\tConsole.WriteLine(\"Yes\");\n}\nelse\n{\n\tConsole.WriteLine(\"No\");\n}",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "Yes" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "No" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemE3 = {
+  type: "WRITE",
+  question: "Write C# code to check if `x` is equal to 10.",
+  answerTiles: ["if", "(", "x", "==", "10", ")", "{", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7],
+} as const;
+
+const csharpLessonProblemE4 = {
+  type: "WRITE",
+  question: "Write C# code to check if the key 'apple' exists in the dictionary `var dict = new Dictionary<string, int>{{\"apple\", 5}, {\"banana\", 10}};`.",
+  answerTiles: ["if", "dict.ContainsKey", "(", "\"apple\"", ")"],
+  correctAnswer: [0, 1, 2, 3, 4],
+} as const;
+
+const csharpLessonProblemE5 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nif (5 == 5)\n{\n\tConsole.WriteLine(\"True\");\n}\nelse\n{\n\tConsole.WriteLine(\"False\");\n}",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "True" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "False" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemE6 = {
+  type: "WRITE",
+  question: "Write C# code to check if `x` is less than 5 and `y` is greater than 0.",
+  answerTiles: ["if", "(", "x", "<", "5", "&&", "y", ">", "0", ")"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+} as const;
+
+const csharpLessonProblemE7 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code print?\nif (10 > 5 && 5 > 3)\n{\n\tConsole.WriteLine(\"Both are true\");\n}\nelse\n{\n\tConsole.WriteLine(\"One is false\");\n}",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "Both are true" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "One is false" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemE8 = {
+  type: "WRITE",
+  question: "Write the missing `if` statement to check if `x` is not equal to 0.",
+  answerTiles: ["if", "(", "x", "!=", "0", ")"],
+  correctAnswer: [0, 1, 2, 3, 4, 5],
+} as const;
+
+const csharpLessonProblemE9 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to handle multiple conditions using `if/else` in C#?",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "if (x > 5 && x < 10)" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "if (x = 5 || x = 10)" },
+    { icon: <Image src={wrong_chick} alt="" width={212} height={212} className="w-full" />, name: "if (x > 10 && x == 0)" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemE10 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nif (5 < 10)\n{\n\tConsole.WriteLine(\"Correct\");\n}\nelse\n{\n\tConsole.WriteLine(\"Incorrect\");\n}",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "Correct" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "Incorrect" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemE11 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following statements checks if `x` is equal to 0 or `y` is greater than 10 in C#?",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "if (x == 0 || y > 10)" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "if (x = 0 && y = 10)" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "if (x == 0 && y > 10)" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemE12 = {
+  type: "WRITE",
+  question: "Write the missing `if` statement to check if `x` is greater than 10.\nif (INSERT_HERE)\n{\n\tConsole.WriteLine(\"High\");\n}\nelse\n{\n\tConsole.WriteLine(\"Low\");\n}",
+  answerTiles: ["x", ">", ">=", "10"],
+  correctAnswer: [0, 1, 3],
+} as const;
+
+const csharpLessonProblemF1 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the correct syntax for a `for` loop that iterates from 1 to 5 in C#?",
+  answers: [
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "for (int i = 1; i < 5; i++)" },
+    { icon: <Image src={happy_twochicks} alt="" width={212} height={212} className="w-full" />, name: "for (int i = 1; i <= 5; i++)" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "for (int i = 0; i < 5; i++)" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemF2 = {
+  type: "WRITE",
+  question: "Write a `for` loop that iterates from 1 to 7 in C#.",
+  answerTiles: ["for", "(int", "i", "= 1;", "i <= 7;", "i++", "{", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7],
+} as const;
+
+const csharpLessonProblemF3 = {
+  type: "SELECT_1_OF_3",
+  question: "Which loop is used to iterate over a sequence such as an array or a collection in C#?",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "For loop" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "While loop" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "Do-while loop" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemF4 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nfor (int i = 1; i < 4; i++)\n{\n\tConsole.WriteLine(i);\n}",
+  answers: [
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "0 1 2" },
+    { icon: <Image src={happy_twochicks} alt="" width={212} height={212} className="w-full" />, name: "1 2 3" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemF5 = {
+  type: "WRITE",
+  question: "Write a `foreach` loop to iterate through the array `int[] numbers = {2, 4, 6}` in C#.",
+  answerTiles: ["foreach", "(int", "num", "in", "numbers)", "{", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6],
+} as const;
+
+const csharpLessonProblemF6 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nfor (int i = 0; i < 2; i++)\n{\n\tConsole.WriteLine(i);\n}",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "0 1 2" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "1 2" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "0 1" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemF7 = {
+  type: "WRITE",
+  question: "Write a `for` loop that iterates from 1 to 3 in C#.",
+  answerTiles: ["for", "(int", "i", "= 1;", "i < 4;", "i++)", "{", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7],
+} as const;
+
+const csharpLessonProblemF8 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nfor (int i = 0; i < 5; i += 2)\n{\n\tConsole.WriteLine(i);\n}",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "0 2 4" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "1 3 5" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "0 1 2 3 4" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemF9 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of the following code?\nint x = 0;\nwhile (x < 3)\n{\n\tConsole.WriteLine(x);\n\tx++;\n}",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "0 1 2" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "1 2 3" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemF10 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nint x = 0;\nwhile (x < 3)\n{\n\tConsole.WriteLine(x);\n\tx++;\n}",
+  answers: [
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "1 2 3" },
+    { icon: <Image src={happy_twochicks} alt="" width={212} height={212} className="w-full" />, name: "0 1 2" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "0 1 2 3" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemF11 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nfor (int i = 1; i < 3; i++)\n{\n\tfor (int j = 1; j < 2; j++)\n\t{\n\t\tConsole.WriteLine(i + \" \" + j);\n\t}\n}",
+  answers: [
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "1 1, 1 2" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "1 1, 2 1" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemF12 = {
+  type: "WRITE",
+  question: "Write C# code to loop 4 times using a `while` loop.",
+  answerTiles: ["while", "(", "i", "<", "4", ")", "{", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6, 7],
+} as const;
+
+const csharpLessonProblemF13 = {
+  type: "SELECT_1_OF_3",
+  question: "Which statement do you use to repeat a condition while it is true in C#?",
+  answers: [
+    { icon: <Image src={hen_thumbsup} alt="" width={212} height={212} className="w-full" />, name: "While loop" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "If/Else" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "For loop" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemF14 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the correct way to stop a loop prematurely in C#?",
+  answers: [
+    { icon: <Image src={happy_hen} alt="" width={212} height={212} className="w-full" />, name: "break" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "stop" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "exit" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemF15 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\nDictionary<string, int> d = new Dictionary<string, int> { {\"a\", 1}, {\"b\", 2}, {\"c\", 3} };\nforeach (var key in d.Keys)\n{\n\tConsole.WriteLine(key + \" \" + d[key]);\n}",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "a 1, b 2, c 3" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "a, b, c" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "1, 2, 3" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemF16 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of using `else` after a loop in C#?",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "To execute code when the loop completes normally without breaking" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "To execute code every time the loop runs" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "To break the loop when a condition is met" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemG1 = {
+  type: "WRITE",
+  question: "Write C# code to define a method `Greet()`.",
+  answerTiles: ["void", "Greet", "()", "{", "}"],
+  correctAnswer: [0, 1, 2, 3, 4],
+} as const;
+
+const csharpLessonProblemG2 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\nvoid Greet()\n{\n\tConsole.WriteLine(\"Hi\");\n}\nGreet();",
+  answers: [
+    { icon: <Image src={cow_question} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={laying_cow} alt="" width={212} height={212} className="w-full" />, name: "Hello" },
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212} className="w-full" />, name: "Hi" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemG3 = {
+  type: "WRITE",
+  question: "Write a lambda expression in C# that adds 2 to a number `x`.",
+  answerTiles: ["=>", "(x)", "x", "2", "+"],
+  correctAnswer: [1, 0, 2, 4, 3],
+} as const;
+
+const csharpLessonProblemG4 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code return?\nFunc<int, int> addTwo = x => x + 2;\nConsole.WriteLine(addTwo(3));",
+  answers: [
+    { icon: <Image src={five_candles} alt="" width={212} height={212} className="w-full" />, name: "5" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "6" },
+    { icon: <Image src={three_chicks} alt="" width={212} height={212} className="w-full" />, name: "3" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemG5 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to define a method `Add` that takes two parameters `a` and `b` in C#?",
+  answers: [
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "function Add(int a, int b)" },
+    { icon: <Image src={cow_lightbulb} alt="" width={212} height={212} className="w-full" />, name: "void Add(int a, int b)" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "define Add(int a, int b)" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemG6 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following correctly calls the method `Greet()` defined as\nvoid Greet()\n{\n\tConsole.WriteLine(\"Hello\");\n}",
+  answers: [
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212} className="w-full" />, name: "Greet();" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "call Greet();" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "Greet" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemG7 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code return?\nint Square(int x)\n{\n\treturn x * x;\n}\nConsole.WriteLine(Square(4));",
+  answers: [
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "4" },
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212} className="w-full" />, name: "16" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemG8 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to call a lambda function?\nFunc<int, int> addTwo = x => x + 2;",
+  answers: [
+    { icon: <Image src={cow_question} alt="" width={212} height={212} className="w-full" />, name: "addTwo" },
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "lambda addTwo(3)" },
+    { icon: <Image src={cow_dollars} alt="" width={212} height={212} className="w-full" />, name: "addTwo(3)" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemG9 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code print?\nstring Greet()\n{\n\treturn \"Hi\";\n}\nGreet();",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "Hello" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "None" },
+    { icon: <Image src={cow_questioning} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemG10 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of `return` in a method in C#?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "It ends the method" },
+    { icon: <Image src={cow_lightbulb} alt="" width={212} height={212} className="w-full" />, name: "It returns a value to the caller" },
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "It prints a value" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemG11 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code print?\n\nstring Greet(string name)\n{\n\treturn \"Hello, \" + name;\n}\nConsole.WriteLine(Greet(\"Alice\"));",
+  answers: [
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "Hello, Alice" },
+    { icon: <Image src={crying_cow3} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212} className="w-full" />, name: "Hello, name" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemG12 = {
+  type: "SELECT_1_OF_3",
+  question: "What does the following code do?\n\nint Multiply(int x, int y)\n{\n\treturn x * y;\n}\nint result = Multiply(3, 4);",
+  answers: [
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "Adds 3 and 4" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Prints the result of 3 * 4" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "Returns the product of 3 and 4" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemG13 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of the following code?\n\nint Multiply(int x, int y = 2)\n{\n\treturn x * y;\n}\nConsole.WriteLine(Multiply(5));",
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "10" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "5" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemG14 = {
+  type: "WRITE",
+  question: "Write C# code that returns the sum of `a` and `b` in a method defined as `AddNumbers(int a, int b)`.",
+  answerTiles: ["a", "+", "return", "b", ";"],
+  correctAnswer: [2, 0, 1, 3, 4],
+} as const;
+
+const csharpLessonProblemG15 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nstring Greet()\n{\n\treturn \"Hello\";\n}\nConsole.WriteLine(Greet());",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={hen_thumbsup} alt="" width={212} height={212} className="w-full" />, name: "Hello" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemG16 = {
+  type: "WRITE",
+  question: "Write C# code to define a method `Multiply(int a, int b)` that will print the result of `a * b`.",
+  answerTiles: ["void", "Multiply", "(int a,", "int b)", "{", "Console.WriteLine(a * b);", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6],
+} as const;
+
+const csharpLessonProblemI1 = {
+  type: "SELECT_1_OF_3",
+  question: "What is a class in C#?",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "A blueprint for creating objects" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "A type of variable" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "A way to store lists of data" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemI2 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is an example of creating a class in C#?",
+  answers: [
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "Dog = {};" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "function Dog() { }" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "class Dog { }" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemI3 = {
+  type: "WRITE",
+  question: "Write C# code to create a class `Car`.",
+  answerTiles: ["class", "Car", "{", "}"],
+  correctAnswer: [0, 1, 2, 3],
+} as const;
+
+const csharpLessonProblemI4 = {
+  type: "SELECT_1_OF_3",
+  question: "What is an object in C#?",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "An instance of a class" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "A type of function" },
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "A list of values" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemI5 = {
+  type: "WRITE",
+  question: "Write C# code to create an object of the `Car` class.",
+  answerTiles: ["Car", "car", "=", "new", "Car();"],
+  correctAnswer: [0, 1, 2, 3, 4],
+} as const;
+
+const csharpLessonProblemI6 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of the constructor in a C# class?",
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "To initialize the object's attributes" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "To define the class's behavior" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "To run code every time an object is printed" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemI7 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the main purpose of using classes in C#?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "To store variables" },
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212} className="w-full" />, name: "To bundle data and methods together" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "To organize loops" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemI8 = {
+  type: "SELECT_1_OF_3",
+  question: "In C#, what does the `this` keyword refer to inside a class?",
+  answers: [
+    { icon: <Image src={chick_microphone} alt="" width={212} height={212} className="w-full" />, name: "The current object of the class" },
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "A reference to all objects in the program" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "The class itself" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemI9 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nclass Cat\n{\n\tpublic string Name;\n\tpublic Cat(string name) { Name = name; }\n}\nCat c = new Cat(\"Whiskers\");\nConsole.WriteLine(c.Name);",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "Whiskers" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "None" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemI10 = {
+  type: "WRITE",
+  question: "Write a constructor for the class that accepts `name` and `age` parameters.",
+  answerTiles: ["public", "(", "string name,", "int age", ")", "{", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6],
+} as const;
+
+const csharpLessonProblemI11 = {
+  type: "WRITE",
+  question: "Within a constructor, assign the 'name' parameter to the 'Name' field of the class.",
+  answerTiles: ["this", ".", "=", "Name", "name", ";"],
+  correctAnswer: [0, 1, 3, 2, 4, 5],
+} as const;
+
+const csharpLessonProblemI12 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nclass Car\n{\n\tpublic string Make;\n\tpublic string Model;\n\tpublic Car(string make, string model) { Make = make; Model = model; }\n}\nCar c = new Car(\"Toyota\", \"Corolla\");\nConsole.WriteLine(c.Make);",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "Toyota" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "Corolla" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemI13 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nclass Employee\n{\n\tpublic string Name;\n\tpublic string Position;\n\tpublic Employee(string name, string position) { Name = name; Position = position; }\n}\nEmployee e = new Employee(\"John\", \"Manager\");\nConsole.WriteLine(e.Position);",
+  answers: [
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "John" },
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "Manager" },
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemI14 = {
+  type: "WRITE",
+  question: "Write C# code to call the `Start` method on the object 'car'.",
+  answerTiles: ["car", ".", "Start", "(", ")"],
+  correctAnswer: [0, 1, 2, 3, 4],
+} as const;
+
+const csharpLessonProblemI15 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nclass Person\n{\n\tpublic string Name;\n\tpublic int Age;\n\tpublic Person(string name, int age) { Name = name; Age = age; }\n}\nPerson p = new Person(\"Alice\", 30);\nConsole.WriteLine(p.Age);",
+  answers: [
+    { icon: <Image src={cow_thinking} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "Alice" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "30" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemI16 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nclass Animal\n{\n\tpublic string Species;\n\tpublic Animal(string species) { Species = species; }\n}\nAnimal a = new Animal(\"Lion\");\nConsole.WriteLine(a.Species);",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "Lion" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "None" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemI17 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nclass Animal\n{\n\tpublic string Name;\n\tpublic Animal(string name) { Name = name; }\n\tpublic string Speak() { return Name + \" makes a sound\"; }\n}\nAnimal animal = new Animal(\"Dog\");\nConsole.WriteLine(animal.Speak());",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "\"Animal makes a sound\"" },
+    { icon: <Image src={hen_question} alt="" width={212} height={212} className="w-full" />, name: "\"Dog barks\"" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "\"Dog makes a sound\"" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemI18 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of the `this` keyword in C# classes?",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "To refer to the instance of the class" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "To refer to the class itself" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "To call methods of other classes" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemI19 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nclass Dog\n{\n\tpublic string Name;\n\tpublic Dog(string name) { Name = name; }\n\tpublic string Speak() { return Name + \" barks\"; }\n}\nDog dog = new Dog(\"Buddy\");\nConsole.WriteLine(dog.Speak());",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "Buddy barks" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "None" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemI20 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\n\nclass Car\n{\n\tpublic string Make;\n\tpublic string Model;\n\tpublic Car(string make, string model) { Make = make; Model = model; }\n}\nCar car = new Car(\"Ford\", \"Mustang\");\nConsole.WriteLine(car.Model);",
+  answers: [
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "Mustang" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "Ford" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemI21 = {
+  type: "WRITE",
+  question: "Write C# code to add a method `Drive` to the `Car` class that prints 'Driving!'",
+  answerTiles: ["public", "void", "Drive", "()", "{", "Console.WriteLine(\"Driving!\");", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6],
+} as const;
+
+const csharpLessonProblemI22 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is correct for creating a new object of a class?",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "object.create()" },
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "ClassName object = new ClassName();" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "object.new()" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemI23 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nclass Person\n{\n\tpublic string Name;\n\tpublic Person(string name) { Name = name; }\n}\nPerson person = new Person(\"John\");\nConsole.WriteLine(person.Name);",
+  answers: [
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={crying_chick5} alt="" width={212} height={212} className="w-full" />, name: "None" },
+    { icon: <Image src={hen_thumbsup} alt="" width={212} height={212} className="w-full" />, name: "John" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemI24 = {
+  type: "WRITE",
+  question: "Write C# code to modify the `Dog` class to add a method `Eat` that prints 'Eating food!'",
+  answerTiles: ["public", "void", "Eat", "()", "{", "Console.WriteLine(\"Eating food!\");", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6],
+} as const;
+
+const csharpLessonProblemJ1 = {
+  type: "SELECT_1_OF_3",
+  question: "What is inheritance in C#?",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "A way to create a new class from an existing class" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "A method to assign variables" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "A function that combines two classes" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemJ2 = {
+  type: "SELECT_1_OF_3",
+  question: "What does the `base` keyword do in C#?",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "It allows access to methods from a parent class" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "It creates a new instance of a class" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "It deletes an object from memory" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemJ3 = {
+  type: "WRITE",
+  question: "Write C# code to create a subclass `Dog` that inherits from `Animal`.",
+  answerTiles: ["class", "Dog", ":", "Animal", "{", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5],
+} as const;
+
+const csharpLessonProblemJ4 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nclass Animal\n{\n\tpublic string Species;\n\tpublic Animal(string species) { Species = species; }\n}\n\nclass Dog : Animal\n{\n\tpublic string Breed;\n\tpublic Dog(string species, string breed) : base(species) { Breed = breed; }\n}\nDog myDog = new Dog(\"Canine\", \"Bulldog\");\nConsole.WriteLine(myDog.Species);",
+  answers: [
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "Bulldog" },
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "Canine" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemJ5 = {
+  type: "WRITE",
+  question: "Write C# code to call the `base` constructor of the parent class inside the subclass `Dog`.",
+  answerTiles: ["base(", ")", "{", ":", "Animal"],
+  correctAnswer: [3, 4, 0, 1, 2],
+} as const;
+
+const csharpLessonProblemJ6 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following correctly demonstrates method overriding in C#?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "override speak();" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "func speak(override);" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "public override string Speak()" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemJ7 = {
+  type: "WRITE",
+  question: "Write C# method declaration to override the `Speak` behavior of the parent class in a `Dog` subclass.",
+  answerTiles: ["public", "override", "string", "Speak()", "{", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5],
+} as const;
+
+const csharpLessonProblemJ8 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nclass Animal\n{\n\tpublic string Species;\n\tpublic Animal(string species) { Species = species; }\n\tpublic virtual string Speak() { return Species + \" makes a sound\"; }\n}\n\nclass Dog : Animal\n{\n\tpublic Dog(string species) : base(species) {}\n\tpublic override string Speak() { return Species + \" barks\"; }\n}\nDog d = new Dog(\"Dog\");\nConsole.WriteLine(d.Speak());",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "Dog barks" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "Dog makes a sound" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemJ9 = {
+  type: "WRITE",
+  question: "Write C# code to override the `Speak` method so a subclass `Cat` can say 'Meow'.",
+  answerTiles: ["public", "override", "string", "Speak()", "{ return", "\"Meow\";", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5, 6],
+} as const;
+
+const csharpLessonProblemJ10 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nclass Vehicle\n{\n\tpublic string Make;\n\tpublic string Model;\n\tpublic Vehicle(string make, string model) { Make = make; Model = model; }\n}\n\nclass Car : Vehicle\n{\n\tpublic Car(string make, string model) : base(make, model) {}\n\tpublic string Drive() { return $\"Driving {Make} {Model}\"; }\n}\nCar myCar = new Car(\"Toyota\", \"Camry\");\nConsole.WriteLine(myCar.Drive());",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "Driving Toyota Camry" },
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={chick_sleeping} alt="" width={212} height={212} className="w-full" />, name: "Toyota Camry" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemJ11 = {
+  type: "WRITE",
+  question: "Write C# code to create a method `Stop` for the `Car` class that prints 'Stopping the car!'",
+  answerTiles: ["public", "void", "Stop", "Console.WriteLine", "(\"Stopping the car!\");", "{}"],
+  correctAnswer: [0, 1, 2, 5, 3, 4],
+} as const;
+
+const csharpLessonProblemJ12 = {
+  type: "SELECT_1_OF_3",
+  question: "What will the following code output?\n\nclass Person\n{\n\tpublic string Name;\n\tpublic int Age;\n\tpublic Person(string name, int age) { Name = name; Age = age; }\n}\n\nclass Employee : Person\n{\n\tpublic string JobTitle;\n\tpublic Employee(string name, int age, string jobTitle) : base(name, age) { JobTitle = jobTitle; }\n}\n\nEmployee employee = new Employee(\"John\", 30, \"Engineer\");\nConsole.WriteLine($\"{employee.Name} {employee.Age} {employee.JobTitle}\");",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "John 30 Engineer" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "John 30" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemJ13 = {
+  type: "SELECT_1_OF_3",
+  question: "In C#, which method is called when a new object is created from a class?",
+  answers: [
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "Dispose()" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "Create()" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "Constructor" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemJ14 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of method resolution order (MRO) in C#?",
+  answers: [
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "To determine the order in which methods are inherited" },
+    { icon: <Image src={crying_chick4} alt="" width={212} height={212} className="w-full" />, name: "To prioritize class names" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "To define the constructor of a class" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemJ15 = {
+  type: "WRITE",
+  question: "Write C# code to display the type hierarchy of a class `Child` that inherits from `Parent1` and `Parent2`.",
+  answerTiles: ["typeof", "(Child)", ".BaseType"],
+  correctAnswer: [0, 1, 2],
+} as const;
+
+const csharpLessonProblemJ16 = {
+  type: "SELECT_1_OF_3",
+  question: "Which keyword can be used to call a parent class method inside a subclass method?",
+  answers: [
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "base()" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "super()" },
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "parent()" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemK1 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of the NuGet command in C#?",
+  answers: [
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "To install, update, or uninstall .NET packages" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "To run C# scripts" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "To debug C# code" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemK2 = {
+  type: "WRITE",
+  question: "Write a NuGet command to install the `Newtonsoft.Json` package.",
+  answerTiles: ["nuget", "install", "Newtonsoft.Json", "-Source"],
+  correctAnswer: [0, 1, 2],
+} as const;
+
+const csharpLessonProblemK3 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is a valid regular expression in C#?",
+  answers: [
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212} className="w-full" />, name: "abc[123]}" },
+    { icon: <Image src={happy_chick} alt="" width={212} height={212} className="w-full" />, name: "\\d{3}-\\d{2}-\\d{4}" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "def*ghi" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemK4 = {
+  type: "WRITE",
+  question: "Write C# code using `Regex` to match an email address from the string 'Contact us at support@example.com'.",
+  answerTiles: ["Regex", ".Match", "(pattern,", "'Contact us at support@example.com')"],
+  correctAnswer: [0, 1, 2, 3],
+} as const;
+
+const csharpLessonProblemK5 = {
+  type: "SELECT_1_OF_3",
+  question: "What does the `Regex.Replace()` method do in C#?",
+  answers: [
+    { icon: <Image src={happy_chick2} alt="" width={212} height={212} className="w-full" />, name: "It replaces parts of a string that match a regex pattern" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "It splits a string based on a regex pattern" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "It returns all matches of a regex pattern in a list" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemK6 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the purpose of a destructor in C#?",
+  answers: [
+    { icon: <Image src={happy_chick3} alt="" width={212} height={212} className="w-full" />, name: "It is called when an object is about to be destroyed" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "It initializes a new object" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "It modifies the object’s attributes" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemK7 = {
+  type: "WRITE",
+  question: "Write C# code to define a destructor in a class `Book` that prints 'Object deleted'.",
+  answerTiles: ["~Book", "()", "{", "Console.WriteLine", "(\"Object deleted\");", "}"],
+  correctAnswer: [0, 1, 2, 3, 4, 5],
+} as const;
+
+const csharpLessonProblemK8 = {
+  type: "SELECT_1_OF_3",
+  question: "What does the `Zip()` method do in C#?",
+  answers: [
+    { icon: <Image src={chick_flattered} alt="" width={212} height={212} className="w-full" />, name: "It pairs elements from two or more collections" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "It sorts elements of a collection" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "It merges two lists" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemK9 = {
+  type: "WRITE",
+  question: "Write C# code to zip two lists: `names = new List<string> { \"Alice\", \"Bob\", \"Charlie\" };` and `scores = new List<int> { 85, 90, 78 };`.",
+  answerTiles: ["names.Zip", "(scores", ",", "(name, score)", "=>"],
+  correctAnswer: [0, 1, 2, 3, 4],
+} as const;
+
+const csharpLessonProblemK10 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct syntax to define a lambda expression in C#?",
+  answers: [
+    { icon: <Image src={crying_chick3} alt="" width={212} height={212} className="w-full" />, name: "function(x) => x + 1" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "lambda x => x + 1" },
+    { icon: <Image src={chick_microphone} alt="" width={212} height={212} className="w-full" />, name: "(x) => x + 1" },
+  ],
+  correctAnswer: 2,
+} as const;
+
+const csharpLessonProblemK11 = {
+  type: "WRITE",
+  question: "Write C# code to define a lambda expression that multiplies two numbers and call it with arguments 5 and 6.",
+  answerTiles: ["(x,", "y)", "=>", "x * y", "multiply", "="],
+  correctAnswer: [4, 5, 0, 1, 2, 3],
+} as const;
+
+const csharpLessonProblemK12 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the result of the following expression in C#:\n`Enumerable.Range(0, 3).Select(i => i * i)`?",
+  answers: [
+    { icon: <Image src={cow_greeting} alt="" width={212} height={212} className="w-full" />, name: "[0, 1, 4]" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "[1, 4, 9]" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "[0, 1, 2]" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemK13 = {
+  type: "SELECT_1_OF_3",
+  question: "Which of the following is the correct way to install a NuGet package in C#?",
+  answers: [
+    { icon: <Image src={crying_chick} alt="" width={212} height={212} className="w-full" />, name: "install nuget package_name" },
+    { icon: <Image src={cow_lightbulb} alt="" width={212} height={212} className="w-full" />, name: "dotnet add package package_name" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "nuget install package_name" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemK14 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following code?\n`Enumerable.Range(0, 3).ToDictionary(x => x, x => x * x);`",
+  answers: [
+    { icon: <Image src={cow_sleeping} alt="" width={212} height={212} className="w-full" />, name: "{1: 1, 2: 4, 3: 9}" },
+    { icon: <Image src={cow_twothumbs} alt="" width={212} height={212} className="w-full" />, name: "{0: 0, 1: 1, 2: 4}" },
+    { icon: <Image src={sad_chick} alt="" width={212} height={212} className="w-full" />, name: "{0: 1, 1: 2, 2: 3}" },
+  ],
+  correctAnswer: 1,
+} as const;
+
+const csharpLessonProblemK15 = {
+  type: "SELECT_1_OF_3",
+  question: "Which regular expression pattern matches one or more digits in C#?",
+  answers: [
+    { icon: <Image src={happy_chickfamily} alt="" width={212} height={212} className="w-full" />, name: "\\d+" },
+    { icon: <Image src={sleeping_chick} alt="" width={212} height={212} className="w-full" />, name: "[0-9]+" },
+    { icon: <Image src={crying_cow} alt="" width={212} height={212} className="w-full" />, name: "\\d" },
+  ],
+  correctAnswer: 0,
+} as const;
+
+const csharpLessonProblemK16 = {
+  type: "SELECT_1_OF_3",
+  question: "What is the output of the following C# code?\n`bool result = !string.IsNullOrEmpty(\"Hello\");`",
+  answers: [
+    { icon: <Image src={crying_cow2} alt="" width={212} height={212} className="w-full" />, name: "Error" },
+    { icon: <Image src={crying_chick2} alt="" width={212} height={212} className="w-full" />, name: "False" },
+    { icon: <Image src={happy_chick4} alt="" width={212} height={212} className="w-full" />, name: "True" },
+  ],
+  correctAnswer: 2,
+} as const;
 
 const getJavaScriptLessonProblems = (lessonsCompleted: number) => {
   const javascriptLessonProblems = [
@@ -3249,8 +4792,30 @@ const getJavaScriptLessonProblems = (lessonsCompleted: number) => {
 
   return javascriptLessonProblems.slice(n);
 };
+
 const getCsLessonProblems = (lessonsCompleted: number) => {
-  
+  const csharpLessonProblems = [
+    csharpLessonProblemA1, csharpLessonProblemA2, csharpLessonProblemA3, csharpLessonProblemA4, csharpLessonProblemA5, csharpLessonProblemA6, csharpLessonProblemA7, csharpLessonProblemA8, csharpLessonProblemA9, csharpLessonProblemA10, csharpLessonProblemA11, csharpLessonProblemA12, csharpLessonProblemA13, csharpLessonProblemA14, csharpLessonProblemA15, csharpLessonProblemA16,
+    csharpLessonProblemB1, csharpLessonProblemB2, csharpLessonProblemB3, csharpLessonProblemB4, csharpLessonProblemB5, csharpLessonProblemB6, csharpLessonProblemB7, csharpLessonProblemB8, csharpLessonProblemB9, csharpLessonProblemB10, csharpLessonProblemB11, csharpLessonProblemB12, csharpLessonProblemB13, csharpLessonProblemB14, csharpLessonProblemB15, csharpLessonProblemB16,
+    csharpLessonProblemC1, csharpLessonProblemC2, csharpLessonProblemC3, csharpLessonProblemC4, csharpLessonProblemC5, csharpLessonProblemC6, csharpLessonProblemC7, csharpLessonProblemC8, csharpLessonProblemC9, csharpLessonProblemC10, csharpLessonProblemC11, csharpLessonProblemC12, csharpLessonProblemC13, csharpLessonProblemC14, csharpLessonProblemC15, csharpLessonProblemC16,
+    csharpLessonProblemD1, csharpLessonProblemD2, csharpLessonProblemD3, csharpLessonProblemD4, csharpLessonProblemD5, csharpLessonProblemD6, csharpLessonProblemD7, csharpLessonProblemD8, csharpLessonProblemD9, csharpLessonProblemD10, csharpLessonProblemD11, csharpLessonProblemD12, csharpLessonProblemD13, csharpLessonProblemD14, csharpLessonProblemD15, csharpLessonProblemD16,
+    csharpLessonProblemE1, csharpLessonProblemE2, csharpLessonProblemE3, csharpLessonProblemE4, csharpLessonProblemE5, csharpLessonProblemE6, csharpLessonProblemE7, csharpLessonProblemE8, csharpLessonProblemE9, csharpLessonProblemE10, csharpLessonProblemE11, csharpLessonProblemE12,
+    csharpLessonProblemF1, csharpLessonProblemF2, csharpLessonProblemF3, csharpLessonProblemF4, csharpLessonProblemF5, csharpLessonProblemF6, csharpLessonProblemF7, csharpLessonProblemF8, csharpLessonProblemF9, csharpLessonProblemF10, csharpLessonProblemF11, csharpLessonProblemF12, csharpLessonProblemF13, csharpLessonProblemF14, csharpLessonProblemF15, csharpLessonProblemF16,
+    csharpLessonProblemG1, csharpLessonProblemG2, csharpLessonProblemG3, csharpLessonProblemG4, csharpLessonProblemG5, csharpLessonProblemG6, csharpLessonProblemG7, csharpLessonProblemG8, csharpLessonProblemG9, csharpLessonProblemG10, csharpLessonProblemG11, csharpLessonProblemG12, csharpLessonProblemG13, csharpLessonProblemG14, csharpLessonProblemG15, csharpLessonProblemG16,
+    // review 1
+    csharpLessonProblemA1, csharpLessonProblemA2, csharpLessonProblemA3, csharpLessonProblemA4, csharpLessonProblemB1, csharpLessonProblemB2, csharpLessonProblemB3, csharpLessonProblemB4, csharpLessonProblemC1, csharpLessonProblemC2, csharpLessonProblemC3, csharpLessonProblemC4, csharpLessonProblemD1, csharpLessonProblemD2, csharpLessonProblemE2, csharpLessonProblemE3, csharpLessonProblemF1, csharpLessonProblemF2, csharpLessonProblemF3, csharpLessonProblemF4, csharpLessonProblemG1, csharpLessonProblemG2, csharpLessonProblemG3, csharpLessonProblemG4,
+    csharpLessonProblemI1, csharpLessonProblemI2, csharpLessonProblemI3, csharpLessonProblemI4, csharpLessonProblemI5, csharpLessonProblemI6, csharpLessonProblemI7, csharpLessonProblemI8, csharpLessonProblemI9, csharpLessonProblemI10, csharpLessonProblemI11, csharpLessonProblemI12, csharpLessonProblemI13, csharpLessonProblemI14, csharpLessonProblemI15, csharpLessonProblemI16, csharpLessonProblemI17, csharpLessonProblemI18, csharpLessonProblemI19, csharpLessonProblemI20, csharpLessonProblemI21, csharpLessonProblemI22, csharpLessonProblemI23, csharpLessonProblemI24,
+    csharpLessonProblemJ1, csharpLessonProblemJ2, csharpLessonProblemJ3, csharpLessonProblemJ4, csharpLessonProblemJ5, csharpLessonProblemJ6, csharpLessonProblemJ7, csharpLessonProblemJ8, csharpLessonProblemJ9, csharpLessonProblemJ10, csharpLessonProblemJ11, csharpLessonProblemJ12, csharpLessonProblemJ13, csharpLessonProblemJ14, csharpLessonProblemJ15, csharpLessonProblemJ16,
+    csharpLessonProblemK1, csharpLessonProblemK2, csharpLessonProblemK3, csharpLessonProblemK4, csharpLessonProblemK5, csharpLessonProblemK6, csharpLessonProblemK7, csharpLessonProblemK8, csharpLessonProblemK9, csharpLessonProblemK10, csharpLessonProblemK11, csharpLessonProblemK12, csharpLessonProblemK13, csharpLessonProblemK14, csharpLessonProblemK15, csharpLessonProblemK16,
+    // review 2
+    csharpLessonProblemA1, csharpLessonProblemB1, csharpLessonProblemC1, csharpLessonProblemD1, csharpLessonProblemE1, csharpLessonProblemF1, csharpLessonProblemG1, csharpLessonProblemI1, csharpLessonProblemJ1, csharpLessonProblemA6, csharpLessonProblemB6, csharpLessonProblemC7, csharpLessonProblemD6, csharpLessonProblemE6, csharpLessonProblemF6, csharpLessonProblemG6, csharpLessonProblemI6, csharpLessonProblemJ6, csharpLessonProblemK6,
+    // extras
+    csharpLessonProblemA1, csharpLessonProblemB1, csharpLessonProblemC1, csharpLessonProblemD1, csharpLessonProblemE1, csharpLessonProblemF1, csharpLessonProblemG1, csharpLessonProblemI1, csharpLessonProblemJ1, csharpLessonProblemA6, csharpLessonProblemB6, csharpLessonProblemC7, csharpLessonProblemD6, csharpLessonProblemE6, csharpLessonProblemF6, csharpLessonProblemG6, csharpLessonProblemI6, csharpLessonProblemJ6, csharpLessonProblemK6,
+  ];
+
+  const n = lessonsCompleted * 2;
+
+  return csharpLessonProblems.slice(n);
 };
 
 const getPythonLessonProblems = (lessonsCompleted: number) => {
@@ -3322,7 +4887,7 @@ const Lesson: NextPage = () => {
         return getPythonLessonProblems(lessonsCompleted);
       case "JavaScript":
         return getJavaScriptLessonProblems(lessonsCompleted);
-      case "C#":
+      case "C":
         return getCsLessonProblems(lessonsCompleted);
       default:
         return lessonProblems;  // Default lesson problems if no valid language is selected
