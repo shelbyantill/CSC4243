@@ -5846,7 +5846,11 @@ const LessonFastForwardEndPass = ({
   return (
     <div className="flex min-h-screen flex-col px-5 py-8 text-center">
       <div className="flex grow flex-col items-center justify-center gap-5">
-        <LessonFastForwardEndPassSvg />
+        <img
+          src="/icons/fast-success.png"
+          alt="Fast Success"
+          className="w-70 h-52" // Example dimensions
+        />
         <h1 className="text-2xl font-bold">You unlocked Unit {unitNumber}!</h1>
         <p className="text-lg text-gray-500">
           Way to go! You’re making great strides!
