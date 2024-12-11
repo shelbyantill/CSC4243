@@ -4911,7 +4911,10 @@ const Lesson: NextPage = () => {
 
   const problem = lessonSet[lessonProblem] ?? lessonProblem1; // Default to first problem if not defined
 
-  const totalCorrectAnswersNeeded = 2;
+  const totalCorrectAnswersNeeded = 
+    "fast-forward" in router.query && !isNaN(Number(router.query["fast-forward"]))
+    ? 4 // 4 correct answers needed for fast-forward
+    : 2; // default correct answers needed for lessons
 
   const [isStartingLesson, setIsStartingLesson] = useState(true);
   const hearts =
@@ -4981,7 +4984,7 @@ const Lesson: NextPage = () => {
 
   const unitNumber = Number(router.query["fast-forward"]);
 
-  if (hearts !== null && hearts < 0 && !correctAnswerShown) {
+  if (hearts !== null && hearts < 1 && !correctAnswerShown) {
     return (
       <LessonFastForwardEndFail
         unitNumber={unitNumber}
