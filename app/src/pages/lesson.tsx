@@ -4876,31 +4876,22 @@ const Lesson: NextPage = () => {
     lessonProblem1, lessonProblem2,
   ];
 
+
   // Check lesson type dynamically
   const lessonsCompleted = useBoundStore((x)=> x.lessonsCompleted);
   const lessonType = router.query["lessonType"];
 
   const lessonSet = (() => {
-    const isFastForward = "fast-forward" in router.query;
-    const lessons = (() => {
-      switch (lessonType) {
-        case "Python":
-          return getPythonLessonProblems(lessonsCompleted);
-        case "JavaScript":
-          return getJavaScriptLessonProblems(lessonsCompleted);
-        case "C":
-          return getCsLessonProblems(lessonsCompleted);
-        default:
-          return lessonProblems; // Default lesson problems if no valid language is selected
-      }
-    })();
-  
-    if (isFastForward) {
-      // Shuffle the lesson set and take the first 4 random problems
-      return lessons.sort(() => Math.random() - 0.5).slice(0, 4);
+    switch (lessonType) {
+      case "Python":
+        return getPythonLessonProblems(lessonsCompleted);
+      case "JavaScript":
+        return getJavaScriptLessonProblems(lessonsCompleted);
+      case "C":
+        return getCsLessonProblems(lessonsCompleted);
+      default:
+        return lessonProblems;  // Default lesson problems if no valid language is selected
     }
-  
-    return lessons; // Default lesson set
   })();
 
   const [lessonProblem, setLessonProblem] = useState(0); // Start at the first question
