@@ -5797,7 +5797,11 @@ const LessonFastForwardEndFail = ({
   return (
     <div className="flex min-h-screen flex-col px-5 py-8 text-center">
       <div className="flex grow flex-col items-center justify-center gap-5">
-        <LessonFastForwardEndFailSvg />
+        <img
+            src="/icons/fast-fail.png"
+            alt="Fast Fail"
+            className="w-70 h-52"
+        />
         <h1 className="text-2xl font-bold">
           {`You didn't unlock Unit ${unitNumber}`}
         </h1>
@@ -5849,7 +5853,7 @@ const LessonFastForwardEndPass = ({
         <img
           src="/icons/fast-success.png"
           alt="Fast Success"
-          className="w-70 h-52" // Example dimensions
+          className="w-70 h-52"
         />
         <h1 className="text-2xl font-bold">You unlocked Unit {unitNumber}!</h1>
         <p className="text-lg text-gray-500">
