@@ -4899,7 +4899,7 @@ const Lesson: NextPage = () => {
    // Generate a stable randomized lesson set for fast-forward mode
    const randomizedLessonSet = useRef(
     isFastForward
-      ? [...lessonSet].sort(() => Math.random() - 0.5).slice(0, 4) // Shuffle and pick 4 random problems
+      ? [...lessonSet].sort(() => Math.random() - 0.5)
       : lessonSet
   ).current;
 
