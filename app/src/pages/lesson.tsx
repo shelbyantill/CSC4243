@@ -4881,6 +4881,8 @@ const Lesson: NextPage = () => {
   const lessonsCompleted = useBoundStore((x)=> x.lessonsCompleted);
   const lessonType = router.query["lessonType"];
 
+  const isFastForward = "fast-forward" in router.query;
+
   const lessonSet = (() => {
     switch (lessonType) {
       case "Python":
@@ -4893,6 +4895,15 @@ const Lesson: NextPage = () => {
         return lessonProblems;  // Default lesson problems if no valid language is selected
     }
   })();
+
+   // Generate a stable randomized lesson set for fast-forward mode
+   const randomizedLessonSet = useRef(
+    isFastForward
+      ? [...lessonSet].sort(() => Math.random() - 0.5).slice(0, 4) // Shuffle and pick 4 random problems
+      : lessonSet
+  ).current;
+
+  const currentLessonSet = randomizedLessonSet;
 
   const [lessonProblem, setLessonProblem] = useState(0); // Start at the first question
   const [correctAnswerCount, setCorrectAnswerCount] = useState(0);
@@ -4909,7 +4920,7 @@ const Lesson: NextPage = () => {
   const [questionResults, setQuestionResults] = useState<QuestionResult[]>([]);
   const [reviewLessonShown, setReviewLessonShown] = useState(false);
 
-  const problem = lessonSet[lessonProblem] ?? lessonProblem1; // Default to first problem if not defined
+  const problem = currentLessonSet[lessonProblem] ?? lessonProblem1; // Default to first problem if not defined
 
   const totalCorrectAnswersNeeded = 
     "fast-forward" in router.query && !isNaN(Number(router.query["fast-forward"]))
@@ -4964,7 +4975,7 @@ const Lesson: NextPage = () => {
     // Increment by 1, ensuring it doesn't loop back
     setLessonProblem((prevLessonProblem) => {
       const nextProblem = prevLessonProblem + 1;
-      if (nextProblem < lessonSet.length) {
+      if (nextProblem < currentLessonSet.length) {
         return nextProblem;
       } else {
         return prevLessonProblem;  // Stay on the last problem if already at the end
